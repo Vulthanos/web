@@ -1,22 +1,23 @@
 * {
     margin:0;
     padding:0;
+    font-family: Montserrat, monospace;
 }
 
 header {
     width: 100%;
     overflow: hidden;
-    height: 150px;
+    height: 9.375em;
     position: relative;
 }
 
 nav {
-    top:-20px;
+    top:-1.25em;
     position: relative;
     left:0;
     right:0;
-    margin:20px auto;
-    max-width:1000px;
+    margin:1.25em auto;
+    max-width:62.5em;
     width:90%;
 }
 
@@ -48,7 +49,7 @@ nav > ul > li > ul {
     left:0;
     right:0;
     overflow:hidden;
-    height:0%;
+    height:0;
     -webkit-transition: all .4s ease;
     -moz-transition: all .4s ease;
     -ms-transition: all .4s ease;
@@ -60,8 +61,8 @@ nav > ul li a {
     color:#000000;
     font-weight:bold;
     display:block;
-    line-height:20px;
-    padding:20px;
+    line-height:1.25em;
+    padding:1.25em;
     position: relative;
     text-align:center;
     text-decoration:none;
@@ -83,7 +84,7 @@ nav > ul > li > a span {
     width:100%;
     left:0;
     position:absolute;
-    top:-55px;
+    top:-3.4375em;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
@@ -93,7 +94,7 @@ nav > ul > li > a span {
 
 nav > ul > li > a span .icon {
     display:block;
-    line-height:60px;
+    line-height:3.75em;
 }
 
 nav > ul > li > a:hover > span {
@@ -109,4 +110,85 @@ nav ul li a .baja {
     position: fixed;
     margin-top: 0;
     z-index: 2000;
+}
+
+.icon-consolas {
+    position: center;
+    left: 16.93%;
+    right: 80.42%;
+    top: 39.11%;
+    bottom: 35.9%;
+}
+
+.icon-juegos {
+    position: center;
+    left: 24.53%;
+    right: 72.4%;
+    top: 33.87%;
+    bottom: 29.83%;
+}
+
+.icon-accesorios {
+    position: center;
+    width: 3.178125em;
+    height: 4.5625em;
+    left: 38.875em;
+    top: 5.6875em;
+}
+
+.icon-controladores {
+    position: center;
+    width: 68.69px;
+    height: 108px;
+    left: 803px;
+    top: 74px;
+}
+
+.icon-componentes {
+    position: center;
+    width: 4.280625em;
+    height: 4.280625em;
+    left: 63.125em;
+    top: 5.8125em;
+
+}
+
+.icon-pc {
+    position: center;
+    width: 4.280625em;
+    height: 4.343125em;
+    left: 63.125em;
+    top: 5.8125em;
+}
+
+.logo {
+    position: absolute;
+    width: 7em;
+    height: 7em;
+    left: 1em;
+    top: 0;
+}
+
+.lupa {
+    position: absolute;
+    width: 5.0625em;
+    height: 4.25em;
+    left: 96.8225em;
+    top: 5.01em;
+}
+
+.carrito {
+    position: absolute;
+    width: 6.875em;
+    height: 3.996875em;
+    left: 101.885em;
+    top: 5.135em;
+}
+
+.user {
+    position: absolute;
+    width: 8.8125em;
+    height: 6.875em;
+    left: 108.76em;
+    top: 3.6975em;
 }

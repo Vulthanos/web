@@ -1,0 +1,16 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Montserrat, monospace;
+}
+
+.slider {
+    font-family: Montserrat, monospace;
+    position: absolute;
+    width: 110.25em;
+    height: 46.125em;
+    left: 0;
+    top: 0;
+    border: 0.0418063125em solid #000000;
+    box-sizing: border-box;
+}
