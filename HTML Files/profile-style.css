@@ -9,25 +9,101 @@ body{
 }
 
 .pagina-personal{
+    position: relative;
+    top: 178px;
     text-align: center;
     font-size: 30px;
     font-style: normal;
     font-weight: normal;
     color: #000000;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
 }
 
-.columns{
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.menu-izquierda {
-    text-decoration:none;
+/*Estilos del menu de la izquierda*/
+.menu-izquierda ul{
+    list-style-type: none;
     font-size: 20px;
-    text-align: left;
+    position: absolute;
+    top: 377px;
+    left: 84px;
+}
+
+/*Titulo: Mi cuenta*/
+.titulo-central {
+    position: absolute;
+    left: 400px;
+    top: 624px;
+}
+
+/*Titulo de informacion personal*/
+.informacion-personal{
+    position: absolute;
+    font-size: 20px;
+    left: 433px;
+    top: 250px;
+
+}
+
+/*Informacion de contacto*/
+.block-informacion{
+    position: absolute;
+    left: 433px;
+    top: 328px;
+
+}
+
+/*Newsletter*/
+.newsletter{
+    position: absolute;
+    left: 1001px;
+    top: 328px;
+}
+
+/*Titulo de direcciones*/
+.apartado-direcciones{
+    position: absolute;
+    font-size: 20px;
+    left: 433px;
+    top: 550px;
+
+}
+
+/*Direccion de facturacion*/
+.block-direccion-facturacion{
+    position: absolute;
+    left: 433px;
+    top: 605px;
+}
+/*Direccion de envio*/
+.block-direccion-envio{
+    position: absolute;
+    left: 1001px;
+    top: 605px;
+}
+
+/*titulos de apartados*/
+.block-information-title{
+    font-weight: bold;
+
+}
+
+/* color de las opciones de edicion y cambio de contraseña, direccion y perfil*/
+.cambio-opciones{
+    font-size: 13px;
+    color: #FFA16D;
+    text-decoration: none;
+}
+
+/*Boton unirse a la newsletter*/
+button{
+    background: #FFA16D;
+    width: 501px;
+    height: 60px;
+    border-radius: 6px;
+    border: 0;
+
+}
+
+.unirse{
+    font-size: 15px;
+    font-weight: bold;
 }
