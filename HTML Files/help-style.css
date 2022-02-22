@@ -7,11 +7,102 @@ body{
     font-family: Montserrat, sans-serif;
     background: #fff;
 }
-
-.pagina-ayuda{
+/*Nombre de la pagina*/
+.titulo-central{
+    position: relative;
+    top: 178px;
     text-align: center;
     font-size: 30px;
     font-style: normal;
     font-weight: normal;
     color: #000000;
+}
+
+/*Titulo apartado preguntas frecuentes*/
+.titulo-seccion{
+    position: absolute;
+    font-size: 20px;
+    left: 163px;
+    top: 250px;
+}
+
+.informacion-util{
+    position: absolute;
+    top: 327px;
+    left: 163px;
+}
+
+.pagos{
+    position: absolute;
+    top: 650px;
+    left: 163px;
+}
+
+.compras{
+    position: absolute;
+    top: 327px;
+    left: 720px;
+}
+
+.activacion-juegos{
+    position: absolute;
+    top: 650px;
+    left: 720px;
+
+}
+
+.pregunta-cuenta{
+    position: absolute;
+    top: 327px;
+    left: 1360px;
+
+}
+
+.pregunta-productos{
+    position: absolute;
+    top: 650px;
+    left: 1360px;
+
+}
+
+.menu-nav-info ul{
+    position: absolute;
+    list-style-type: none;
+    top: 350px;
+    left: 163px;
+}
+
+.menu-nav-pagos ul{
+    position: absolute;
+    list-style-type: none;
+    top: 680px;
+    left: 163px;
+}
+
+.menu-nav-compras ul{
+    position: absolute;
+    list-style-type: none;
+    top: 350px;
+    left: 720px;
+}
+
+.menu-nav-juegos ul{
+    position: absolute;
+    list-style-type: none;
+    top: 680px;
+    left: 720px;
+}
+
+.menu-nav-cuenta ul{
+    position: absolute;
+    list-style-type: none;
+    top: 350px;
+    left: 1360px;
+}
+
+.menu-nav-productos ul{
+    position: absolute;
+    list-style-type: none;
+    top: 680px;
+    left: 1360px;
 }
