@@ -21,6 +21,7 @@ body{
 /*Estilos del menu de la izquierda*/
 .menu-izquierda ul{
     list-style-type: none;
+    display: block;
     font-size: 20px;
     position: absolute;
     top: 377px;
