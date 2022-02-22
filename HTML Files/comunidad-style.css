@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+/*Titulo de la pagina*/
+.pagina-comunidad{
+    position: relative;
+    top: 178px;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*Titulo del apartado*/
+.sorteo{
+    position: absolute;
+    font-size: 20px;
+    left: 163px;
+    top: 250px;
+}
+
+/*Imagen sorteo 1*/
+.sorteo1{
+    position: absolute;
+    top: 350px;
+    left: 233px;
+}
+
+/*Imagen sorteo 2*/
+.sorteo2{
+    position: absolute;
+    top: 350px;
+    left: 790px;
+}
+
+/*Imagen sorteo 3*/
+.sorteo3{
+    position: absolute;
+    top: 350px;
+    left: 1355px;
+
+}
+
+/*Estilo de los botones para unirse*/
+button {
+    background: #FFA16D;
+    width: 501px;
+    height: 60px;
+    border-radius: 6px;
+    border: 0;
+
+}
+
+/*Textos unirse al sorteo*/
+.unir-sorteo1, .unir-sorteo2, .unir-sorteo3{
+    font-size: 15px;
+    font-weight: bold;
+}
