@@ -1,0 +1,58 @@
+/*Estilos del footer*/
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.footer {
+    position: relative;
+    bottom: 0%;
+    width: 1920px;
+    height: 309px;
+    background: #3d1f37;
+}
+
+.info {
+    text-align:center;
+    text-decoration: none;
+    color: #ffffff;
+    position: absolute;
+    width: 266.54px;
+    height: 392.29px;
+    left: 111.4px;
+    top: 38.95px;
+}
+
+.ayuda {
+    text-align:center;
+    text-decoration: none;
+    color: #ffffff;
+    position: absolute;
+    width: 272px;
+    height: 392.29px;
+    left: 589px;
+    top: 38.95px;
+}
+
+.comunidad {
+    text-align:center;
+    text-decoration: none;
+    color: #ffffff;
+    position: absolute;
+    width: 266.54px;
+    height: 392.29px;
+    left: 1072.29px;
+    top: 38.95px;
+}
+
+.redes {
+    text-align:center;
+    text-decoration: none;
+    color: #ffffff;
+    position: absolute;
+    width: 342px;
+    height: 392.29px;
+    left: 1524px;
+    top: 38.95px;
+}

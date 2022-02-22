@@ -1,0 +1,112 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+
+nav {
+    top:-20px;
+    position: relative;
+    left:0;
+    right:0;
+    margin:20px auto;
+    max-width:1000px;
+    width:90%;
+}
+
+nav ul {
+    list-style:none;
+}
+
+nav > ul {
+    display:table;
+    width:100%;
+    background: #bd879d;
+    position:relative;
+}
+
+nav > ul li {
+    display:table-cell;
+}
+
+/*sub-menu*/
+nav > ul > li:hover > ul {
+    display:block;
+    height:100%;
+}
+
+nav > ul > li > ul {
+    display:block;
+    position:absolute;
+    background:#E39FB4;
+    left:0;
+    right:0;
+    overflow:hidden;
+    height:0%;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+nav > ul li a {
+    color:#000000;
+    font-weight:bold;
+    display:block;
+    line-height:20px;
+    padding:20px;
+    position: relative;
+    text-align:center;
+    text-decoration:none;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+    background:#cc4400;
+}
+
+nav > ul > li > a span {
+    background:#174459;
+    display:block;
+    height:100%;
+    width:100%;
+    left:0;
+    position:absolute;
+    top:-55px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+nav > ul > li > a span .icon {
+    display:block;
+    line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+    top:0;
+}
+
+/*colores*/
+nav ul li a .baja {
+    background: #b45873;
+}
+
+.header {
+    position: fixed;
+    margin-top: 0;
+    z-index: 2000;
+}
