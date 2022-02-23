@@ -58,6 +58,7 @@ h3{
 /*boton de suscribete*/
 button{
     background: none;
+    color:black;
     width: 6.25em;
     height: 2em;
     border-radius: 0.375em;
