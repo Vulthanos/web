@@ -13,9 +13,8 @@ header {
 
 nav {
     top:-1.25em;
-    position: relative;
-    left:0;
-    right:0;
+    position: absolute;
+    left: 12em;
     margin:1.25em auto;
     max-width:62.5em;
     width:90%;
@@ -29,7 +28,7 @@ nav > ul {
     display:table;
     width:100%;
     background: #bd879d;
-    position:relative;
+    position:absolute;
 }
 
 nav > ul li {
@@ -92,17 +91,17 @@ nav > ul > li > a span {
     transition: all .5s ease;
 }
 
-nav > ul > li > a span .icon {
-    display:block;
-    line-height:3.75em;
-}
-
 nav > ul > li > a:hover > span {
     top:0;
 }
 
+.icon {
+    position: absolute;
+}
+
 /*colores*/
 nav ul li a .baja {
+    position: absolute;
     background: #b45873;
 }
 
@@ -113,52 +112,46 @@ nav ul li a .baja {
 }
 
 .icon-consolas {
-    position: center;
-    left: 16.93%;
-    right: 80.42%;
-    top: 39.11%;
-    bottom: 35.9%;
+    width: 2.6875em;
+    height: 3.3125em;
+    left: 3.8em;
+    top: 0.1em;
 }
 
 .icon-juegos {
-    position: center;
-    left: 24.53%;
-    right: 72.4%;
-    top: 33.87%;
-    bottom: 29.83%;
+    width:  3.3125em;
+    height: 5.1875em;
+    left: 2.7em;
+    top: -0.8em;
 }
 
 .icon-accesorios {
-    position: center;
     width: 3.178125em;
     height: 4.5625em;
-    left: 38.875em;
-    top: 5.6875em;
+    left: 4.2em;
+    top: -0.41em;
 }
 
 .icon-controladores {
-    position: center;
-    width: 68.69px;
-    height: 108px;
-    left: 803px;
-    top: 74px;
+    width: 4.293125em;
+    height: 6.75em;
+    left: 5.15em;
+    top: -1.5em;
 }
 
 .icon-componentes {
-    position: center;
     width: 4.280625em;
     height: 4.280625em;
-    left: 63.125em;
-    top: 5.8125em;
+    left: 4.6em;
+    top: -0.16em;
 
 }
 
 .icon-pc {
-    position: center;
-    width: 4.280625em;
-    height: 4.343125em;
-    left: 63.125em;
-    top: 5.8125em;
+    width: 5.5em;
+    height: 5.5em;
+    left: -0.2em;
+    top: -0.8em;
 }
 
 .logo {
@@ -171,8 +164,8 @@ nav ul li a .baja {
 
 .lupa {
     position: absolute;
-    width: 4em;
-    height: 4em;
+    width: 3.8em;
+    height: 3.8em;
     right: 0;
     top: 0;
     text-align: center;
@@ -184,41 +177,42 @@ nav ul li a .baja {
     position: absolute;
     padding: 0.3125em;
     top: 0;
-    right: 12.5em;
+    right: 9.5em;
 }
 
 .buscar input {
     width: 0;
-    height: 0;
+    height: 3.7em;
     padding: 0 1.25em;
     font-size: 1.125em;
     color: #000000;
     outline: none;
-    border: 0 solid silver;
-    border-radius: 0;
-    transition: all 1s ease;
+    border: 0 solid #000000;
+    border-radius: 1.875em;
+    transition: all 0.6s ease;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .buscar:hover input {
-    width: 12.5em;
-    height: 2.5em;
-    border: 0.0625em solid silver;
+    width: 15em;
+    border: 0.0625em solid #000000;
     border-radius: 1.875em;
+    background-color: #ffffff;
 }
 
 .buscar input:focus {
-    width: 12.5em;
-    height: 2.5em;
-    border: 0.0625em solid silver;
+    width: 15em;
+    border: 0.0625em solid #000000;
     border-radius: 1.875em;
+    background-color: #ffffff;
 }
 
 .carrito {
     position: absolute;
     width: 6em;
     height: 4em;
-    right: 5.5em;
-    top: 0;
+    right: 4.5em;
+    top: 0.05em;
 }
 
 .user {
