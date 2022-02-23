@@ -163,32 +163,68 @@ nav ul li a .baja {
 
 .logo {
     position: absolute;
-    width: 7em;
-    height: 7em;
-    left: 1em;
+    width: 4em;
+    height: 4em;
+    left: 0;
     top: 0;
 }
 
 .lupa {
     position: absolute;
-    width: 5.0625em;
-    height: 4.25em;
-    left: 96.8225em;
-    top: 5.01em;
+    width: 4em;
+    height: 4em;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+.buscar {
+    position: absolute;
+    padding: 0.3125em;
+    top: 0;
+    right: 12.5em;
+}
+
+.buscar input {
+    width: 0;
+    height: 0;
+    padding: 0 1.25em;
+    font-size: 1.125em;
+    color: #000000;
+    outline: none;
+    border: 0 solid silver;
+    border-radius: 0;
+    transition: all 1s ease;
+}
+
+.buscar:hover input {
+    width: 12.5em;
+    height: 2.5em;
+    border: 0.0625em solid silver;
+    border-radius: 1.875em;
+}
+
+.buscar input:focus {
+    width: 12.5em;
+    height: 2.5em;
+    border: 0.0625em solid silver;
+    border-radius: 1.875em;
 }
 
 .carrito {
     position: absolute;
-    width: 6.875em;
-    height: 3.996875em;
-    left: 101.885em;
-    top: 5.135em;
+    width: 6em;
+    height: 4em;
+    right: 5.5em;
+    top: 0;
 }
 
 .user {
     position: absolute;
-    width: 8.8125em;
-    height: 6.875em;
-    left: 108.76em;
-    top: 3.6975em;
+    width: 4.5em;
+    height: 4em;
+    right: 0;
+    top: 0;
 }
