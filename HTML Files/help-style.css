@@ -11,9 +11,9 @@ body{
 /*Nombre de la pagina*/
 .titulo-central{
     position: relative;
-    top: 178px;
+    top: 5em;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875em;
     font-style: normal;
     font-weight: normal;
     color: #000000;
@@ -22,88 +22,88 @@ body{
 /*Titulo apartado preguntas frecuentes*/
 .titulo-seccion{
     position: absolute;
-    font-size: 20px;
-    left: 163px;
-    top: 250px;
+    font-size: 1.25em;
+    left: 10.1875em;
+    top: 14em;
 }
 
 .informacion-util{
     position: absolute;
-    top: 327px;
-    left: 163px;
+    top: 20em;
+    left: 10.1875em;
 }
 
 .pagos{
     position: absolute;
-    top: 650px;
-    left: 163px;
+    top: 40.625em;
+    left: 10.1875em;
 }
 
 .compras{
     position: absolute;
-    top: 327px;
-    left: 720px;
+    top: 20em;
+    left: 45em;
 }
 
 .activacion-juegos{
     position: absolute;
-    top: 650px;
-    left: 720px;
+    top: 40.625em;
+    left: 45em;
 
 }
 
 .pregunta-cuenta{
     position: absolute;
-    top: 327px;
-    left: 1360px;
+    top: 20em;
+    left: 85em;
 
 }
 
 .pregunta-productos{
     position: absolute;
-    top: 650px;
-    left: 1360px;
+    top: 40.625em;
+    left: 85em;
 
 }
 
 .menu-nav-info ul{
     position: absolute;
     list-style-type: none;
-    top: 350px;
-    left: 163px;
+    top: 21.875em;
+    left: 10.1875em;
 }
 
 .menu-nav-pagos ul{
     position: absolute;
     list-style-type: none;
-    top: 680px;
-    left: 163px;
+    top: 42.5em;
+    left: 10.1875em;
 }
 
 .menu-nav-compras ul{
     position: absolute;
     list-style-type: none;
-    top: 350px;
-    left: 720px;
+    top: 21.875em;
+    left: 45em;
 }
 
 .menu-nav-juegos ul{
     position: absolute;
     list-style-type: none;
-    top: 680px;
-    left: 720px;
+    top: 42.5em;
+    left: 45em;
 }
 
 .menu-nav-cuenta ul{
     position: absolute;
     list-style-type: none;
-    top: 350px;
-    left: 1360px;
+    top: 21.875em;
+    left: 85em;
 }
 
 .menu-nav-productos ul{
     position: absolute;
     list-style-type: none;
-    top: 680px;
-    left: 1360px;
+    top: 42.5em;
+    left: 85em;
 }
