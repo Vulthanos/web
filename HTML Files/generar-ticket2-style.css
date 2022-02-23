@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+/*Nombre de la pagina*/
+.titulo-central{
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*Titulo apartado Genere un ticket*/
+.titulo-seccion{
+    position: absolute;
+    font-size: 1.4em;
+    left: 10.1875em;
+    top: 13em;
+}
