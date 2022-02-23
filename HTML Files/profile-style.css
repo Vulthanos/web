@@ -10,75 +10,79 @@ body{
 
 .pagina-personal{
     position: relative;
-    top: 178px;
+    top: 5em;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875em;
     font-style: normal;
     font-weight: normal;
     color: #000000;
 }
 
 /*Estilos del menu de la izquierda*/
-.menu-izquierda ul{
+.menu-izquierda ul {
     list-style-type: none;
     display: block;
-    font-size: 20px;
+    font-size: 1.25em;
     position: absolute;
-    top: 377px;
-    left: 84px;
+    top: 20em;
+    left: 5.25em;
+}
+
+.menu-nav{
+    color: black;
 }
 
 /*Titulo: Mi cuenta*/
 .titulo-central {
     position: absolute;
-    left: 400px;
-    top: 624px;
+    left: 25em;
+    top: 39em;
 }
 
 /*Titulo de informacion personal*/
 .informacion-personal{
     position: absolute;
-    font-size: 20px;
-    left: 433px;
-    top: 250px;
+    font-size: 1.25em;
+    left: 27.0625em;
+    top: 14em;
 
 }
 
 /*Informacion de contacto*/
 .block-informacion{
     position: absolute;
-    left: 433px;
-    top: 328px;
+    left: 27.0625em;
+    top: 20.5em;
 
 }
 
 /*Newsletter*/
 .newsletter{
     position: absolute;
-    left: 1001px;
-    top: 328px;
+    left: 62.5625em;
+    top: 20.5em;
 }
 
 /*Titulo de direcciones*/
 .apartado-direcciones{
     position: absolute;
-    font-size: 20px;
-    left: 433px;
-    top: 550px;
+    font-size: 1.25em;
+    left: 27.0625em;
+    top: 27em;
 
 }
 
 /*Direccion de facturacion*/
 .block-direccion-facturacion{
     position: absolute;
-    left: 433px;
-    top: 605px;
+    left: 27.0625em;
+    top: 37.8125em;
 }
 /*Direccion de envio*/
 .block-direccion-envio{
     position: absolute;
-    left: 1001px;
-    top: 605px;
+    left: 62.5625em;
+    top: 37.8125em;
 }
 
 /*titulos de apartados*/
@@ -89,7 +93,7 @@ body{
 
 /* color de las opciones de edicion y cambio de contraseña, direccion y perfil*/
 .cambio-opciones{
-    font-size: 13px;
+    font-size: 0.8125em;
     color: #FFA16D;
     text-decoration: none;
 }
@@ -97,14 +101,14 @@ body{
 /*Boton unirse a la newsletter*/
 button{
     background: #FFA16D;
-    width: 501px;
-    height: 60px;
-    border-radius: 6px;
+    width: 31.3125em;
+    height: 3.75em;
+    border-radius: 0.375em;
     border: 0;
 
 }
 
 .unirse{
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: bold;
 }
