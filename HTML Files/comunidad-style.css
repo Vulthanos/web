@@ -11,9 +11,9 @@ body{
 /*Titulo de la pagina*/
 .pagina-comunidad{
     position: relative;
-    top: 178px;
+    top: 5em;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875em;
     font-style: normal;
     font-weight: normal;
     color: #000000;
@@ -22,45 +22,45 @@ body{
 /*Titulo del apartado*/
 .sorteo{
     position: absolute;
-    font-size: 20px;
-    left: 163px;
-    top: 250px;
+    font-size: 1.25em;
+    left: 10.1875em ;
+    top: 13em;
 }
 
 /*Imagen sorteo 1*/
 .sorteo1{
     position: absolute;
-    top: 350px;
-    left: 233px;
+    top: 21.875em;
+    left: 14.5625em;
 }
 
 /*Imagen sorteo 2*/
 .sorteo2{
     position: absolute;
-    top: 350px;
-    left: 790px;
+    top: 21.875em;
+    left: 49.375em;
 }
 
 /*Imagen sorteo 3*/
 .sorteo3{
     position: absolute;
-    top: 350px;
-    left: 1355px;
+    top: 21.875em;
+    left: 84.6875em;
 
 }
 
 /*Estilo de los botones para unirse*/
 button {
     background: #FFA16D;
-    width: 501px;
-    height: 60px;
-    border-radius: 6px;
+    width: 31.3125em;
+    height: 3.75em;
+    border-radius: 0.375em;
     border: 0;
 
 }
 
 /*Textos unirse al sorteo*/
 .unir-sorteo1, .unir-sorteo2, .unir-sorteo3{
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: bold;
 }
