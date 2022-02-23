@@ -9,12 +9,13 @@ header {
     overflow: hidden;
     height: 9.375em;
     position: relative;
+    background-color: #ffffff;
 }
 
 nav {
     top:-1.25em;
     position: absolute;
-    left: 12em;
+    left: 25em;
     margin:1.25em auto;
     max-width:62.5em;
     width:90%;
@@ -194,14 +195,14 @@ nav ul li a .baja {
 }
 
 .buscar:hover input {
-    width: 15em;
+    width: 30em;
     border: 0.0625em solid #000000;
     border-radius: 1.875em;
     background-color: #ffffff;
 }
 
 .buscar input:focus {
-    width: 15em;
+    width: 30em;
     border: 0.0625em solid #000000;
     border-radius: 1.875em;
     background-color: #ffffff;

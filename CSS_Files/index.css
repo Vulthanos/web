@@ -5,12 +5,13 @@
 }
 
 .slider {
-    font-family: Montserrat, monospace;
+    background: url("/IMGS/slider/pc_prueba.jpg");
     position: absolute;
     width: 130em;
-    height: 53em;
+    height: 60em;
     left: 10em;
-    top: 5em;
+    top: 10em;
     border: 0.0418063125em solid #000000;
     box-sizing: border-box;
+    bottom: 12em;
 }
