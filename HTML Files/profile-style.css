@@ -40,7 +40,7 @@ body{
 }
 
 /*Titulo de informacion personal*/
-.informacion-personal{
+h1{
     position: absolute;
     font-size: 1.25em;
     left: 27.0625em;
@@ -49,7 +49,7 @@ body{
 }
 
 /*Informacion de contacto*/
-.block-informacion{
+.informacion-contacto{
     position: absolute;
     left: 27.0625em;
     top: 20.5em;
@@ -69,7 +69,6 @@ body{
     font-size: 1.25em;
     left: 27.0625em;
     top: 27em;
-
 }
 
 /*Direccion de facturacion*/
@@ -85,15 +84,10 @@ body{
     top: 37.8125em;
 }
 
-/*titulos de apartados*/
-.block-information-title{
-    font-weight: bold;
-
-}
 
 /* color de las opciones de edicion y cambio de contraseña, direccion y perfil*/
 .cambio-opciones{
-    font-size: 0.8125em;
+    font-size: 0.85em;
     color: #FFA16D;
     text-decoration: none;
 }
@@ -105,10 +99,6 @@ button{
     height: 3.75em;
     border-radius: 0.375em;
     border: 0;
-
-}
-
-.unirse{
     font-size: 0.9375em;
     font-weight: bold;
 }
