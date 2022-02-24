@@ -20,7 +20,7 @@ header {
     background-color: #ffffff;
 }
 
-header nav {
+header > nav {
     top:-1.25em;
     position: absolute;
     left: 25em;
@@ -29,28 +29,28 @@ header nav {
     width:90%;
 }
 
-header nav ul {
+header > nav ul {
     list-style:none;
 }
 
-header nav > ul {
+header > nav > ul {
     display:table;
     width:100%;
     background: #bd879d;
     position:absolute;
 }
 
-header nav > ul li {
+header > nav > ul li {
     display:table-cell;
 }
 
 /*sub-menu*/
-header nav > ul > li:hover > ul {
+header > nav > ul > li:hover > ul {
     display:block;
     height:100%;
 }
 
-header nav > ul > li > ul {
+header > nav > ul > li > ul {
     display:block;
     position:absolute;
     background:#E39FB4;
@@ -65,7 +65,7 @@ header nav > ul > li > ul {
     transition: all .4s ease;
 }
 
-header nav > ul li a {
+header > nav > ul li a {
     color:#000000;
     font-weight:bold;
     display:block;
@@ -81,11 +81,11 @@ header nav > ul li a {
     transition: all .4s ease;
 }
 
-header nav > ul > li > ul > li a:hover {
+header > nav > ul > li > ul > li a:hover {
     background:#cc4400;
 }
 
-header nav > ul > li > a span {
+header > nav > ul > li > a span {
     background:#174459;
     display:block;
     height:100%;
@@ -100,7 +100,7 @@ header nav > ul > li > a span {
     transition: all .5s ease;
 }
 
-header nav > ul > li > a:hover > span {
+header > nav > ul > li > a:hover > span {
     top:0;
 }
 
@@ -109,7 +109,7 @@ header nav > ul > li > a:hover > span {
 }
 
 /*colores*/
-header nav ul li a .baja {
+header > nav ul li a .baja {
     position: absolute;
     background: #b45873;
 }
