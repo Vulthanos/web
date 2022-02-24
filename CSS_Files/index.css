@@ -1,0 +1,17 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Montserrat, monospace;
+}
+
+.slider {
+    background-image: url("/IMGS/slider/pc_prueba.jpg");
+    position: absolute;
+    width: 90%;
+    height: 60em;
+    left: 8em;
+    top: 10em;
+    border: 0.0418063125em solid #000000;
+    box-sizing: border-box;
+    bottom: 12em;
+}
