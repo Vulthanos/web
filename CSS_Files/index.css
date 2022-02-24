@@ -5,11 +5,11 @@
 }
 
 .slider {
-    background: url("/IMGS/slider/pc_prueba.jpg");
+    background-image: url("/IMGS/slider/pc_prueba.jpg");
     position: absolute;
-    width: 130em;
+    width: 90%;
     height: 60em;
-    left: 10em;
+    left: 8em;
     top: 10em;
     border: 0.0418063125em solid #000000;
     box-sizing: border-box;
