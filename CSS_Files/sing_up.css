@@ -27,8 +27,10 @@ ul {
 }
 
 label {
-    padding-top: 1em;
+    padding-top: 1.5em;
     display: block;
+    text-align: center;
+    position: relative;
 }
 
 .text-field {
@@ -46,25 +48,48 @@ label {
 
 }
 
-.selector {
+#selector {
+    display: none;
+}
+
+.selector-lbl {
+    position: relative;
+    text-align: center;
+    padding-left: 1.6em;
+}
+
+.selector-lbl .regular {
+    padding-left: 2em;
+}
+
+.selector-lbl:before {
+    content: "";
     width: 1.375em;
     height: 1.375em;
     border: 0.0825em solid #000000;
-    box-sizing: border-box;
     border-radius: 0.275em;
-    left: 10em;
+    position: absolute;
+    padding-right: 0;
+    cursor: pointer;
+    bottom: -0.2em;
 }
 
-.selector:hover {
-    cursor: pointer;
-}
-.selector:active {
-    background-color: #FFA16D;
+#selector:checked + .selector-lbl:before {
+    background-color: #FF833D;
+    color: #000000;
+    content: url(../IMGS/sing_up/check.png);
 }
 
 footer {
+    padding-top: 4em;
     text-align: center;
     left: 10em;
+
+}
+
+footer a {
+    padding-top: 1em;
+    display: block;
 }
 
 button {
