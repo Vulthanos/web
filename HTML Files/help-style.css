@@ -20,7 +20,7 @@ body{
 }
 
 /*Titulo apartado preguntas frecuentes*/
-.titulo-seccion{
+h1{
     position: absolute;
     font-size: 1.25em;
     left: 10.1875em;
@@ -30,13 +30,13 @@ body{
 .informacion-util{
     position: absolute;
     top: 20em;
-    left: 10.1875em;
+    left: 14em;
 }
 
 .pagos{
     position: absolute;
     top: 40.625em;
-    left: 10.1875em;
+    left: 14em;
 }
 
 .compras{
@@ -84,26 +84,26 @@ body{
     position: absolute;
     list-style-type: none;
     top: 21.875em;
-    left: 45em;
+    left: 40em;
 }
 
 .menu-nav-juegos ul{
     position: absolute;
     list-style-type: none;
     top: 42.5em;
-    left: 45em;
+    left: 40em;
 }
 
 .menu-nav-cuenta ul{
     position: absolute;
     list-style-type: none;
     top: 21.875em;
-    left: 85em;
+    left: 80em;
 }
 
 .menu-nav-productos ul{
     position: absolute;
     list-style-type: none;
     top: 42.5em;
-    left: 85em;
+    left: 80em;
 }

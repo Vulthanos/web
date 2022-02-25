@@ -5,46 +5,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="generar-ticket-style.css" rel="stylesheet">
     <link href="generar-ticket2.html">
+    <link href="generar-ticket2-style.css">
     <title>VULTHANOS</title>
 </head>
 <body>
-<div class="titulo-central">Ayuda</div>
+<section class="titulo-central">Ayuda</section>
 
-<div class="titulo-seccion"><strong>Genere un ticket</strong></div>
-<div class="linea-temporal">
+<section class="titulo-seccion"><strong>Genere un ticket</strong></section>
+<section class="linea-temporal">
     <ul>
         <li class="paso1" style="text-decoration:none">Informacion el pedido</li>
         <li class="paso2" style="text-decoration:none">Detalles del pedido</li>
         <li class="paso3" style="text-decoration:none">Informacion adicional</li>
     </ul>
-</div>
+</section>
 
-<div class="contenedor-informacion">
-    <div class="informacion-pedido"><span><strong>Informacion del pedido</strong></span></div>
+<section class="contenedor-informacion">
+    <section class="informacion-pedido"><span><strong>Informacion del pedido</strong></span></section>
     <form>
-        <div class="id-pedido">
+        <section class="id-pedido">
             <label for="orderId"><strong>Id del pedido</strong></label>
-            <input type="text" maxlength="50" name="orderId" id="orderId" class="inputForm" tabindex="1" value="">
-            <div class="parrafo1">Puede encontrar el id del producto en el correo de confirmacion o en el apartado <a href=" " class="link-pedidos" style="text-decoration:none" target="_blank">Mis pedidos</a></div>
-        </div>
+            <input type="text" maxlength="50"  id="orderId"  tabindex="1" value="">
+            <section class="parrafo1">Puede encontrar el id del producto en el correo de confirmacion o en el apartado <a href=" " class="link-pedidos" style="text-decoration:none" target="_blank">Mis pedidos</a></section>
+        </section>
 
-        <div class="email-pedido">
+        <section class="email-pedido">
             <label for="orderEmail"><strong>Email del pedido</strong></label>
-            <input type="email" maxlength="200" name="orderEmail" id="orderEmail" class="inputForm" tabindex="2" value="">
+            <input type="email" maxlength="200" id="orderEmail" tabindex="2" value="">
             <p>El correo electronico que has usado en la compra o en la creacion de la cuenta</p>
-        </div>
+        </section>
 
-        <div class="metodo-pago">
+        <section class="metodo-pago">
             <label for="orderMethod"><strong>Metodo de pago</strong></label>
-            <input type="text" maxlength="50" name="orderMethod" id="orderMethod" class="inputForm" tabindex="3" value="">
+            <input type="text" maxlength="50" id="orderMethod" tabindex="3" value="">
             <p>Metodo de pago usado durante el proceso de compra</p>
-        </div>
+        </section>
 
         <button class="continuar" >
-            <a href="generar-ticket2.html" class="continuar" style="text-decoration:none" target="_blank"> <span>Continuar</span> </a>
+            <a href="generar-ticket2.html" style="text-decoration:none" target="_blank"> <span>Continuar</span> </a>
         </button>
     </form>
-</div>
+</section>
 
 </body>
 </html>
