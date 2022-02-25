@@ -20,9 +20,76 @@ body{
 }
 
 /*Titulo apartado Genere un ticket*/
-.titulo-seccion{
-    position: absolute;
-    font-size: 1.4em;
-    left: 10.1875em;
-    top: 13em;
+h1{
+    position: relative;
+    font-size: 1.5em;
+    top: 7em;
+    left: 10em;
+
+}
+
+/*encabezado de detalles del pedido*/
+h2{
+    position: relative;
+    font-size:1.20em;
+    top: 9em;
+    left: 8.5em;
+}
+
+/*Seccion para introducir el correo electronico*/
+.correo{
+    position: relative;
+    top: 11.5em;
+    left: 10em;
+}
+
+/*texto en -algo que añadir-*/
+.comentario-extra{
+    position: relative;
+    top: 13.5em;
+    left: 10em;
+}
+
+/*caja de comentario*/
+.inputForm{
+    height: 150px;
+    width: 350px;
+}
+
+/*comentario dentro de la caja de comentario*/
+::placeholder{
+    font-style: normal;
+    font-family: Montserrat, sans-serif;
+}
+
+/*apartado añadir imagenes*/
+.imagenes{
+    position: relative;
+    top: 16em;
+    left: 10em;
+}
+
+button{
+    background: #FFA16D;
+    border-radius: 0.375em;
+    border: none;
+    color: black;
+}
+
+/*boton de subir imagenes*/
+.subir-imagenes{
+    position: relative;
+    width: 14em;
+    height: 3em;
+    top: 1em;
+    left: 15em;
+}
+
+/*boton crear ticket*/
+.crear-ticket{
+    width: 13em;
+    height: 7em;
+    position: relative;
+    left: 60%;
+    font-size: 1em;
 }

@@ -43,11 +43,6 @@ body{
     top: 24em;
 }
 
-/*Texto debajo del id-pedido*/
-.parrafo1{
-    font-size: 0.85em;
-}
-
 /*Apartado para escribir el email del pedido*/
 .email-pedido{
     position: absolute;
@@ -81,7 +76,7 @@ button{
     font-size: 1em;
 }
 
-.continuar{
+.boton-continuar{
     font-size: 0.9375em;
     text-align: center;
     color:black;
