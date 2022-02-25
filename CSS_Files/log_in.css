@@ -18,6 +18,9 @@ ul {
 
 .link {
     color: #FF833D;
+}
+
+.link:hover {
     text-decoration: underline;
 }
 

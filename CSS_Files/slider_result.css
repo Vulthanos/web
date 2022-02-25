@@ -1,0 +1,37 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Montserrat, sans-serif;
+}
+
+section {
+    display: inline-flex;
+    align-items: center;
+}
+
+.top {
+    margin-top: auto;
+}
+
+.bot {
+    margin-top: 2em;
+    margin-bottom: auto;
+}
+
+article {
+    text-align: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+img {
+    max-width: 19.4375em;
+    max-height: 19.4375em;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    padding-top: 0.5em;
+}
