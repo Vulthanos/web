@@ -4,6 +4,55 @@
     font-family: Montserrat, sans-serif;
 }
 
+body {
+    margin-top: 10em;
+    font-size: 1.5em;
+}
+
+.bold {
+    text-weight: bold;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    text-weight: bold;
+}
+
+.title {
+    display: block;
+}
+
+.cruz {
+    max-width: 1.436875em;
+    max-height: 1.440625em;
+}
+
+.lupa {
+    max-width: 3.456875em;
+    max-height: 3.15875em;
+}
+
+.desplegable {
+    max-width: 1.9375em;
+    max-height: 1.250625em;
+}
+
+.order {
+    right: 0;
+}
+
+.filters {
+    display: inline-flex;
+}
+
+.filters-menu {
+    display: block;
+    left: 0;
+    position:absolute;
+    margin-right: 0.2em;
+}
+
 section {
     display: inline-flex;
     align-items: center;
@@ -20,8 +69,8 @@ section {
 
 article {
     text-align: center;
+    align-items: center;
     margin-top: 2em;
-    display: flex;
 }
 
 img {
@@ -32,5 +81,19 @@ img {
 label {
     font-weight: bold;
     text-align: center;
+    display: inline-block;
     padding-top: 0.5em;
+}
+
+.price {
+    background-color: #FFA16D;
+    border: none;
+    border-radius: 1em;
+    text-align: center;
+    width: 7.4375em;
+    height: 3.8125em;
+}
+
+.separator {
+    margin: 0.5em;
 }
