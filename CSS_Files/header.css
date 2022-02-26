@@ -17,7 +17,8 @@ header {
     overflow: hidden;
     height: 9.375em;
     position: relative;
-    background-color: #ffffff;
+    background: none;
+    margin-bottom: 2em;
 }
 
 header > nav {
