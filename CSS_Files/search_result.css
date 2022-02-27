@@ -28,19 +28,41 @@ h1 {
     max-width: 0.8em;
     max-height: 0.8em;
     margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.search {
+    text-align: center;
+    align-items: center;
+    left: 0.5em;
+}
+
+.search input {
+    width: 5.5em;
+    height: 3.7em;
+    padding: 0 1.25em;
+    font-size: 1em;
+    color: #000000;
+    outline: none;
+    border: 0.05em solid #000000;
+    border-radius: 1.875em;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .lupa {
-    padding-top: 0.5em;
+    position: relative;
+    top: 0.2em;
     max-width: 1.5em;
     max-height: 1.5em;
     margin-left: 0.5em;
+    cursor: pointer;
 }
 
 .desplegable {
     max-width: 1em;
     max-height: 0.5em;
     margin-left: 0.5em;
+    cursor: pointer;
 }
 
 .order {
@@ -112,15 +134,25 @@ section {
     align-items: center;
 }
 
-.top {
+.products {
+    margin-left: 1em;
+    position: absolute;
+    right: 10em;
     margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top {
+    margin-top: 0.5em;
     right: 0;
+    display: flex;
 }
 
 .bot {
-    margin-top: 2em;
+    margin-top: 0.5em;
     margin-bottom: auto;
     right: 0;
+    display: flex;
 }
 
 article {
@@ -129,15 +161,16 @@ article {
     margin-top: 2em;
 }
 
-img {
-    max-width: 19.4375em;
-    max-height: 19.4375em;
+.product {
+    max-width: 15em;
+    max-height: 15em;
+    margin: 1em;
 }
 
 label {
     font-weight: bold;
     text-align: center;
-    display: inline-block;
+    display: block;
     padding-top: 0.5em;
 }
 
@@ -148,6 +181,11 @@ label {
     text-align: center;
     width: 7.4375em;
     height: 3.8125em;
+}
+
+.price-input {
+    display: inline-flex;
+    margin-left: 0.6em;
 }
 
 .separator {
