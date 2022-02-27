@@ -5,7 +5,8 @@
 }
 
 body {
-    margin-top: 10em;
+    margin-top: auto;
+    margin-bottom: auto;
     font-size: 1.5em;
 }
 
@@ -24,13 +25,16 @@ h1 {
 }
 
 .cruz {
-    max-width: 1.436875em;
-    max-height: 1.440625em;
+    max-width: 0.8em;
+    max-height: 0.8em;
+    margin-left: 0.5em;
 }
 
 .lupa {
-    max-width: 3.456875em;
-    max-height: 3.15875em;
+    padding-top: 0.5em;
+    max-width: 1.5em;
+    max-height: 1.5em;
+    margin-left: 0.5em;
 }
 
 .desplegable {
@@ -46,25 +50,75 @@ h1 {
     display: inline-flex;
 }
 
+.filters .filter {
+    margin: 0.5em;
+}
+
+.filter-selector {
+    margin-top: 1em;
+}
+
+.filters .orden {
+    position: absolute;
+    right: 1em;
+}
+
+.filters article {
+    margin-right: 1.5em;
+}
+
 .filters-menu {
     display: block;
     left: 0;
     position:absolute;
     margin-right: 0.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.simple-filter {
+    position: absolute;
+    text-weight: bold;
+    cursor: pointer;
+    padding-left: 2em;
+    left: 0.2em;
+}
+
+.simple-filter:before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border: 0.0825em solid #000000;
+    border-radius: 0.275em;
+    position: absolute;
+    padding-right: 0;
+    left: 0.5em;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + .simple-filter:before {
+    background-color: #FF833D;
+    color: #000000;
+    content: url("/IMGS/sing_up/check.png");
+}
+
+.filt {
+    display: none;
 }
 
 section {
-    display: inline-flex;
     align-items: center;
 }
 
 .top {
     margin-top: auto;
+    right: 0;
 }
 
 .bot {
     margin-top: 2em;
     margin-bottom: auto;
+    right: 0;
 }
 
 article {
