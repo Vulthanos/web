@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+/*Titulo de la pagina*/
+.pagina-comunidad{
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*Titulo del apartado*/
+.sorteo{
+    position: absolute;
+    font-size: 1.25em;
+    left: 10.1875em ;
+    top: 13em;
+}
+
+
+/*Seccion para introducir el nombre*/
+.nombre{
+    position: relative;
+    top: 23em;
+    left: 20em;
+}
+
+/*Seccion para introducir el apellido*/
+.apellido{
+    position: relative;
+    top: 28em;
+    left: 20em;
+}
+
+/*Seccion para introducir el correo electronico*/
+.correo{
+    position: relative;
+    top: 32em;
+    left: 20em;
+}
+
+.imagen-sorteo{
+    position: relative;
+    top: 10em;
+    left: 70em;
+}
+
+button{
+    position: absolute;
+    background: #FFA16D;
+    border-radius: 0.375em;
+    border: none;
+    width: 14em;
+    height: 3em;
+    top: 55em;
+    left: 65em;
+}
+
+.boton-entrar{
+    color: black;
+}
+
