@@ -11,14 +11,13 @@ body {
 .slider {
     width: 110.25em;
     height: 51.4375em;
-    margin: auto;
     display: block;
 }
 
 .slider-img {
     max-width: 110.25em;
     max-height: 46.125em;
-    margin: auto;
+    margin-top: 10em;
 }
 
 .slider-nav {
@@ -39,7 +38,7 @@ figure label {
     border: none;
     border-radius: 50%;
     position: absolute;
-    text-align: left;
+    left: 34em;
 }
 
 .circulo_p {
@@ -51,21 +50,37 @@ figure label {
     border-radius: 50%;
     position: absolute;
     display: inline;
-    text-align: left;
+    top: 45.7em;
+}
+
+.uno {
+    left: 29em;
+}
+
+.dos {
+    left: 31.5em;
+}
+
+.tres {
+    left: 37.5em;
+}
+
+.cuatro {
+    left: 40em;
 }
 
 .adelante {
     max-width: 2.055em;
     max-height: 2.055em;
-    position: absolute;
-    right: 0;
-    text-align: right;
+    position: relative;
+    right: -24em;
+    top: 0.5em;
 }
 
 .atras {
     max-width: 2.055em;
     max-height: 2.055em;
-    position: absolute;
-    right: auto;
-    text-align: right;
+    position: relative;
+    right: -23em;
+    top: 0.5em;
 }
