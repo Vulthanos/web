@@ -17,13 +17,14 @@ header {
     overflow: hidden;
     height: 9.375em;
     position: relative;
-    background-color: #ffffff;
+    background: none;
+    margin-bottom: 2em;
 }
 
 header > nav {
     top:-1.25em;
     position: absolute;
-    left: 25em;
+    left: 9em;
     margin:1.25em auto;
     max-width:62.5em;
     width:90%;

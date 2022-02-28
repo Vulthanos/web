@@ -1,0 +1,115 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Montserrat, monospace;
+    text-decoration: none;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.link {
+    color: #FF833D;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.regular {
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+label {
+    padding-top: 1.5em;
+    display: block;
+    text-align: center;
+}
+
+.text-field {
+    width: 18.9375em;
+    height: 3.75em;
+    background-color: #CEB7E5 ;
+    border: none;
+    border-radius: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#vision {
+    position: absolute;
+    right: 0;
+}
+
+#selector {
+    display: none;
+}
+
+.selector-lbl {
+    position: relative;
+    text-align: center;
+    padding-left: 1.6em;
+}
+
+.selector-lbl .regular {
+    padding-left: 2em;
+}
+
+.selector-lbl:before {
+    content: "";
+    width: 1.375em;
+    height: 1.375em;
+    border: 0.0825em solid #000000;
+    border-radius: 0.275em;
+    position: absolute;
+    padding-right: 0;
+    cursor: pointer;
+    bottom: -0.2em;
+}
+
+#selector:checked + .selector-lbl:before {
+    background-color: #FF833D;
+    color: #000000;
+    content: url("/IMGS/sing_up/check.png");
+}
+
+footer {
+    padding-top: 4em;
+    text-align: center;
+    left: 10em;
+
+}
+
+footer a {
+    padding-top: 1em;
+    display: block;
+}
+
+button {
+    width: 18.9375em;
+    height: 3.75em;
+    background-color: #FFA16D ;
+    border: none;
+    border-radius: 1em;
+    top: 9.46875em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
