@@ -11,13 +11,16 @@ body {
 }
 
 .bold {
-    text-weight: bold;
+    font-weight: bold;
+}
+
+.regular {
+    font-weight: normal;
 }
 
 h1 {
     display: block;
     text-align: center;
-    text-weight: bold;
 }
 
 .title {
@@ -68,6 +71,7 @@ h1 {
 .order {
     position: absolute;
     right: 1.5em;
+    top: 2.5em;
 }
 
 .filters {
@@ -102,7 +106,7 @@ h1 {
 
 .simple-filter {
     position: absolute;
-    text-weight: bold;
+    font-weight: bold;
     cursor: pointer;
     padding-left: 2em;
     left: 0.2em;
