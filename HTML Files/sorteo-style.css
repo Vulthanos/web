@@ -59,8 +59,24 @@ button {
 
 }
 
-/*Textos unirse al sorteo*/
-.unir-sorteo1, .unir-sorteo2, .unir-sorteo3{
-    font-size: 0.9375em;
-    font-weight: bold;
+/*colocacion titulo sorteo 1*/
+.txt-sorteo1{
+    position: absolute;
+    color: black;
+    left: 14.5625em;
+}
+
+/*colocacion titulo sorteo 2*/
+.txt-sorteo2{
+    position: absolute;
+    color: black;
+    left: 20em;
+
+}
+
+/*colocacion titulo sorteo 3*/
+.txt-sorteo3{
+    position: absolute;
+    color: black;
+    left: 23em;
 }
