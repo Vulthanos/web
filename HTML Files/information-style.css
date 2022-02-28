@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+/*Nombre de la pagina*/
+.titulo-central{
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+.sobre-nosotros{
+    position: absolute;
+    left: 10em;
+    top: 14em;
+
+
+}
+
+.imagen-corp{
+    position: absolute;
+    top: 4em;
+    left: 77px;
+}
+
+.contacto{
+    position: absolute;
+    left: 10em;
+    top: 40em;
+}
