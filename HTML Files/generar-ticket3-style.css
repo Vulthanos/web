@@ -11,7 +11,7 @@ body{
 /*Nombre de la pagina*/
 .titulo-central{
     position: relative;
-    top: 5em;
+    top: 7em;
     text-align: center;
     font-size: 1.875em;
     font-style: normal;
@@ -23,7 +23,7 @@ body{
 h1{
     position: relative;
     font-size: 1em;
-    top: 10em;
+    top: 15em;
     left: 10em;
 }
 
@@ -31,14 +31,15 @@ h1{
 .fin-ticket{
     position: relative;
     text-align: center;
-    top: 12em;
+    font-size: large;
+    top: 20em;
 }
 
 /*Volver a home*/
 button{
     position: relative;
-    left: 43%;
-    top: 16em;
+    left: 45.5%;
+    top: 28em;
     background: #FFA16D;
     border-radius: 0.375em;
     width: 14em;
