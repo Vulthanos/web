@@ -86,7 +86,8 @@ label {
 #selector:checked + .selector-lbl:before {
     background-color: #FF833D;
     color: #000000;
-    content: url("/IMGS/sing_up/check.png");
+    content: "\2714";
+    align-content: center;
 }
 
 footer {
