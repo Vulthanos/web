@@ -1,0 +1,86 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Montserrat, monospace;
+}
+
+body {
+    text-align: center;
+}
+
+.slider {
+    width: 110.25em;
+    height: 51.4375em;
+    display: block;
+}
+
+.slider-img {
+    max-width: 110.25em;
+    max-height: 46.125em;
+    margin-top: 10em;
+}
+
+.slider-nav {
+    max-width: 110.25em;
+    height: 5.25em;
+    display: block;
+}
+
+figure label {
+    margin: 0.5em;
+}
+
+.circulo_g {
+    content: "";
+    background-color: #E34F21;
+    width: 2.92625em;
+    height: 2.92625em;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 34em;
+}
+
+.circulo_p {
+    content: "";
+    width: 2.006875em;
+    height: 2.006875em;
+    background-color: #FF833D;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    display: inline;
+    top: 45.7em;
+}
+
+.uno {
+    left: 29em;
+}
+
+.dos {
+    left: 31.5em;
+}
+
+.tres {
+    left: 37.5em;
+}
+
+.cuatro {
+    left: 40em;
+}
+
+.adelante {
+    max-width: 2.055em;
+    max-height: 2.055em;
+    position: relative;
+    right: -24em;
+    top: 0.5em;
+}
+
+.atras {
+    max-width: 2.055em;
+    max-height: 2.055em;
+    position: relative;
+    right: -23em;
+    top: 0.5em;
+}
