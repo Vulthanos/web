@@ -27,19 +27,25 @@ h1{
     left: 10em;
 }
 
+.linea-temporal{
+    position: absolute;
+    top: 19em;
+    left: 42em;
+}
+
 /*Texto e icono central*/
 .fin-ticket{
     position: relative;
     text-align: center;
     font-size: large;
-    top: 20em;
+    top: 24em;
 }
 
 /*Volver a home*/
 button{
     position: relative;
     left: 45.5%;
-    top: 28em;
+    top: 34em;
     background: #FFA16D;
     border-radius: 0.375em;
     width: 14em;

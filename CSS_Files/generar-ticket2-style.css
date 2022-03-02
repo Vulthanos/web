@@ -28,25 +28,32 @@ h1{
 
 }
 
+.linea-temporal{
+    position: absolute;
+    top: 15em;
+    left: 40em;
+}
+
 /*encabezado de detalles del pedido*/
 h2{
     position: relative;
     font-size:1.20em;
-    top: 9em;
+    top: 17em;
     left: 8.5em;
 }
+
 
 /*Seccion para introducir el correo electronico*/
 .correo{
     position: relative;
-    top: 11.5em;
-    left: 10em;
+    top: 21em;
+    left: 12em;
 }
 
 /*texto en -algo que añadir-*/
 .comentario-extra{
     position: relative;
-    top: 13.5em;
+    top: 23em;
     left: 10em;
 }
 
@@ -65,7 +72,7 @@ h2{
 /*apartado añadir imagenes*/
 .imagenes{
     position: relative;
-    top: 16em;
+    top: 25em;
     left: 10em;
 }
 
