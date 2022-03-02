@@ -1,12 +1,46 @@
 body{
-    margin: 0;
     /*background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);*/
     height: 100vh;
-    display: flex;
     justify-content: left;
-    align-items: center;
 }
 
+
+.Circulo{
+    position: absolute;
+    width: 55.44px;
+    height: 53.9px;
+
+    background: #FDAD80;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.C1{
+
+    left: 0em;
+    border: 2px solid #010101;
+}
+
+.C2{
+    left: 14em;
+}
+
+.C3{
+    left: 28em;
+}
+
+.Avance{
+    margin: 40px;
+}
+
+.Linea{
+    position: absolute;
+    width: 594.2px;
+    height: 0px;
+
+    border: 0.605609px solid #000000;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
 
 
 .OrangeRectangle{
@@ -15,10 +49,6 @@ body{
     height: 684px;
     background: #FFAE81;
     border-radius: 30% 10%;
-
-    /*margin-top: 7%;*/
-
-
 
     /* Shadow 1 */
     /*
@@ -59,15 +89,6 @@ body{
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
     perspective: 100px;
 }
-
-.testLeft {
-    float: left;
-    height: auto;
-    margin-right: 4%;
-    margin-top: 12%;
-    margin-left: 5%;
-}
-
 
 .BlueRectangle{
 
@@ -117,42 +138,26 @@ body{
     color: #F6F6F6;
 
 }
-
-#naranjita{
-    color: #FFAE81;
-    font-family: "Open Sans";
-    font-size: 13px;
-}
-
-th, td {
-    padding: 10px;
-    margin-bottom: 0%;
-    padding-left: 0%;
-    font-family: "Open Sans";
-}
-
-.politicas{
-    padding-top: 10px;
-}
-
 .CheckOutText{
-    text-align: center;
     margin-top: 20%;
 }
-
+.CheckOutTitle {
+    text-align: center;
+    font-family: Arial;
+}
 
 
 .CartContainer{
     float: left;
+    margin-top: 84px;
     width: 35vw;
     height: auto;
-    padding: 50px;
+    /*padding: 50px;*/
     margin-left: 10%;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 10px 20px #1687d933;
-    /*margin: auto;*/
-
+    /*margin: auto; */
 }
 
 .Header{
@@ -172,10 +177,11 @@ th, td {
 }
 
 .HeadingResumen{
+
     font-size: 20px;
     font-family: 'Open Sans';
+    font-weight: 700;
     color: #2F3841;
-    margin: auto;
 }
 
 .Action{
@@ -326,27 +332,47 @@ hr{
 
 .Linea{
     position: absolute;
-    width: 300px;
+    width: 265px;
     height: 0px;
-    left: 20px;
-    bottom: 45%;
+    bottom: 36%;
+
     /* Grey/Grey 3 */
 
     border: 1px solid #E0E0E0;
 }
 
-.norton img{
-    font-family: Montserrat;
-    position: absolute;
-    width: auto;
-    height: auto;
+.TableAlign{
 
-    /* Rectangle 9 */
-
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-
-    margin-bottom: 50px;
-    margin: 23px;
+    margin: auto;
 }
+
+th, td {
+    padding: 10px;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    font-family: "Open Sans";
+}
+
+#naranjita{
+    color: #FFAE81;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
+
+#total{
+    float: left;
+}
+
+#pendiente{
+    float: right;
+}
+
+.blueText{
+    color: #2F88FF;
+}
+
+.politicas{
+    padding-top: 10px;
+}
+
+

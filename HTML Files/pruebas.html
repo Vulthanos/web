@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  USAR GRID
+  <meta charset="UTF-8">
+  <title>Shopping Cart UI</title>
+  <link rel="stylesheet" type="text/css" href="./purchaseStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+</head>
+<body>
+
+<div class="Avance TextoBlanco">
+  <label class="Circulo C1">1</label>
+  <label class="Circulo C2">2</label>
+  <label class="Circulo C3">3</label>
+  <!--<label class="Linea"></label>-->
+</div>
+
+<div class="CartContainer">
+  <div class="Header">
+    <h3 class="Heading">Shopping Cart</h3>
+    <h5 class="Action">Remove all</h5>
+  </div>
+  <marquee behavior="alternate">VULTHANOS, HOT products!</marquee>
+
+  <!--######Ordenador Buen estado-->
+  <div class="Cart-Items">
+    <div class="image-box">
+      <img src="/IMGS/purchase/ordenador.png" height="120px" />
+    </div>
+    <div class="about">
+      <h1 class="title">Ordenador PC Gaming [buen estado]</h1>
+      <h3 class="subtitle">X1</h3>
+      <img src="/IMGS/purchase/veg.png" height="30px"  />
+    </div>
+
+    <div class="prices">
+      <div class="amount">1099&euro;</div>
+      <div class="remove"><u>Remove</u></div>
+    </div>
+  </div>
+
+  <!-- ######## MANDO PLAY-->
+  <div class="Cart-Items pad">
+    <div class="image-box">
+      <img src="/IMGS/purchase/mandoplay.png" height="120px" />
+    </div>
+    <div class="about">
+      <h1 class="title">Mando PS5 - Sony Dualsense Blanco</h1>
+      <h3 class="subtitle">X1</h3>
+      <img src="/IMGS/purchase/veg.png" height="30px"  />
+    </div>
+
+    <div class="prices">
+      <div class="amount">48&euro;</div>
+      <div class="remove"><u>Remove</u></div>
+    </div>
+  </div>
+
+  <!--##### GRAFICA -->
+  <div class="Cart-Items pad">
+    <div class="image-box">
+      <img src="/IMGS/purchase/grafica.png" height="120px" />
+    </div>
+    <div class="about">
+      <h1 class="title">Tarjeta Gráfica EVGA GeForce RTX 2060 12GB</h1>
+      <h3 class="subtitle">X1</h3>
+      <img src="/IMGS/purchase/veg.png" height="30px"  />
+    </div>
+
+    <div class="prices">
+      <div class="amount">532&euro;</div>
+      <div class="remove"><u>Remove</u></div>
+    </div>
+  </div>
+</div>
+
+<div class="Rectangle OrangeRectangle">
+  <div class="Rectangle WhiteRectangle">
+    <!--<h1 class="CheckOutTitle"> Check Out</h1>-->
+    <h4 class="HeadingResumen">Resumen del carrito</h4>
+    <table width="250" cellspacing="0">
+      <tbody>
+      <tr class="TableAlign">
+        <td>Subtotal</td>
+        <td></td>
+        <td><b>1679,00&euro;</b></td>
+      </tr>
+      <tr class="TableAlign">
+        <td>Descuento</td>
+        <td></td>
+        <td><b>pendiente</b></td>
+      </tr>
+      <tr class="TableAlign">
+        <td>Garantía(Platimun) <p id="naranjita"> Añadir </p></td>
+        <td></td>
+        <td><b>pendiente</b></td>
+      </tr>
+      <tr class="TableAlign">
+        <td>Envío</td>
+        <td></td>
+        <td>pendiente</td>
+      </tr>
+
+      <tr><td></td></tr>
+      <tr><td></td></tr>
+
+      <div class="Linea"></div>
+
+      <tr class="totalLast">
+        <td><b>Total</b></td>
+        <td></td>
+        <td><b>pendiente</b></td>
+      </tr>
+
+
+
+      </tbody>
+    </table>
+
+    <div class="politicas"><input type="checkbox">Acepto los términos de <a href="https://bit.ly/3K8VERM">Privacidad & Políticas</a> </div>
+
+    <div class="BlueRectangle TextoBlanco"><p> Proceder al Envío y Pago</p></div>
+  </div>
+</div>
+</body>
