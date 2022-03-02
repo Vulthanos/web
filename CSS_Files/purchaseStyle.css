@@ -331,18 +331,12 @@ hr{
     height: 0px;
     left: 20px;
     bottom: 45%;
-    /* Grey/Grey 3 */
-
     border: 1px solid #E0E0E0;
 }
 
 .norton img{
     font-family: Montserrat;
     position: absolute;
-
-
-    /* Rectangle 9 */
-
     left: 0%;
     right: 0%;
     bottom: 0%;
