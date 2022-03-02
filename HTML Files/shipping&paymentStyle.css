@@ -37,6 +37,14 @@ div {
     /*padding: 20px;*/
 }
 /*---------------------------------------*/
+.contentPurchase {
+    margin: 0;
+    /*background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);*/
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
 .OrangeRectangle{
     position: absolute; left: 65%;

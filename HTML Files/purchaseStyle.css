@@ -1,4 +1,4 @@
-body{
+.contentPurchase {
     margin: 0;
     /*background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);*/
     height: 100vh;
@@ -6,7 +6,6 @@ body{
     justify-content: left;
     align-items: center;
 }
-
 
 
 .OrangeRectangle{
@@ -80,7 +79,7 @@ body{
 
     left: 0%;
     right: 0%;
-    bottom: 0%;
+    bottom: 10%;
 
     margin-bottom: 50px;
     margin: 23px;
@@ -143,6 +142,7 @@ th, td {
 
 
 .CartContainer{
+    margin-top: 5%;
     float: left;
     width: 35vw;
     height: auto;
@@ -338,8 +338,7 @@ hr{
 .norton img{
     font-family: Montserrat;
     position: absolute;
-    width: auto;
-    height: auto;
+
 
     /* Rectangle 9 */
 
@@ -349,4 +348,55 @@ hr{
 
     margin-bottom: 50px;
     margin: 23px;
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+.BarraProgreso{
+    /* Barra de Progreso */
+    position: absolute;
+    width: 633.97px;
+    height: 53.9px;
+}
+
+
+.C{
+    position: absolute;
+    width: 55.44px;
+    height: 53.9px;
+
+    background: #FF833D;
+    border: 2px solid #010101;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 12.05px;
+    height: 16.35px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21.8019px;
+    line-height: 27px;
+
+    margin: 40px;
+    color: #FFFFFF;
+}
+
+.C1{
+    margin: 40px;
+}
+.C2{
+    margin: 40px;
+}
+.C3{
+    margin: 40px;
+}
+
+.progressBar{
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    width: 750px;
+    height: 100px;
 }
