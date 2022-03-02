@@ -24,15 +24,22 @@ body{
     position: absolute;
     font-size: 1.4em;
     left: 10.1875em;
-    top: 13em;
+    top: 10em;
 }
+
+
+.linea-temporal{
+    position: absolute;
+    top: 15em;
+    left: 40em;
+}
+
 
 /*Titulo apartado informacion del pedido*/
 .informacion-pedido{
     position: absolute;
-    font-size: 11em;
-    left: 9em;
-    top: 17em;
+    left: 13.5em;
+    top: 23em;
 }
 
 /*Apartado para escribir el id del cliente*/
@@ -40,7 +47,7 @@ body{
     position: absolute;
     font-size: 1em;
     left: 20em;
-    top: 24em;
+    top: 26em;
 }
 
 /*Apartado para escribir el email del pedido*/
@@ -48,7 +55,7 @@ body{
     position: absolute;
     font-size: 1em;
     left: 68em;
-    top: 24em;
+    top: 26em;
 }
 
 /*Tamaño de los textos de la seccion 2 y 3*/
@@ -61,7 +68,7 @@ p{
     position: absolute;
     font-size: 1em;
     left: 20em;
-    top: 30em;
+    top: 32em;
 
 }
 
