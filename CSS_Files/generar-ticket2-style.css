@@ -25,6 +25,7 @@ h1{
     font-size: 1.5em;
     top: 7em;
     left: 10em;
+    width: 26.75em;
 
 }
 
@@ -40,6 +41,7 @@ h2{
     font-size:1.20em;
     top: 17em;
     left: 8.5em;
+    width: 26.75em;
 }
 
 
@@ -48,6 +50,7 @@ h2{
     position: relative;
     top: 21em;
     left: 12em;
+    width: 26.75em;
 }
 
 /*texto en -algo que añadir-*/
@@ -55,6 +58,7 @@ h2{
     position: relative;
     top: 23em;
     left: 10em;
+    width: 26.75em;
 }
 
 /*caja de comentario*/
@@ -74,6 +78,7 @@ h2{
     position: relative;
     top: 25em;
     left: 10em;
+    width: 26.75em;
 }
 
 button{
@@ -90,6 +95,7 @@ button{
     height: 3em;
     top: 1em;
     left: 15em;
+
 }
 
 /*boton crear ticket*/
