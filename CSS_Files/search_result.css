@@ -4,9 +4,7 @@
     font-family: Montserrat, sans-serif;
 }
 
-body {
-    margin-top: 3em;
-    margin-bottom: 0.5em;
+.result-content {
     font-size: 1.5em;
 }
 
@@ -82,6 +80,8 @@ h1 {
 
 .filters .filter {
     margin: 0.5em;
+    top: 2.5em;
+    margin-top: 3em;
 }
 
 .filter-selector {
