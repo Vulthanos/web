@@ -32,8 +32,9 @@ input[type=submit]:hover {
 }
 
 div {
+    font-family: "Open Sans";
     border-radius: 5px;
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
     /*padding: 20px;*/
 }
 /*---------------------------------------*/
@@ -52,7 +53,7 @@ div {
     height: 684px;
     background: #FFAE81;
     border-radius: 30% 10%;
-
+    font-family: "Open Sans";
     margin-top: 7%;
 
 
@@ -77,6 +78,7 @@ div {
     left: 8%;
     right: 8%;
     top: 10%;
+    font-family: "Open Sans";
 
 
 
@@ -95,6 +97,7 @@ div {
     float: right;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
     perspective: 100px;
+    font-family: "Open Sans";
 }
 
 .testLeft {
@@ -117,7 +120,7 @@ div {
 
     left: 0%;
     right: 0%;
-    bottom: 0%;
+    bottom: 10%;
 
     margin-bottom: 50px;
     margin: 23px;
@@ -177,4 +180,36 @@ label{
     margin-bottom: 0%;
     padding-left: 0%;
     font-family: "Open Sans";
+}
+
+th, td {
+    padding: 10px;
+    margin-bottom: 0%;
+    padding-left: 0%;
+    font-family: "Open Sans";
+}
+
+.progressBar{
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    width: 750px;
+    height: 100px;
+}
+
+.norton img{
+    font-family: Montserrat;
+    position: absolute;
+
+
+    /* Rectangle 9 */
+
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+
+    margin-bottom: 50px;
+    margin: 23px;
+    margin-left: 40%;
+    margin-top: 20%;
 }
