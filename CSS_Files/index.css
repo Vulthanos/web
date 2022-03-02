@@ -2,10 +2,16 @@
     margin:0;
     padding:0;
     font-family: Montserrat, monospace;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 body {
     text-align: center;
+    margin: 0;
+    position: relative;
+    padding-bottom: 14em;
+    min-height: 100vh;
 }
 
 .slider {
