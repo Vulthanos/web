@@ -1,0 +1,204 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Montserrat, sans-serif;
+}
+
+.result-content {
+    font-size: 1.5em;
+    margin-bottom: 5em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+}
+
+.title {
+    display: block;
+}
+
+.cruz {
+    max-width: 0.8em;
+    max-height: 0.8em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.search {
+    text-align: center;
+    align-items: center;
+    left: 0.5em;
+}
+
+.search input {
+    width: 5.5em;
+    height: 3.7em;
+    padding: 0 1.25em;
+    font-size: 1em;
+    color: #000000;
+    outline: none;
+    border: 0.05em solid #000000;
+    border-radius: 1.875em;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.lupa-search {
+    position: relative;
+    top: 0.2em;
+    max-width: 1.5em;
+    max-height: 1.5em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.desplegable {
+    max-width: 1em;
+    max-height: 0.5em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.order {
+    position: absolute;
+    right: 1.5em;
+    top: 2.5em;
+    margin-top: 3em;
+}
+
+.filters {
+    display: inline-flex;
+    margin-left: 2em;
+    color: #000000;
+}
+
+.filters .filter {
+    margin: 0.5em;
+    top: 2.5em;
+    margin-top: 3em;
+}
+
+.filter-selector {
+    margin-top: 1em;
+}
+
+.filters .orden {
+    position: absolute;
+    right: 1em;
+}
+
+.filters article {
+    margin-right: 1.5em;
+}
+
+.filters-menu {
+    display: block;
+    left: 0;
+    position:absolute;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
+    margin-left: 4em;
+}
+
+.simple-filter {
+    position: absolute;
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 2em;
+    left: 0.2em;
+}
+
+.simple-filter:before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border: 0.0825em solid #000000;
+    border-radius: 0.275em;
+    position: relative;
+    cursor: pointer;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    margin-right: 0.3em;
+}
+
+input[type=checkbox]:checked + .simple-filter:before {
+    background-color: #FF833D;
+    color: #000000;
+    content: "\2714";
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.filt {
+    display: none;
+}
+
+section {
+    align-items: center;
+}
+
+.products {
+    margin-left: 1em;
+    position: absolute;
+    right: 10em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top {
+    margin-top: 0.5em;
+    right: 0;
+    display: flex;
+}
+
+.bot {
+    margin-top: 0.5em;
+    margin-bottom: auto;
+    right: 0;
+    display: flex;
+}
+
+article {
+    text-align: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.product {
+    max-width: 15em;
+    max-height: 15em;
+    margin: 1em;
+}
+
+label {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding-top: 0.5em;
+}
+
+.price {
+    background-color: #FFA16D;
+    border: none;
+    border-radius: 1em;
+    text-align: center;
+    width: 7.4375em;
+    height: 3.8125em;
+}
+
+.price-input {
+    display: inline-flex;
+    margin-left: 0.6em;
+}
+
+.separator {
+    margin: 0.5em;
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Montserrat';
+    src:  url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bold {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.regular {
+    color: #ffffff;
+}
