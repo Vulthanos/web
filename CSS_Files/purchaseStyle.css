@@ -1,5 +1,6 @@
 .contentPurchase {
-    margin: 0;
+
+
     /*background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);*/
     height: 100vh;
     display: flex;
@@ -390,7 +391,7 @@ hr{
 
 .progressBar{
     position: absolute;
-    top: 3%;
+    top: 13%;
     left: 10%;
     width: 750px;
     height: 100px;
