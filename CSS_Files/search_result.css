@@ -6,6 +6,7 @@
 
 .result-content {
     font-size: 1.5em;
+    margin-bottom: 5em;
 }
 
 .bold {
@@ -76,6 +77,7 @@ h1 {
 .filters {
     display: inline-flex;
     margin-left: 2em;
+    color: #000000;
 }
 
 .filters .filter {
