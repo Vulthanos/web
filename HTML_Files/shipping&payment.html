@@ -10,146 +10,144 @@
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
     </head>
 
-<body>
+    <body>
+        <header class="header">
+            <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
+                </ul>
+            </nav>
+            <div class="buscar"><label>
+                <input type="text" placeholder="Buscar" required>
+                <img class="lupa" src="/IMGS/header/lupa.png" alt="">
+            </label></div>
+            <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
+            <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
+        </header>
 
-<header class="header">
-    <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
-    <nav>
-        <ul>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span>CONSOLAS</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span>JUEGOS</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span>ACCESORIOS</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span>CONTROLADORES</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span>COMPONENTES</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span>PC</a></li>
-        </ul>
-    </nav>
-    <div class="buscar"><label>
-        <input type="text" placeholder="Buscar" required>
-        <img class="lupa" src="/IMGS/header/lupa.png" alt="">
-    </label></div>
-    <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-    <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
-</header>
+        <section class="contentPurchase">
 
-    <section class="contentPurchase">
+            <a href="purchase.html"> <img class="progressBar" src="/IMGS/purchase/progressBar2.png" alt="progressBar"> </a>
 
-    <a href="purchase.html"> <img class="progressBar" src="/IMGS/purchase/progressBar2.png" alt="progressBar"> </a>
+            <div class = "testLeft">
+                <form>
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Name and lastname">
 
-    <div class = "testLeft">
-        <form> <!--action="/action_page.php-->
-            <label for="fname"></label>
-            <input type="text" id="fname" name="firstname" placeholder="Name and lastname">
+                    <label for="ldir"></label>
+                    <input type="text" id="ldir" name="ldir" placeholder="Address">
 
-            <label for="ldir"></label>
-            <input type="text" id="ldir" name="ldir" placeholder="Address">
+                    <label for="lpostcode"></label>
+                    <input type="text" id="lpostcode" name="lpostcode" placeholder="Postal Code">
 
-            <label for="lpostcode"></label>
-            <input type="text" id="lpostcode" name="lpostcode" placeholder="Postal Code">
+                    <label for="lCity"></label>
+                    <input type="text" id="lCity" name="lCity" placeholder="City">
 
-            <label for="lCity"></label>
-            <input type="text" id="lCity" name="lCity" placeholder="City">
+                    <label for="lnumber"></label>
+                    <input type="text" id="lnumber" name="lnumber" placeholder="Phone Number">
 
-            <label for="lnumber"></label>
-            <input type="text" id="lnumber" name="lnumber" placeholder="Phone Number">
+                    <!-- <input type="submit" value="Submit">-->
+                </form>
+            </div>
 
-            <!-- <input type="submit" value="Submit">-->
-        </form>
-    </div>
+            <div class = "testLeft">
+                <form>
+                    <label for="fcardnumber"></label>
+                    <input type="text" id="fcardnumber" name="cardnumber" placeholder="Card Number">
 
-    <div class = "testLeft">
-        <form> <!--action="/action_page.php-->
-            <label for="fcardnumber"></label>
-            <input type="text" id="fcardnumber" name="cardnumber" placeholder="Card Number">
+                    <label for="ldate"></label>
+                    <input type="text" id="ldate" name="date" placeholder="MM/AA">
 
-            <label for="ldate"></label>
-            <input type="text" id="ldate" name="date" placeholder="MM/AA">
+                    <label for="lCVV"></label>
+                    <input type="text" id="lCVV" name="lCVV" placeholder="CVV">
 
-            <label for="lCVV"></label>
-            <input type="text" id="lCVV" name="lCVV" placeholder="CVV">
+                    <img src= "/IMGS/purchase/creditCardLogo.png" width="0" height="0">
+                    <a href="https://www.paypal.com/es/home"><img src= "/IMGS/purchase/paypal.png" width="100" height="50"></a>
+                </form>
+            </div>
 
-            <label for="lpaypal"></label>
-            <input type="text" id="lpaypal" name="lpaypal" placeholder="Paypal">
+            <div class="Rectangle OrangeRectangle">
+                <div class="Rectangle WhiteRectangle">
+                    <h4 class="HeadingResumen">Resumen del carrito</h4>
+                    <table width="250" cellspacing="0">
+                        <tbody>
+                            <tr class="TableAlign">
+                                <td>Subtotal</td>
+                                <td></td>
+                                <td><b>1679,00&euro;</b></td>
+                            </tr>
 
-        </form>
-    </div>
+                            <tr class="TableAlign">
+                                <td>Descuento</td>
+                                <td></td>
+                                <td><b>11,99&euro;</b></td>
+                            </tr>
 
+                            <tr class="TableAlign">
+                                <td>Garantía(Platinum) <p id="naranjita"> Añadir </p></td>
+                                <td></td>
+                                <td><b>0,00&euro;</b></td>
+                            </tr>
 
-    <div class="Rectangle OrangeRectangle">
-        <div class="Rectangle WhiteRectangle">
-            <!--<h1 class="CheckOutTitle"> Check Out</h1>-->
-            <h4 class="HeadingResumen">Resumen del carrito</h4>
-            <table width="250" cellspacing="0">
-                <tbody>
-                <tr class="TableAlign">
-                    <td>Subtotal</td>
-                    <td></td>
-                    <td><b>1679,00&euro;</b></td>
-                </tr>
-                <tr class="TableAlign">
-                    <td>Descuento</td>
-                    <td></td>
-                    <td><b>11,99&euro;</b></td>
-                </tr>
-                <tr class="TableAlign">
-                    <td>Garantía(Platinum) <p id="naranjita"> Añadir </p></td>
-                    <td></td>
-                    <td><b>0,00&euro;</b></td>
-                </tr>
-                <tr class="TableAlign">
-                    <td>Envío</td>
-                    <td></td>
-                    <td>11,99&euro;</td>
-                </tr>
+                            <tr class="TableAlign">
+                                <td>Envío</td>
+                                <td></td>
+                                <td>11,99&euro;</td>
+                            </tr>
 
-                <div class="Linea"></div>
+                            <div class="Linea"></div>
 
-                <tr class="totalLast">
-                    <td><b>Total</b></td>
-                    <td></td>
-                    <td><b>1679,00&euro;</b></td>
-                </tr>
+                            <tr class="totalLast">
+                                <td><b>Total</b></td>
+                                <td></td>
+                                <td><b>1679,00&euro;</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                </tbody>
-            </table>
+                    <label class="politicas"><input type="checkbox">Acepto los términos de <a href="https://bit.ly/3K8VERM">Privacidad & Políticas</a> </label>
 
-            <label class="politicas"><input type="checkbox">Acepto los términos de <a href="https://bit.ly/3K8VERM">Privacidad & Políticas</a> </label>
+                    <div class="coment"><img  src="/IMGS/purchase/comentarioOpcional.png" alt="norton" width="250" height="70"> </div>
 
-            <div class="coment"><img  src="/IMGS/purchase/comentarioOpcional.png" alt="norton" width="250" height="70"> </div>
+                    <a href="successfulPurchase.html"><div class="BlueRectangle WhiteText"><p> Pagar 1679,00&euro;</p></div></a>
 
-            <a href="successfulPurchase.html"><div class="BlueRectangle TextoBlanco"><p> Pagar 1679,00&euro;</p></div></a>
-
-            <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
-        </div>
-    </div>
+                    <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
+                </div>
+            </div>
+        </section>
 
 
-</section>
 
-<footer>
-    <ul class="info">
-        <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
-        <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
-        <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
-    </ul>
-    <ul class="ayuda">
-        <li><a href="help.html" class="bold-footer">AYUDA</a></li>
-        <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
-        <li><a href="help.html" class="regular-footer">GENERA UN TICKET</a></li>
-    </ul>
-    <ul class="comunidad">
-        <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
-        <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
-        <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
-    </ul>
-    <ul class="redes">
-        <li class="bold-footer">REDES SOCIALES</li>
-        <li class="content"><a href=""><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
-        <li><a href=""><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
-        <li class="content"><a href=""><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
-        <li><a href=""><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
-    </ul>
-</footer>
-
-</body>
+        <footer>
+            <ul class="info">
+                <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
+                <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
+                <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
+            </ul>
+            <ul class="ayuda">
+                <li><a href="help.html" class="bold-footer">AYUDA</a></li>
+                <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
+                <li><a href="help.html" class="regular-footer">GENERA UN TICKET</a></li>
+            </ul>
+            <ul class="comunidad">
+                <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
+                <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
+                <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
+            </ul>
+            <ul class="redes">
+                <li class="bold-footer">REDES SOCIALES</li>
+                <li class="content"><a href=""><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
+                <li><a href=""><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
+                <li class="content"><a href=""><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
+                <li><a href=""><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
+

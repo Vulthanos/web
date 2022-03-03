@@ -29,6 +29,7 @@
 .Rectangle{
     float: right;
     box-shadow: 0 0.12em 0.4em rgba(0, 0, 0, 0.14);
+
 }
 
 .testLeft {
@@ -54,7 +55,7 @@
     border-radius: 0.38em;
 }
 
-.TextoBlanco{
+.WhiteText{
     align-items: center;
     text-align: center;
     margin-top: 1em ;

@@ -11,7 +11,10 @@ html{
     margin-left: 35%;
 }
 
-
+.contentPurchase{
+    width: 70%;
+    float: left;
+}
 
 .TextoCompraFinal{
     /* Pago completado exitosamente. */
@@ -151,7 +154,7 @@ html{
     border-radius: 6px;
 }
 
-.TextoBlanco{
+.WhiteText{
     /*
     position: absolute;
     left: 12px;

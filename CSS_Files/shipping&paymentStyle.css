@@ -13,7 +13,6 @@ input[type=text]{
     float: left;
     margin: 10px;
     width: 75%;
-
 }
 
 input[type=submit] {
@@ -36,45 +35,32 @@ div {
     /*background-color: #f2f2f2;*/
     /*padding: 20px;*/
 }
-/*---------------------------------------*/
+
 th, td {
     padding: 10px;
-    margin-bottom: 0%;
-    padding-left: 0%;
-    font-family: "Montserrat";
+    margin-bottom: 0;
+    padding-left: 0;
+    font-family: "Montserrat", sans-serif;
 }
 
 .contentPurchase {
     margin: 0;
-    /*background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);*/
     height: 100vh;
     display: flex;
     justify-content: left;
     align-items: center;
 }
-.OrangeRectangle{
 
+.OrangeRectangle{
     position: absolute; left: 65%;
     width: 447px;
     height: 684px;
     background: #FFAE81;
     border-radius: 30% 10%;
-
-    /*margin-top: 7%;*/
-
-
-
-    /* Shadow 1 */
-    /*
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 52px;
-    float: right;
-    margin: auto; */
 }
 
-
 .WhiteRectangle{
-    position: absolute; /* right: 6em;*/
+    position: absolute;
     width: 270px;
     height: 477px;
     background: #FFFFFF;
@@ -84,25 +70,12 @@ th, td {
     left: 8%;
     right: 8%;
     top: 10%;
-
-
-
-    /*left: 0px;
-    top: 0px;
-    float: right;
-    margin: auto;
-    position: relative; */
-
-    /* Shadow 1 */
-    /*box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 52px; */
 }
 
 .Rectangle{
     float: right;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
     perspective: 100px;
-
 }
 
 .testLeft {
@@ -113,37 +86,7 @@ th, td {
     margin-left: 8%;
 }
 
-
-.BlueRectangle{
-
-    position: absolute;
-    width: auto;
-    height: auto;
-
-    /* Rectangle 9 */
-
-    left: 0%;
-    right: 0%;
-    bottom: 10%;
-
-    margin-bottom: 50px;
-    margin: 23px;
-
-    /* Gradient/Blue Gradient 1 */
-    background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
-
-    box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
-    border-radius: 6px;
-}
-
-.TextoBlanco{
-    /*
-    position: absolute;
-    left: 12px;
-    right: 11px;
-    top: 25%;
-    bottom: 25%; */
-
+.WhiteText{
     align-items: center;
     text-align: center;
     margin-top: 1em ;
@@ -151,40 +94,45 @@ th, td {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height, or 125% */
-
-    text-align: center;
-
-    /* Grey/Grey 1 */
-
     color: #F6F6F6;
+}
 
+.BlueRectangle{
+    font-family: Montserrat, sans-serif;
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0%;
+    right: 0%;
+    bottom: 10%;
+    margin-bottom: 3em;
+    margin: 1.44em;
+    background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
+    box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
+    border-radius: 0.38em;
 }
 
 #naranjita{
     color: #FFAE81;
-    font-family: "Open Sans";
+    font-family: "Montserrat", sans-serif;
     font-size: 13px;
 }
 
 th, td {
-    padding: 5px;
+    padding: 15px;
     margin-bottom: 0%;
     padding-left: 0%;
-    font-family: "Open Sans";
+    font-family: "Montserrat", sans-serif;
 }
 
 .Linea{
     position: absolute;
     width: 300px;
-    height: 0px;
+    height: 0;
     left: 20px;
-    bottom: 54%;
-    /* Grey/Grey 3 */
-
+    bottom: 51%;
     border: 1px solid #E0E0E0;
 }
-
 
 .politicas{
     padding-top: 10px;
@@ -192,11 +140,10 @@ th, td {
 
 label{
     padding: 10px;
-    margin-bottom: 0%;
-    padding-left: 0%;
-    font-family: "Open Sans";
+    margin-bottom: 0;
+    padding-left: 0;
+    font-family: Montserrat, sans-serif;
 }
-
 
 .progressBar{
     position: absolute;
@@ -207,16 +154,11 @@ label{
 }
 
 .norton img{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     position: absolute;
-
-
-    /* Rectangle 9 */
-
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin-bottom: 50px;
     margin: 23px;
     margin-left: 40%;
@@ -225,18 +167,18 @@ label{
 
 #fcardnumber{
     text-align: center;
-    background-image: url("/IMGS/purchase/creditCardLogo.png");
-    background-size: 60px;
+    background-image: url(/IMGS/purchase/creditCardLogo.png);
     background-repeat: no-repeat;
+    background-size: 60px;
 }
-
 
 #lCVV{
     text-align: center;
-    background-image: url("/IMGS/purchase/creditCardLogo.png");
+    background-image: url(/IMGS/purchase/creditCardLogo.png);
     background-size: 60px;
     background-repeat: no-repeat;
 }
+
 #lpaypal{
     text-align: center;
     background-position-y: center;
