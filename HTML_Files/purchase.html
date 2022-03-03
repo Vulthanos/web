@@ -1,180 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>VULTHANOS</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>VULTHANOS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/purchaseStyle.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
+        <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
+    </head>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
-    <link rel="stylesheet" type="text/css" href="/CSS_Files/purchaseStyle.css">
-    <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
-    <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
-    <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
-</head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
+                </ul>
+            </nav>
+            <div class="buscar"><label>
+                <input type="text" placeholder="Buscar" required>
+                <img class="lupa" src="/IMGS/header/lupa.png" alt="">
+            </label></div>
+            <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
+            <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
+        </header>
 
-<body>
+        <section class="contentPurchase">
+            <a href="index.html"><img class="progressBar" src="/IMGS/purchase/progressBar.png" alt="progressBar"></a>
 
-<header class="header">
-    <a href="/HTML_Files/index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
-    <nav>
-        <ul>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span>CONSOLAS</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span>JUEGOS</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span>ACCESORIOS</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span>CONTROLADORES</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span>COMPONENTES</a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span>PC</a></li>
-        </ul>
-    </nav>
-    <div class="buscar"><label>
-        <input type="text" placeholder="Buscar" required>
-        <img class="lupa" src="/IMGS/header/lupa.png" alt="">
-    </label></div>
-    <a href="/HTML_Files/purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-    <a href="/HTML_Files/profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
-</header>
+            <div class="CartContainer">
+                <div class="HeaderCart">
+                    <h3 class="Heading">Shopping Cart</h3>
+                    <h5 class="Action">Remove all</h5>
+                </div>
 
+                <marquee behavior="alternate">VULTHANOS, HOT products!</marquee>
 
+                <!--Ordenador Buen estado-->
+                <div class="Cart-Items">
 
+                    <div class="image-box">
+                        <img src="/IMGS/purchase/ordenador.png" height="120px" />
+                    </div>
 
-<section class="contentPurchase">
+                    <div class="about">
+                        <h1 class="title">Ordenador PC Gaming [buen estado]</h1>
+                        <h3 class="subtitle">X1</h3>
+                        <img src="/IMGS/purchase/veg.png" height="30px"  />
+                    </div>
 
-<img class="progressBar" src="/IMGS/purchase/progressBar.png" alt="progressBar">
+                    <div class="prices">
+                        <div class="amount">1099&euro;</div>
+                        <div class="remove"><u>Remove</u></div>
+                    </div>
 
-<div class="CartContainer">
-    <div class="Header">
-        <h3 class="Heading">Shopping Cart</h3>
-        <h5 class="Action">Remove all</h5>
-    </div>
-    <marquee behavior="alternate">VULTHANOS, HOT products!</marquee>
+                </div>
 
-    <!--######Ordenador Buen estado-->
-    <div class="Cart-Items">
-        <div class="image-box">
-            <img src="/IMGS/purchase/ordenador.png" height="120px" />
-        </div>
-        <div class="about">
-            <h1 class="title">Ordenador PC Gaming [buen estado]</h1>
-            <h3 class="subtitle">X1</h3>
-            <img src="/IMGS/purchase/veg.png" height="30px"  />
-        </div>
+                <!-- Mando de Playstation-->
+                <div class="Cart-Items pad">
 
-        <div class="prices">
-            <div class="amount">1099&euro;</div>
-            <div class="remove"><u>Remove</u></div>
-        </div>
-    </div>
+                    <div class="image-box">
+                        <img src="/IMGS/purchase/mandoplay.png" height="120px" />
+                    </div>
 
-    <!-- ######## MANDO PLAY-->
-    <div class="Cart-Items pad">
-        <div class="image-box">
-            <img src="/IMGS/purchase/mandoplay.png" height="120px" />
-        </div>
-        <div class="about">
-            <h1 class="title">Mando PS5 - Sony Dualsense Blanco</h1>
-            <h3 class="subtitle">X1</h3>
-            <img src="/IMGS/purchase/veg.png" height="30px"  />
-        </div>
+                    <div class="about">
+                        <h1 class="title">Mando PS5 - Sony Dualsense Blanco</h1>
+                        <h3 class="subtitle">X1</h3>
+                        <img src="/IMGS/purchase/veg.png" height="30px"  />
+                    </div>
 
-        <div class="prices">
-            <div class="amount">48&euro;</div>
-            <div class="remove"><u>Remove</u></div>
-        </div>
-    </div>
+                    <div class="prices">
+                        <div class="amount">48&euro;</div>
+                        <div class="remove"><u>Remove</u></div>
+                    </div>
 
-    <!--##### GRAFICA -->
-    <div class="Cart-Items pad">
-        <div class="image-box">
-            <img src="/IMGS/purchase/grafica.png" height="120px" />
-        </div>
-        <div class="about">
-            <h1 class="title">Tarjeta Gráfica EVGA GeForce RTX 2060 12GB</h1>
-            <h3 class="subtitle">X1</h3>
-            <img src="/IMGS/purchase/veg.png" height="30px"  />
-        </div>
+                </div>
 
-        <div class="prices">
-            <div class="amount">532&euro;</div>
-            <div class="remove"><u>Remove</u></div>
-        </div>
-    </div>
-</div>
+                <!--Tarjeta Gráfica-->
+                <div class="Cart-Items pad">
 
+                    <div class="image-box">
+                        <img src="/IMGS/purchase/grafica.png" height="120px" />
+                    </div>
 
-    <div class="Rectangle OrangeRectangle">
-        <div class="Rectangle WhiteRectangle">
-            <!--<h1 class="CheckOutTitle"> Check Out</h1>-->
-            <h4 class="HeadingResumen">Resumen del carrito</h4>
-            <table width="250" cellspacing="0">
-                <tbody>
-                <tr class="TableAlign">
-                    <td>Subtotal</td>
-                    <td></td>
-                    <td><b>1679,00&euro;</b></td>
-                </tr>
-                <tr class="TableAlign">
-                    <td>Descuento</td>
-                    <td></td>
-                    <td>pendiente</td>
-                </tr>
-                <tr class="TableAlign">
-                    <td>Garantía(Platinum) <p id="naranjita"> Añadir </p></td>
-                    <td></td>
-                    <td><b>pendiente</b></td>
-                </tr>
-                <tr class="TableAlign">
-                    <td>Envío</td>
-                    <td></td>
-                    <td>pendiente</td>
-                </tr>
+                    <div class="about">
+                        <h1 class="title">Tarjeta Gráfica EVGA GeForce RTX 2060 12GB</h1>
+                        <h3 class="subtitle">X1</h3>
+                        <img src="/IMGS/purchase/veg.png" height="30px"  />
+                    </div>
 
-                <tr><td></td></tr>
-                <tr><td></td></tr>
+                    <div class="prices">
+                        <div class="amount">532&euro;</div>
+                        <div class="remove"><u>Remove</u></div>
+                    </div>
 
-                <div class="Linea"> </div>
-
-                <tr class="totalLast">
-                    <td><b>Total</b></td>
-                    <td></td>
-                    <td><b>pendiente</b></td>
-                </tr>
-
-                </tbody>
-            </table>
-
-            <div class="politicas"><input type="checkbox">Acepto los términos de <a href="https://bit.ly/3K8VERM">Privacidad & Políticas</a> </div>
-
-            <a href="shipping&payment.html"><button class="BlueRectangle TextoBlanco"><p> Proceder el envío y pago</p></button> </a>
-
-            <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <ul class="info">
-        <li><a href="/HTML_Files/information.html" class="bold-footer">INFORMACIÓN</a></li>
-        <li class="content"><a href="/HTML_Files/information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
-        <li><a href="/HTML_Files/information.html" class="regular-footer">CONTACTO</a></li>
-    </ul>
-    <ul class="ayuda">
-        <li><a href="/HTML_Files/help.html" class="bold-footer">AYUDA</a></li>
-        <li class="content"><a href="/HTML_Files/help.html" class="regular-footer">FAQ</a></li>
-        <li><a href="/HTML_Files/help.html" class="regular-footer">GENERA UN TICKET</a></li>
-    </ul>
-    <ul class="comunidad">
-        <li><a href="/HTML_Files/sorteo.html" class="bold-footer">COMUNIDAD</a></li>
-        <li class="content"><a href="/HTML_Files/sorteo.html" class="regular-footer">BLOG</a></li>
-        <li><a href="/HTML_Files/sorteo.html" class="regular-footer">SORTEOS</a></li>
-    </ul>
-    <ul class="redes">
-        <li class="bold-footer">REDES SOCIALES</li>
-        <li class="content"><a href=""><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
-        <li><a href=""><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
-        <li class="content"><a href=""><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
-        <li><a href=""><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
-    </ul>
-</footer>
+                </div>
+            </div>
 
 
-</body>
+            <div class="Rectangle OrangeRectangle">
+                <div class="Rectangle WhiteRectangle">
+                    <h4 class="HeadingResumen">Resumen del carrito</h4>
+                    <table width="250" cellspacing="0">
+                        <tbody>
+
+                            <tr class="TableAlign">
+                                <td>Subtotal</td>
+                                <td></td>
+                                <td><b>1679,00&euro;</b></td>
+                            </tr>
+
+                            <tr class="TableAlign">
+                                <td>Descuento</td>
+                                <td></td>
+                                <td>pendiente</td>
+                            </tr>
+
+                            <tr class="TableAlign">
+                                <td>Garantía(Platinum) <p id="naranjita"> Añadir </p></td>
+                                <td></td>
+                                <td><b>pendiente</b></td>
+                            </tr>
+
+                            <tr class="TableAlign">
+                                <td>Envío</td>
+                                <td></td>
+                                <td>pendiente</td>
+                            </tr>
+                            <tr><td></td></tr>
+                            <tr><td></td></tr>
+                            <div class="Linea"> </div>
+
+                            <tr class="totalLast">
+                                <td><b>Total</b></td>
+                                <td></td>
+                                <td><b>pendiente</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="politicas"><input type="checkbox">Acepto los términos de <a href="https://bit.ly/3K8VERM">Privacidad & Políticas</a> </div>
+
+                    <a href="shipping&payment.html"><button class="BlueRectangle TextoBlanco"><p> Proceder el envío y pago</p></button> </a>
+
+                    <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <ul class="info">
+                <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
+                <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
+                <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
+            </ul>
+            <ul class="ayuda">
+                <li><a href="help.html" class="bold-footer">AYUDA</a></li>
+                <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
+                <li><a href="help.html" class="regular-footer">GENERA UN TICKET</a></li>
+            </ul>
+            <ul class="comunidad">
+                <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
+                <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
+                <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
+            </ul>
+            <ul class="redes">
+                <li class="bold-footer">REDES SOCIALES</li>
+                <li class="content"><a href="" target="_blank"><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
+                <li><a href="" target="_blank"><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
+                <li class="content"><a href="" target="_blank"><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
+                <li><a href="" target="_blank"><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
