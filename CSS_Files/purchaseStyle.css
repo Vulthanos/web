@@ -7,19 +7,19 @@
 
 .OrangeRectangle{
     position: absolute; left: 65%;
-    width: 447px;
-    height: 684px;
+    width: 27em;
+    height: 42em;
     background: #FFAE81;
     border-radius: 30% 10%;
 }
 
 .WhiteRectangle{
-    position: absolute; /* right: 6em;*/
-    width: 270px;
-    height: 477px;
+    position: absolute;
+    width: 17em;
+    height: 28em;
     background: #FFFFFF;
     border-radius: 10%;
-    padding: 40px;
+    padding: 2.5em;
     margin-left: 2%;
     left: 8%;
     right: 8%;
@@ -28,8 +28,7 @@
 
 .Rectangle{
     float: right;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    perspective: 100px;
+    box-shadow: 0 0.12em 0.4em rgba(0, 0, 0, 0.14);
 }
 
 .testLeft {
@@ -48,11 +47,11 @@
     left: 0%;
     right: 0%;
     bottom: 10%;
-    margin-bottom: 50px;
-    margin: 23px;
+    margin-bottom: 3em;
+    margin: 1.44em;
     background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
-    box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
-    border-radius: 6px;
+    box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
+    border-radius: 0.38em;
 }
 
 .TextoBlanco{
@@ -62,8 +61,8 @@
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1em;
+    line-height: 1.25em;
     text-align: center;
     color: #F6F6F6;
 }
@@ -71,18 +70,18 @@
 #naranjita{
     color: #FFAE81;
     font-family: Montserrat, sans-serif;
-    font-size: 13px;
+    font-size: 0.82em;
 }
 
 th, td {
-    padding: 10px;
+    padding: 0.625em;
     margin-bottom: 0%;
     padding-left: 0%;
     font-family: Montserrat, sans-serif;
 }
 
 .politicas{
-    padding-top: 10px;
+    padding-top: 0.625em;
 }
 
 .CheckOutText{
@@ -91,15 +90,15 @@ th, td {
 }
 
 .CartContainer{
-    margin-top: 5%;
+    margin-top: 8%;
     float: left;
     width: 35vw;
     height: auto;
-    padding: 50px;
+    padding: 3.125em;
     margin-left: 10%;
     background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 10px 20px #1687d933;
+    border-radius: 1.25em;
+    box-shadow: 0 0.625em 1.25em #1687d933;
 }
 
 .HeaderCart{
@@ -112,26 +111,26 @@ th, td {
 }
 
 .Heading{
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     color: #2F3841;
 }
 
 .HeadingResumen{
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: Montserrat, sans-serif;
     color: #2F3841;
     margin: auto;
 }
 
 .Action{
-    font-size: 14px;
+    font-size: 0.9em;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #E44C4C;
     cursor: pointer;
-    border-bottom: 1px solid #E44C4C;
+    border-bottom: 0.1em solid #E44C4C;
 }
 
 .Cart-Items{
@@ -153,23 +152,23 @@ th, td {
     height: 100%;
     width: 70%;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 3.125em;
 }
 
 .title{
-    padding-top: 10px;
-    line-height: 18px;
+    padding-top: 0.625em;
+    line-height: 1.125em;
     font-size: 100%;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 800;
     color: #202020;
     text-align: left;
 }
 
 .subtitle{
-    line-height: 10px;
-    font-size: 18px;
-    font-family: 'Open Sans';
+    line-height: 0.625em;
+    font-size: 1.125em;
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #909090;
 }
@@ -182,14 +181,14 @@ th, td {
 }
 
 .btn{
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
     background-color: #d9d9d9;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: Montserrat, sans-serif;
     font-weight: 900;
     color: #202020;
@@ -197,7 +196,7 @@ th, td {
 }
 
 .count{
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #202020;
@@ -209,16 +208,16 @@ th, td {
 }
 
 .amount{
-    padding-top: 20px;
-    font-size: 26px;
+    padding-top: 1.25em;
+    font-size: 1.625em;
     font-family: Montserrat, sans-serif;
     font-weight: 800;
     color: #202020;
 }
 
 .remove{
-    padding-top: 5px;
-    font-size: 14px;
+    padding-top: 0.32em;
+    font-size: 0.88em;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #E44C4C;
@@ -226,7 +225,7 @@ th, td {
 }
 
 .pad{
-    margin-top: 5px;
+    margin-top: 0.32em;
 }
 
 hr{
@@ -248,36 +247,36 @@ hr{
 }
 
 .Subtotal{
-    font-size: 22px;
+    font-size: 1.38em;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     color: #202020;
 }
 
 .items{
-    font-size: 16px;
+    font-size: 1em;
     font-family: Montserrat, sans-serif;
     font-weight: 500;
     color: #909090;
-    line-height: 10px;
+    line-height: 0.625em;
 }
 
 .total-amount{
-    font-size: 36px;
+    font-size: 2.25em;
     font-family: Montserrat, sans-serif;
     font-weight: 900;
     color: #202020;
 }
 
 .button{
-    margin-top: 10px;
+    margin-top: 0.625em;
     width: 100%;
-    height: 40px;
+    height: 2.5em;
     border: none;
     background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
-    border-radius: 20px;
+    border-radius: 1.25em;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #202020;
@@ -285,11 +284,11 @@ hr{
 
 .Linea{
     position: absolute;
-    width: 300px;
-    height: 0px;
-    left: 20px;
-    bottom: 45%;
-    border: 1px solid #E0E0E0;
+    width: 19em;
+    height: 0;
+    left: 1.25em;
+    bottom: 52%;
+    border: 0.1em solid #E0E0E0;
 }
 
 .norton img{
@@ -298,48 +297,48 @@ hr{
     left: 0%;
     right: 0%;
     bottom: 0%;
-    margin-bottom: 50px;
-    margin: 23px;
+    margin-bottom: 3.125em;
+    margin: 1.44em;
     margin-left: 40%;
     margin-top: 20%;
 }
 
 .BarraProgreso{
     position: absolute;
-    width: 633.97px;
-    height: 53.9px;
+    width: 41.5em;
+    height: 3.38em;
 }
 
 .C{
     position: absolute;
-    width: 55.44px;
-    height: 53.9px;
+    width: 3.47em;
+    height: 3.37em;
     background: #FF833D;
-    border: 2px solid #010101;
+    border: 0.125em solid #010101;
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
-    font-size: 21.8019px;
-    line-height: 27px;
-    margin: 40px;
+    font-size: 1.37em;
+    line-height: 1.69em;
+    margin: 2.5em;
     color: #FFFFFF;
 }
 
 .C1{
-    margin: 40px;
+    margin: 2.5em;
 }
 .C2{
-    margin: 40px;
+    margin: 2.5em;
 }
 .C3{
-    margin: 40px;
+    margin: 2.5em;
 }
 
 .progressBar{
     position: absolute;
     top: 13%;
     left: 10%;
-    width: 750px;
-    height: 100px;
+    width: 47em;
+    height: 6.25em;
 }
 
 button:hover{
