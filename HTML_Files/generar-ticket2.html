@@ -4,14 +4,15 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
-        <link rel="stylesheet" type="text/css" href="/CSS_Files/fonts.css">
-        <link rel="stylesheet" type="text/css" href="/CSS_Files/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="../CSS_Files/generar-ticket2-style.css" rel="stylesheet">
+        <link href="generar-ticket.html">
+        <link href="../CSS_Files/generar-ticket-style.css">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
-        <style> BODY{ font-family: Montserrat, monospace; } </style>
         <title>VULTHANOS</title>
     </head>
     <body>
+
         <header class="header">
             <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
             <nav>
@@ -31,18 +32,49 @@
             <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
             <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
         </header>
-        <figure class="slider">
-            <a href="slider_result.html"><img class="slider-img" src="/IMGS/slider/pc_prueba.jpg" alt=""></a>
-            <nav class="slider-nav">
-                <label class="circulo_p uno"></label>
-                <label class="circulo_p dos"></label>
-                <label class="circulo_g"></label>
-                <label class="circulo_p tres"></label>
-                <label class="circulo_p cuatro"></label>
-                <img class="atras" src="/IMGS/slider/flecha_atras.png" alt="">
-                <img class="adelante" src="/IMGS/slider/flecha_adelante.png" alt="">
-            </nav>
-        </figure>
+
+        <section class="titulo-central">Ayuda</section>
+
+        <h1><strong>Genere un ticket</strong></h1>
+
+        <section class="linea-temporal">
+            <img src="/IMGS/barra_progreso_ticket1.PNG" alt="barra progreso 1">
+        </section>
+
+        <h2><strong>Detalles del pedido</strong></h2>
+
+        <form>
+            <section class="correo">
+                <label for="contactEmail">
+                    <span class="email"><strong>Correo electronico de contacto</strong></span>
+                </label>
+                <input type="email" maxlength="200" name="contactEmail" id="contactEmail" value=" ">
+            </section>
+
+            <section class="comentario-extra">
+                <label for="comentario">
+                    <span class="caja-comentario"><strong>¿Algo que añadir?</strong></span>
+                    <p>No dudes en añadir cualquier dato o comentario que cree que podria ayudarnos a solventar el problema</p>
+                </label>
+                <textarea required=""  id="comentario" class="inputForm" maxlength="2000" placeholder="Proporcione detalles importantes aquí ..."></textarea>
+            </section>
+
+            <section class="imagenes">
+                <span class="comentario-imagenes"><strong>Imagen adicional</strong></span>
+                <p>Puede adjuntar una imagen que nos ayude a comprender el problema</p>
+
+                <section tabindex="0" class="cuadro-imagenes">
+                    <input accept="image/jpeg, image/jpg, image/png" type="file" autocomplete="off" tabindex="-1" style="display: none;">
+                    <span>Arrastra o suelta la imagen</span>
+                    <button class="subir-imagenes" type="button">Seleccionar imagenes</button>
+                    <p style="color:#FFA16D"><small>Formato permitido: PNG, JPG, JPEG</small></p>
+                </section>
+            </section>
+
+            <button class="crear-ticket" type="submit">
+                <a href="generar-ticket3.html" style="text-decoration:none">Crear ticket</a>
+            </button>
+        </form>
 
 
         <footer>

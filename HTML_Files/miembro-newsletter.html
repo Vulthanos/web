@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
-        <link rel="stylesheet" type="text/css" href="/CSS_Files/fonts.css">
-        <link rel="stylesheet" type="text/css" href="/CSS_Files/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="../CSS_Files/miembro-newsletter-style.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
-        <style> BODY{ font-family: Montserrat, monospace; } </style>
         <title>VULTHANOS</title>
     </head>
     <body>
+
         <header class="header">
             <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
             <nav>
@@ -31,18 +30,22 @@
             <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
             <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
         </header>
-        <figure class="slider">
-            <a href="slider_result.html"><img class="slider-img" src="/IMGS/slider/pc_prueba.jpg" alt=""></a>
-            <nav class="slider-nav">
-                <label class="circulo_p uno"></label>
-                <label class="circulo_p dos"></label>
-                <label class="circulo_g"></label>
-                <label class="circulo_p tres"></label>
-                <label class="circulo_p cuatro"></label>
-                <img class="atras" src="/IMGS/slider/flecha_atras.png" alt="">
-                <img class="adelante" src="/IMGS/slider/flecha_adelante.png" alt="">
-            </nav>
-        </figure>
+
+        <section class="contenedor-newsletter">
+            <section class="header-newsletter">
+                <h1>Newsletter de Vulthanos™</h1><br>
+                <h2>Suscríbete al boletín informativo para no perderte las ofertas más importantes de nuestra comunidad, productos, sorteos...</h2><br>
+                <h3><small><i>Suscribiendote, estas de acuerdo con los terminos y condiciones de uso y la politica de privacidad, entendiendo que Vulthanos™ recibira tu correo electronico</i></small> </h3>
+            </section>
+
+            <section class="formulario-entrada">
+                <input class="formulario" placeholder="Tu email..." title="Suscríbete al boletín de Newsletter de la comunidad Vulthanos™" type="email" name="member[email]" id="member_email">
+            </section>
+
+            <button>
+                <a href="profile_page.html" style="text-decoration:none" target="_blank"> <span>Suscribete</span> </a>
+            </button>
+        </section>
 
 
         <footer>

@@ -1,7 +1,7 @@
 * {
     margin:0;
     padding:0;
-    font-family: Montserrat, monospace;
+    font-family: Montserrat, sans-serif;
 }
 
 html {
@@ -15,8 +15,6 @@ body {
 header {
     width: 100%;
     overflow: hidden;
-    height: 9.375em;
-    position: relative;
     background: none;
     margin-bottom: 2em;
 }
@@ -39,6 +37,7 @@ header > nav > ul {
     width:100%;
     background: #bd879d;
     position:absolute;
+    height: 4.6em;
 }
 
 header > nav > ul li {
@@ -48,7 +47,7 @@ header > nav > ul li {
 /*sub-menu*/
 header > nav > ul > li:hover > ul {
     display:block;
-    height:100%;
+    height: 4.6em;
 }
 
 header > nav > ul > li > ul {
@@ -71,7 +70,7 @@ header > nav > ul li a {
     font-weight:bold;
     display:block;
     line-height:1.25em;
-    padding:1.25em;
+    padding:1.75em;
     position: relative;
     text-align:center;
     text-decoration:none;
@@ -82,12 +81,11 @@ header > nav > ul li a {
     transition: all .4s ease;
 }
 
-header > nav > ul > li > ul > li a:hover {
-    background:#cc4400;
+.header-text {
+    font-size: 1.125em;
 }
 
 header > nav > ul > li > a span {
-    background:#174459;
     display:block;
     height:100%;
     width:100%;
@@ -113,47 +111,46 @@ header > nav > ul > li > a:hover > span {
 header > nav ul li a .baja {
     position: absolute;
     background: #b45873;
+    height: 4.6em;
+    top: -4.2em;
 }
 
 .header {
     position: fixed;
     margin-top: 0;
     z-index: 2000;
+    height: 4.6em;
+    background-color: #ffffff;
 }
 
 .icon-consolas {
-    width: 2.6875em;
-    height: 3.3125em;
+    height: 4.13em;
     left: 3.8em;
     top: 0.1em;
 }
 
 .icon-juegos {
-    width:  3.3125em;
-    height: 5.1875em;
-    left: 2.7em;
-    top: -0.8em;
+    height: 7em;
+    left: 2em;
+    top: -1.2em;
 }
 
 .icon-accesorios {
-    width: 3.178125em;
-    height: 4.5625em;
-    left: 4.2em;
-    top: -0.41em;
+    height: 5.5em;
+    left: 3.8em;
+    top: -0.46em;
 }
 
 .icon-controladores {
-    width: 4.293125em;
-    height: 6.75em;
-    left: 5.15em;
-    top: -1.5em;
+    height: 8.2em;
+    left: 4.8em;
+    top: -1.8em;
 }
 
 .icon-componentes {
-    width: 4.280625em;
-    height: 4.280625em;
-    left: 4.6em;
-    top: -0.16em;
+    height: 5.5em;
+    left: 3.5em;
+    top: -0.5em;
 
 }
 
@@ -161,13 +158,12 @@ header > nav ul li a .baja {
     width: 5.5em;
     height: 5.5em;
     left: -0.2em;
-    top: -0.8em;
+    top: -0.4em;
 }
 
 .logo {
     position: absolute;
-    width: 4em;
-    height: 4em;
+    width: 4.6em;
     left: 0;
     top: 0;
 }
@@ -227,8 +223,8 @@ header > nav ul li a .baja {
 
 .user {
     position: absolute;
-    width: 4.5em;
-    height: 4em;
+    width: 5.1em;
+    height: 4.6em;
     right: 0;
     top: 0;
 }
