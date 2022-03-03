@@ -1,13 +1,9 @@
 .contentPurchase {
-
-
-    /*background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);*/
     height: 100vh;
     display: flex;
     justify-content: left;
     align-items: center;
 }
-
 
 .OrangeRectangle{
     position: absolute; left: 65%;
@@ -15,19 +11,7 @@
     height: 684px;
     background: #FFAE81;
     border-radius: 30% 10%;
-
-    /*margin-top: 7%;*/
-
-
-
-    /* Shadow 1 */
-    /*
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 52px;
-    float: right;
-    margin: auto; */
 }
-
 
 .WhiteRectangle{
     position: absolute; /* right: 6em;*/
@@ -40,25 +24,12 @@
     left: 8%;
     right: 8%;
     top: 10%;
-
-
-
-    /*left: 0px;
-    top: 0px;
-    float: right;
-    margin: auto;
-    position: relative; */
-
-    /* Shadow 1 */
-    /*box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 52px; */
 }
 
 .Rectangle{
     float: right;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
     perspective: 100px;
-
 }
 
 .testLeft {
@@ -69,59 +40,37 @@
     margin-left: 5%;
 }
 
-
 .BlueRectangle{
-
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     position: absolute;
     width: auto;
     height: auto;
-
-    /* Rectangle 9 */
-
     left: 0%;
     right: 0%;
     bottom: 10%;
-
     margin-bottom: 50px;
     margin: 23px;
-
-    /* Gradient/Blue Gradient 1 */
     background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
-
     box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
     border-radius: 6px;
 }
 
 .TextoBlanco{
-    /*
-    position: absolute;
-    left: 12px;
-    right: 11px;
-    top: 25%;
-    bottom: 25%; */
-
     align-items: center;
     text-align: center;
     margin-top: 1em ;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height, or 125% */
-
     text-align: center;
-
-    /* Grey/Grey 1 */
-
     color: #F6F6F6;
-
 }
 
 #naranjita{
     color: #FFAE81;
-    font-family: "Open Sans";
+    font-family: Montserrat, sans-serif;
     font-size: 13px;
 }
 
@@ -129,7 +78,7 @@ th, td {
     padding: 10px;
     margin-bottom: 0%;
     padding-left: 0%;
-    font-family: "Open Sans";
+    font-family: Montserrat, sans-serif;
 }
 
 .politicas{
@@ -141,8 +90,6 @@ th, td {
     margin-top: 20%;
 }
 
-
-
 .CartContainer{
     margin-top: 5%;
     float: left;
@@ -153,8 +100,6 @@ th, td {
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 10px 20px #1687d933;
-    /*margin: auto;*/
-
 }
 
 .HeaderCart{
@@ -168,21 +113,21 @@ th, td {
 
 .Heading{
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     color: #2F3841;
 }
 
 .HeadingResumen{
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     color: #2F3841;
     margin: auto;
 }
 
 .Action{
     font-size: 14px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #E44C4C;
     cursor: pointer;
@@ -198,17 +143,19 @@ th, td {
     align-items: center;
 
 }
+
 .image-box{
     width: 15%;
     text-align: center;
 }
+
 .about{
     height: 100%;
     width: 70%;
     text-align: left;
     padding-left: 50px;
-
 }
+
 .title{
     padding-top: 10px;
     line-height: 18px;
@@ -218,6 +165,7 @@ th, td {
     color: #202020;
     text-align: left;
 }
+
 .subtitle{
     line-height: 10px;
     font-size: 18px;
@@ -232,6 +180,7 @@ th, td {
     justify-content: space-between;
     align-items: center;
 }
+
 .btn{
     width: 40px;
     height: 40px;
@@ -241,14 +190,15 @@ th, td {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     color: #202020;
     cursor: pointer;
 }
+
 .count{
     font-size: 20px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #202020;
 }
@@ -257,10 +207,11 @@ th, td {
     height: 100%;
     text-align: right;
 }
+
 .amount{
     padding-top: 20px;
     font-size: 26px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 800;
     color: #202020;
 }
@@ -268,7 +219,7 @@ th, td {
 .remove{
     padding-top: 5px;
     font-size: 14px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #E44C4C;
     cursor: pointer;
@@ -283,35 +234,41 @@ hr{
     float: right;
     margin-right: 5%;
 }
+
 .checkout{
     float: right;
     margin-right: 5%;
     width: 28%;
 }
+
 .total{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .Subtotal{
     font-size: 22px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     color: #202020;
 }
+
 .items{
     font-size: 16px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
     color: #909090;
     line-height: 10px;
 }
+
 .total-amount{
     font-size: 36px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 900;
     color: #202020;
 }
+
 .button{
     margin-top: 10px;
     width: 100%;
@@ -321,7 +278,7 @@ hr{
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
-    font-family: 'Open Sans';
+    font-family: Montserrat, sans-serif;
     font-weight: 600;
     color: #202020;
 }
@@ -336,12 +293,11 @@ hr{
 }
 
 .norton img{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     position: absolute;
     left: 0%;
     right: 0%;
     bottom: 0%;
-
     margin-bottom: 50px;
     margin: 23px;
     margin-left: 40%;
@@ -349,32 +305,21 @@ hr{
 }
 
 .BarraProgreso{
-    /* Barra de Progreso */
     position: absolute;
     width: 633.97px;
     height: 53.9px;
 }
 
-
 .C{
     position: absolute;
     width: 55.44px;
     height: 53.9px;
-
     background: #FF833D;
     border: 2px solid #010101;
     box-sizing: border-box;
-
-    position: absolute;
-    width: 12.05px;
-    height: 16.35px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Montserrat, sans-serif;
     font-size: 21.8019px;
     line-height: 27px;
-
     margin: 40px;
     color: #FFFFFF;
 }
