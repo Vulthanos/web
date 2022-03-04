@@ -43,15 +43,11 @@ html{
     font-weight: normal;
     font-size: 24px;
     line-height: 20px;
-    /* or 83% */
-
     display: flex;
     align-items: flex-end;
     letter-spacing: 0.3px;
-
     color: #0075FF;
 }
-
 
 .OrangeRectangle{
     position: absolute; left: 65%;
@@ -76,7 +72,7 @@ html{
 
 .Rectangle{
     float: right;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14);
     perspective: 100px;
     margin-top: auto;
 
@@ -90,37 +86,21 @@ html{
     margin-left: 8%;
 }
 
-
 .BlueRectangle{
-
     position: absolute;
     width: auto;
     height: auto;
-
-    /* Rectangle 9 */
-
     left: 0%;
     right: 0%;
     bottom: 10%;
-
     margin-bottom: 50px;
     margin: 23px;
-
-    /* Gradient/Blue Gradient 1 */
     background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
-
     box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
     border-radius: 6px;
 }
 
 .WhiteText{
-    /*
-    position: absolute;
-    left: 12px;
-    right: 11px;
-    top: 25%;
-    bottom: 25%; */
-
     align-items: center;
     text-align: center;
     margin-top: 1em ;
@@ -128,19 +108,12 @@ html{
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height, or 125% */
-
-    text-align: center;
-
-    /* Grey/Grey 1 */
-
     color: #F6F6F6;
-
 }
 
 #naranjita{
     color: #FFAE81;
-    font-family: "Open Sans";
+    font-family: Montserrat, sans-serif;
     font-size: 13px;
 }
 .politicas{
@@ -148,16 +121,11 @@ html{
 }
 
 .norton img{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     position: absolute;
-
-
-    /* Rectangle 9 */
-
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin-bottom: 50px;
     margin: 23px;
     margin-left: 40%;
@@ -166,7 +134,6 @@ html{
 
 .progressBar{
     position: absolute;
-    /*top: 4%;*/
     left: 11%;
     width: 750px;
     height: 100px;
@@ -178,5 +145,5 @@ html{
 
 th, td {
     padding: 1em;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat, sans-serif;
 }
