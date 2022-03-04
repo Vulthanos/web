@@ -45,8 +45,8 @@
     position: absolute;
     width: auto;
     height: auto;
-    left: 0%;
-    right: 0%;
+    left: 0;
+    right: 0;
     bottom: 10%;
     margin-bottom: 3em;
     margin: 1.44em;
@@ -64,7 +64,6 @@
     font-weight: bold;
     font-size: 1em;
     line-height: 1.25em;
-    text-align: center;
     color: #F6F6F6;
 }
 
@@ -76,8 +75,8 @@
 
 th, td {
     padding: 0.625em;
-    margin-bottom: 0%;
-    padding-left: 0%;
+    margin-bottom: 0;
+    padding-left: 0;
     font-family: Montserrat, sans-serif;
 }
 
@@ -295,9 +294,9 @@ hr{
 .norton img{
     font-family: Montserrat, sans-serif;
     position: absolute;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin-bottom: 3.125em;
     margin: 1.44em;
     margin-left: 40%;
@@ -332,6 +331,10 @@ hr{
 }
 .C3{
     margin: 2.5em;
+}
+
+.veg {
+    margin-top: 0.3em;
 }
 
 .progressBar{
