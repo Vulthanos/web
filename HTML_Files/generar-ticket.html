@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="../CSS_Files/generar-ticket-style.css" rel="stylesheet">
+    <link href="generar-ticket2.html">
+    <link href="../CSS_Files/generar-ticket2-style.css">
+    <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
+    <title>VULTHANOS</title>
+</head>
+<body>
+<section class="titulo-central">Ayuda</section>
+
+<section class="titulo-seccion"><strong>Genere un ticket</strong></section>
+<section class="linea-temporal">
+    <ul>
+        <li class="paso1" style="text-decoration:none">Informacion el pedido</li>
+        <li class="paso2" style="text-decoration:none">Informacion adicional</li>
+    </ul>
+</section>
+
+<section class="contenedor-informacion">
+    <section class="informacion-pedido"><span><strong>Informacion del pedido</strong></span></section>
+    <form>
+        <section class="id-pedido">
+            <label for="orderId"><strong>Id del pedido</strong></label>
+            <input type="text" maxlength="50"  id="orderId"  tabindex="1" value="">
+            <p>Puede encontrar el id del producto en el correo de confirmacion o en el apartado <a href=" " class="link-pedidos" style="text-decoration:none" target="_blank">Mis pedidos</a></p>
+        </section>
+
+        <section class="email-pedido">
+            <label for="orderEmail"><strong>Email del pedido</strong></label>
+            <input type="email" maxlength="200" id="orderEmail" tabindex="2" value="">
+            <p>El correo electronico que has usado en la compra o en la creacion de la cuenta</p>
+        </section>
+
+        <section class="metodo-pago">
+            <label for="orderMethod"><strong>Metodo de pago</strong></label>
+            <input type="text" maxlength="50" id="orderMethod" tabindex="3" value="">
+            <p>Metodo de pago usado durante el proceso de compra</p>
+        </section>
+
+        <button class="continuar" >
+            <a href="generar-ticket2.html" style="text-decoration:none" class="boton-continuar"> <span>Continuar</span> </a>
+        </button>
+    </form>
+</section>
+
+</body>
+</html>
