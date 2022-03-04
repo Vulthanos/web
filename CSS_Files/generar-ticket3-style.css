@@ -25,6 +25,13 @@ h1{
     font-size: 1em;
     top: 15em;
     left: 10em;
+    width: 8.8125em;
+    text-align: center;
+}
+
+.paso2 {
+    width: 100%;
+    margin-top: 2em;
 }
 
 /*Texto e icono central*/
