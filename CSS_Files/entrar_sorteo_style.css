@@ -33,6 +33,7 @@ body{
     position: relative;
     top: 23em;
     left: 20em;
+    width: 26.75em;
 }
 
 /*Seccion para introducir el apellido*/
@@ -40,6 +41,7 @@ body{
     position: relative;
     top: 28em;
     left: 20em;
+    width: 26.75em;
 }
 
 /*Seccion para introducir el correo electronico*/
@@ -47,12 +49,14 @@ body{
     position: relative;
     top: 32em;
     left: 20em;
+    width: 26.75em;
 }
 
 .imagen-sorteo{
     position: relative;
     top: 10em;
     left: 70em;
+    width: 18.75em;
 }
 
 button{
@@ -69,4 +73,3 @@ button{
 .boton-entrar{
     color: black;
 }
-

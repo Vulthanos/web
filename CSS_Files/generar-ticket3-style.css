@@ -25,13 +25,13 @@ h1{
     font-size: 1em;
     top: 15em;
     left: 10em;
-    width: 8.8125em;
-    text-align: center;
+    width: 26.75em;
 }
 
-.paso2 {
-    width: 100%;
-    margin-top: 2em;
+.linea-temporal{
+    position: absolute;
+    top: 19em;
+    left: 42em;
 }
 
 /*Texto e icono central*/
@@ -39,14 +39,14 @@ h1{
     position: relative;
     text-align: center;
     font-size: large;
-    top: 20em;
+    top: 24em;
 }
 
 /*Volver a home*/
 button{
     position: relative;
     left: 45.5%;
-    top: 28em;
+    top: 34em;
     background: #FFA16D;
     border-radius: 0.375em;
     width: 14em;
@@ -54,4 +54,3 @@ button{
     border: none;
     color: black;
 }
-

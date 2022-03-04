@@ -8,11 +8,11 @@ body{
     background: #fff;
 }
 
-.header-newsletter{
-    text-align: center;
+.contenedor-newsletter{
     position: absolute;
-    margin-top: 12em;
-    margin-left: 12em;
+    margin: 14em;
+    text-align: center;
+
 }
 
 /*Ambos botones de la newsletter*/
@@ -20,12 +20,14 @@ body{
     text-align: center;
     position: absolute;
     top: 55%;
-    left: 45%;
+    left: 27em;
     font-size: 1.5em;
 }
 
 /*recuadro del formulario*/
 .formulario {
+    position: absolute;
+    top: 20em;
     background: #FFA16D;
     width: 15em;
     height: 3.75em;
@@ -40,14 +42,14 @@ body{
 
 /*boton de suscribete*/
 button{
+    position: absolute;
     background: none;
     width: 6.25em;
     height: 2em;
     border-radius: 0.375em;
     border: none;
     text-align: center;
-    position: absolute;
-    top: 61%;
-    left: 47.5%;
+    top: 25em;
+    left: 43.5em;
     font-size: 1em;
 }

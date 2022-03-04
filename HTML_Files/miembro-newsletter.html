@@ -2,10 +2,10 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="/CSS_Files/miembro-newsletter-style.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="../CSS_Files/miembro-newsletter-style.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
         <title>VULTHANOS</title>
     </head>
@@ -31,19 +31,22 @@
             <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
         </header>
 
-        <section class="header-newsletter">
-            <h1>Newsletter de Vulthanos™</h1><br>
-            <h2>Suscríbete al boletín informativo para no perderte las ofertas más importantes de nuestra comunidad, productos, sorteos...</h2><br>
-            <h3><small><i>Suscribiendote, estas de acuerdo con los terminos y condiciones de uso y la politica de privacidad, entendiendo que Vulthanos™ recibira tu correo electronico</i></small> </h3>
+        <section class="contenedor-newsletter">
+            <section class="header-newsletter">
+                <h1>Newsletter de Vulthanos™</h1><br>
+                <h2>Suscríbete al boletín informativo para no perderte las ofertas más importantes de nuestra comunidad, productos, sorteos...</h2><br>
+                <h3><small><i>Suscribiendote, estas de acuerdo con los terminos y condiciones de uso y la politica de privacidad, entendiendo que Vulthanos™ recibira tu correo electronico</i></small> </h3>
+            </section>
+
+            <section class="formulario-entrada">
+                <input class="formulario" placeholder="Tu email..." title="Suscríbete al boletín de Newsletter de la comunidad Vulthanos™" type="email" name="member[email]" id="member_email">
+            </section>
+
+            <button>
+                <a href="profile_page.html" style="text-decoration:none" target="_blank"> <span>Suscribete</span> </a>
+            </button>
         </section>
 
-        <section class="formulario-entrada">
-            <input class="formulario" placeholder="Tu email..." title="Suscríbete al boletín de Newsletter de la comunidad Vulthanos™" type="email" name="member[email]" id="member_email">
-        </section>
-
-        <button>
-            <a href="profile_page.html" style="text-decoration:none" target="_blank"> <span>Suscribete</span> </a>
-        </button>
 
         <footer>
             <ul class="info">

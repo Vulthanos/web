@@ -12,6 +12,7 @@ body{
 .titulo-central{
     position: relative;
     top: 5em;
+    left: 28em;
     text-align: center;
     font-size: 1.875em;
     font-style: normal;
@@ -105,5 +106,5 @@ h1{
     position: absolute;
     list-style-type: none;
     top: 42.5em;
-    left: 80em;
+    left: 78em;
 }

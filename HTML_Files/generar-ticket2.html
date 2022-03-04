@@ -1,107 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="/CSS_Files/generar-ticket2-style.css" rel="stylesheet">
-        <link href="generar-ticket.html">
-        <link href="/CSS_Files/generar-ticket-style.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
-        <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
-        <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
-        <title>VULTHANOS</title>
-    </head>
-    <body>
-        <header class="header">
-            <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
-            <nav>
-                <ul>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
-                </ul>
-            </nav>
-            <div class="buscar"><label>
-                <input type="text" placeholder="Buscar" required>
-                <img class="lupa" src="/IMGS/header/lupa.png" alt="">
-            </label></div>
-            <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-            <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
+    <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="../CSS_Files/generar-ticket2-style.css" rel="stylesheet">
+    <link href="generar-ticket.html">
+    <link href="../CSS_Files/generar-ticket-style.css">
+    <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
+    <title>VULTHANOS</title>
+</head>
+<body>
 
-        <section class="titulo-central">Ayuda</section>
-        <h1><strong>Genere un ticket</strong></h1>
+<header class="header">
+    <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
+    <nav>
+        <ul>
+            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
+            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
+            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
+            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
+            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
+            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
+        </ul>
+    </nav>
+    <div class="buscar"><label>
+        <input type="text" placeholder="Buscar" required>
+        <img class="lupa" src="/IMGS/header/lupa.png" alt="">
+    </label></div>
+    <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
+    <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
+</header>
 
-        <section class="linea-temporal">
-            <ul>
-                <li class="paso1" style="text-decoration:none">Informacion el pedido</li>
-                <li class="paso2" style="text-decoration:none">Informacion adicional</li>
-            </ul>
+<section class="titulo-central">Ayuda</section>
 
+<h1><strong>Genere un ticket</strong></h1>
+
+<section class="linea-temporal">
+    <img src="/IMGS/barra_progreso_ticket1.png" alt="barra progreso 1">
+</section>
+
+<h2><strong>Detalles del pedido</strong></h2>
+
+<form>
+    <section class="correo">
+        <label for="contactEmail">
+            <span class="email"><strong>Correo electronico de contacto</strong></span>
+        </label>
+        <input type="email" maxlength="200" name="contactEmail" id="contactEmail" value=" ">
+    </section>
+
+    <section class="comentario-extra">
+        <label for="comentario">
+            <span class="caja-comentario"><strong>¿Algo que añadir?</strong></span>
+            <p>No dudes en añadir cualquier dato o comentario que cree que podria ayudarnos a solventar el problema</p>
+        </label>
+        <textarea required=""  id="comentario" class="inputForm" maxlength="2000" placeholder="Proporcione detalles importantes aquí ..."></textarea>
+    </section>
+
+    <section class="imagenes">
+        <span class="comentario-imagenes"><strong>Imagen adicional</strong></span>
+        <p>Puede adjuntar una imagen que nos ayude a comprender el problema</p>
+
+        <section tabindex="0" class="cuadro-imagenes">
+            <input accept="image/jpeg, image/jpg, image/png" type="file" autocomplete="off" tabindex="-1" style="display: none;">
+            <span>Arrastra o suelta la imagen</span>
+            <button class="subir-imagenes" type="button">Seleccionar imagenes</button>
+            <p style="color:#FFA16D"><small>Formato permitido: PNG, JPG, JPEG</small></p>
         </section>
+    </section>
 
-        <h2><strong>Detalles del pedido</strong></h2>
+    <button class="crear-ticket" type="submit">
+        <a href="generar-ticket3.html" style="text-decoration:none">Crear ticket</a>
+    </button>
+</form>
 
-        <form>
-            <section class="correo">
-                <label for="contactEmail">
-                    <span class="email"><strong>Correo electronico de contacto</strong></span>
-                </label>
-                <input type="email" maxlength="200" name="contactEmail" id="contactEmail" value=" ">
-            </section>
 
-            <section class="comentario-extra">
-                <label for="comentario">
-                    <span class="caja-comentario"><strong>¿Algo que añadir?</strong></span>
-                    <p>No dudes en añadir cualquier dato o comentario que cree que podria ayudarnos a solventar el problema</p>
-                </label>
-                <textarea required=""  id="comentario" class="inputForm" maxlength="2000" placeholder="Proporcione detalles importantes aquí ..."></textarea>
-            </section>
+<footer>
+    <ul class="info">
+        <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
+        <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
+        <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
+    </ul>
+    <ul class="ayuda">
+        <li><a href="help.html" class="bold-footer">AYUDA</a></li>
+        <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
+        <li><a href="help.html" class="regular-footer">GENERA UN TICKET</a></li>
+    </ul>
+    <ul class="comunidad">
+        <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
+        <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
+        <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
+    </ul>
+    <ul class="redes">
+        <li class="bold-footer">REDES SOCIALES</li>
+        <li class="content"><a href="" target="_blank"><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
+        <li><a href="" target="_blank"><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
+        <li class="content"><a href="" target="_blank"><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
+        <li><a href="" target="_blank"><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
+    </ul>
+</footer>
 
-            <section class="imagenes">
-                <span class="comentario-imagenes"><strong>Imagen adicional</strong></span>
-                <p>Puede adjuntar una imagen que nos ayude a comprender el problema</p>
-
-                <section tabindex="0" class="cuadro-imagenes">
-                    <input accept="image/jpeg, image/jpg, image/png" type="file" autocomplete="off" tabindex="-1" style="display: none;">
-                    <span>Arrastra o suelta la imagen</span>
-                    <button class="subir-imagenes" type="button">Seleccionar imagenes</button>
-                    <p style="color:#FFA16D"><small>Formato permitido: PNG, JPG, JPEG</small></p>
-                </section>
-            </section>
-
-            <button class="crear-ticket" type="submit">
-                <a href="generar-ticket3.html" style="text-decoration:none">Crear ticket</a>
-            </button>
-        </form>
-
-        <footer>
-            <ul class="info">
-                <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
-                <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
-                <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
-            </ul>
-            <ul class="ayuda">
-                <li><a href="help.html" class="bold-footer">AYUDA</a></li>
-                <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
-                <li><a href="help.html" class="regular-footer">GENERA UN TICKET</a></li>
-            </ul>
-            <ul class="comunidad">
-                <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
-                <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
-                <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
-            </ul>
-            <ul class="redes">
-                <li class="bold-footer">REDES SOCIALES</li>
-                <li class="content"><a href="" target="_blank"><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
-                <li><a href="" target="_blank"><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
-                <li class="content"><a href="" target="_blank"><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
-                <li><a href="" target="_blank"><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
-            </ul>
-        </footer>
-
-    </body>
+</body>
 </html>
