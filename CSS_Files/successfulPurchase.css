@@ -3,7 +3,6 @@ html{
     height: 100%;
 }
 
-
 #successful{
     width: 10px ;
     height: auto;
@@ -17,29 +16,19 @@ html{
 }
 
 .TextoCompraFinal{
-    /* Pago completado exitosamente. */
     margin-top: 1%;
     margin-left: 15%;
     position: absolute;
-
-    /*
-    width: 646px;
-    height: 32px;
-*/
     width: auto;
     height: auto;
-
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 20px;
-    /* or 56% */
-
     display: flex;
     align-items: flex-end;
     letter-spacing: 0.3px;
-
     color: #000000;
 }
 
@@ -47,15 +36,9 @@ html{
     margin-top: 5%;
     margin-left: 23%;
     position: absolute;
-    /*
-    width: 509px;
-    height: 32px;
-    */
-
     width: auto;
     height: auto;
-
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -71,49 +54,24 @@ html{
 
 
 .OrangeRectangle{
-
     position: absolute; left: 65%;
-    width: 447px;
-    height: 684px;
+    width: 28em;
+    height: 43em;
     background: #FFAE81;
     border-radius: 30% 10%;
-
-    /*margin-top: 7%;*/
-
-
-
-    /* Shadow 1 */
-    /*
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 52px;
-    float: right;
-    margin: auto; */
 }
 
-
 .WhiteRectangle{
-    position: absolute; /* right: 6em;*/
-    width: 270px;
-    height: 477px;
+    position: absolute;
+    width: 17em;
+    height: 30em;
     background: #FFFFFF;
     border-radius: 10%;
-    padding: 40px;
+    padding: 2.5em;
     margin-left: 2%;
     left: 8%;
     right: 8%;
     top: 10%;
-
-
-
-    /*left: 0px;
-    top: 0px;
-    float: right;
-    margin: auto;
-    position: relative; */
-
-    /* Shadow 1 */
-    /*box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 52px; */
 }
 
 .Rectangle{
@@ -186,7 +144,7 @@ html{
     font-size: 13px;
 }
 .politicas{
-    padding-top: 10px;
+    padding-top: 16px;
 }
 
 .norton img{
@@ -216,4 +174,9 @@ html{
 
 #AllSuccess{
     padding-top: 120px;
+}
+
+th, td {
+    padding: 1em;
+    font-family: "Montserrat", sans-serif;
 }

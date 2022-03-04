@@ -1,9 +1,9 @@
 input[type=text], select {
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 0.75em 1.25em;
+    margin: 0.5em 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 0.1em solid #ccc;
+    border-radius: 0.25em;
     box-sizing: border-box;
     clear: both;
     width: 100%;
@@ -11,7 +11,7 @@ input[type=text], select {
 
 input[type=text]{
     float: left;
-    margin: 10px;
+    margin: 0.625em;
     width: 75%;
 }
 
@@ -19,10 +19,10 @@ input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 0.875em 1.25em;
+    margin: 0.5em 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25em;
     cursor: pointer;
 }
 
@@ -31,15 +31,14 @@ input[type=submit]:hover {
 }
 
 div {
-    border-radius: 5px;
+    border-radius: 0.32em;
     /*background-color: #f2f2f2;*/
     /*padding: 20px;*/
 }
 
 th, td {
-    padding: 10px;
+    padding: 0.625em;
     margin-bottom: 0;
-    padding-left: 0;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -53,19 +52,19 @@ th, td {
 
 .OrangeRectangle{
     position: absolute; left: 65%;
-    width: 447px;
-    height: 684px;
+    width: 28em;
+    height: 43em;
     background: #FFAE81;
     border-radius: 30% 10%;
 }
 
 .WhiteRectangle{
     position: absolute;
-    width: 270px;
-    height: 477px;
+    width: 17em;
+    height: 30em;
     background: #FFFFFF;
     border-radius: 10%;
-    padding: 40px;
+    padding: 2.5em;
     margin-left: 2%;
     left: 8%;
     right: 8%;
@@ -74,15 +73,15 @@ th, td {
 
 .Rectangle{
     float: right;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    perspective: 100px;
+    box-shadow: 0 0.125em 0.375em rgba(0, 0, 0, 0.14);
+    perspective: 6.25em;
 }
 
 .testLeft {
     float: left;
     height: auto;
     margin-right: 4%;
-    margin-top: 0%;
+    margin-top: 0;
     margin-left: 8%;
 }
 
@@ -92,8 +91,8 @@ th, td {
     margin-top: 1em ;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1em;
+    line-height: 1.25em;
     color: #F6F6F6;
 }
 
@@ -102,10 +101,9 @@ th, td {
     position: absolute;
     width: auto;
     height: auto;
-    left: 0%;
-    right: 0%;
+    left: 0;
+    right: 0;
     bottom: 10%;
-    margin-bottom: 3em;
     margin: 1.44em;
     background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
     box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
@@ -115,33 +113,31 @@ th, td {
 #naranjita{
     color: #FFAE81;
     font-family: "Montserrat", sans-serif;
-    font-size: 13px;
+    font-size: 0.82em;
 }
 
 th, td {
-    padding: 15px;
-    margin-bottom: 0%;
-    padding-left: 0%;
+    padding: 1em;
+    margin-bottom: 0;
     font-family: "Montserrat", sans-serif;
 }
 
 .Linea{
     position: absolute;
-    width: 300px;
+    width: 19em;
     height: 0;
-    left: 20px;
+    left: 1.25em;
     bottom: 51%;
-    border: 1px solid #E0E0E0;
+    border: 0.0625em solid #E0E0E0;
 }
 
 .politicas{
-    padding-top: 10px;
+    padding-top: 0.625em;
 }
 
 label{
-    padding: 10px;
     margin-bottom: 0;
-    padding-left: 0;
+    padding: 0.625em 0 1.25em 0;
     font-family: Montserrat, sans-serif;
 }
 
@@ -149,8 +145,8 @@ label{
     position: absolute;
     top: 12%;
     left: 11%;
-    width: 750px;
-    height: 80px;
+    width: 47em;
+    height: 5em;
 }
 
 .norton img{
@@ -159,23 +155,21 @@ label{
     left: 0;
     right: 0;
     bottom: 0;
-    margin-bottom: 50px;
-    margin: 23px;
-    margin-left: 40%;
-    margin-top: 20%;
+    margin: 1.5em 1.5em 1.5em 40%;
+
 }
 
 #fcardnumber{
     text-align: center;
     background-image: url(/IMGS/purchase/creditCardLogo.png);
     background-repeat: no-repeat;
-    background-size: 60px;
+    background-size: 3.75em;
 }
 
 #lCVV{
     text-align: center;
     background-image: url(/IMGS/purchase/creditCardLogo.png);
-    background-size: 60px;
+    background-size: 3.75em;
     background-repeat: no-repeat;
 }
 
@@ -183,7 +177,7 @@ label{
     text-align: center;
     background-position-y: center;
     background-image: url("/IMGS/purchase/paypal.png");
-    background-size: 60px;
+    background-size: 3.75em;
     background-repeat: no-repeat;
 }
 
