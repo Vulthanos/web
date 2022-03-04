@@ -10,8 +10,11 @@ body{
 
 .header-newsletter{
     text-align: center;
-    margin: 17em;
+    position: absolute;
+    margin-top: 12em;
+    margin-left: 12em;
 }
+
 /*Ambos botones de la newsletter*/
 .formulario-entrada{
     text-align: center;
