@@ -2,35 +2,89 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>successfulPurchase</title>
+        <title>VULTHANOS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
-        <link rel="stylesheet" type="text/css" href="../CSS_Files/successfulPurchase.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/successfulPurchase.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
+        <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
     </head>
+
     <body>
+        <header class="header">
+            <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
+                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
+                </ul>
+            </nav>
+            <div class="buscar"><label>
+                <input type="text" placeholder="Buscar" required>
+                <img class="lupa" src="/IMGS/header/lupa.png" alt="">
+            </label></div>
+            <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
+            <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
+        </header>
 
-        <div class="contentPurchase">
-            <img class="progressBar" src="/IMGS/purchase/progressBar3.png" alt="progressBar">
-            <div id="successful"><img src="/IMGS/purchase/pagoexitoso.png" alt="successful" width="100" height="100"></div>
-        </div>
+        <div id="AllSuccess">
+            <div class="contentPurchase">
+                <img class="progressBar" src="/IMGS/purchase/progressBar3.png" alt="progressBar">
+                <div id="successful"><img src="/IMGS/purchase/pagoexitoso.png" alt="successful" width="100" height="100"></div>
+                <h1 class="TextoCompraFinal">Pago completado exitosamente.</h1>
+                <a href="index"> <h2 class="GoToMain">Ir a la página de inicio</h2> </a>
+            </div>
 
-        <h1 class="TextoCompraFinal">Pago completado exitosamente.</h1>
-        <h2 class="GoToMain">Ir a la página de inicio</h2>
+            <div class="Rectangle OrangeRectangle">
+                <div class="Rectangle WhiteRectangle">
+                    <h4 class="HeadingResumen">Confirmación</h4>
 
-        <div class="Rectangle OrangeRectangle">
-            <div class="Rectangle WhiteRectangle">
-                <!--<h1 class="CheckOutTitle"> Check Out</h1>-->
-                <h4 class="HeadingResumen">Confirmación</h4>
-                <p>Te hemos enviado un correo a tu e-mail de
-                    registro. Revisa tu bandeja de entrada.</p>
+                    <table width="250" cellspacing="0">
+                        <tbody>
+                        <tr class="TableAlign">
+                            <td>Te hemos enviado un correo a tu e-mail de
+                                registro. Revisa tu bandeja de entrada.</td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-                <div class="Linea"></div>
+                    <label class="politicas">¿No lo has recibido? <a href="https://bit.ly/3K8VERM">Clica aquí</a> </label>
 
-                <label class="politicas">¿No lo has recibido? <a href="https://bit.ly/3K8VERM">Clica aquí</a> </label>
+                    <a href="index"> <div class="BlueRectangle WhiteText"><p> Ir a la página de inicio</p></div> </a>
 
-                <div class="BlueRectangle TextoBlanco"><p> Ir a la página de inicio</p></div>
-
-                <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
+                    <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
+                </div>
             </div>
         </div>
+
+        <footer>
+            <ul class="info">
+                <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
+                <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
+                <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
+            </ul>
+            <ul class="ayuda">
+                <li><a href="help.html" class="bold-footer">AYUDA</a></li>
+                <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
+                <li><a href="help.html" class="regular-footer">GENERA UN TICKET</a></li>
+            </ul>
+            <ul class="comunidad">
+                <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
+                <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
+                <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
+            </ul>
+            <ul class="redes">
+                <li class="bold-footer">REDES SOCIALES</li>
+                <li class="content"><a href=""><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
+                <li><a href=""><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
+                <li class="content"><a href=""><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
+                <li><a href=""><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
+            </ul>
+        </footer>
     </body>
 </html>

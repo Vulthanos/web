@@ -3,209 +3,142 @@ html{
     height: 100%;
 }
 
-
 #successful{
-    width: 10px ;
+    width: 0.625em;
     height: auto;
-    margin-top: 30%;
-    margin-left: 35%;
+    margin-top: 20%;
+    margin-left: 40%;
 }
 
-
+.contentPurchase{
+    width: 70%;
+    float: left;
+}
 
 .TextoCompraFinal{
-    /* Pago completado exitosamente. */
     margin-top: 1%;
-    margin-left: 18%;
+    margin-left: 15%;
     position: absolute;
-
-    /*
-    width: 646px;
-    height: 32px;
-*/
     width: auto;
     height: auto;
-
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 20px;
-    /* or 56% */
-
+    font-size: 2.25em;
+    line-height: 1.25em;
     display: flex;
     align-items: flex-end;
-    letter-spacing: 0.3px;
-
+    letter-spacing: 0.02em;
     color: #000000;
 }
 
 .GoToMain{
-    margin-top: 10%;
-    margin-left: 25%;
+    margin-top: 5%;
+    margin-left: 23%;
     position: absolute;
-    /*
-    width: 509px;
-    height: 32px;
-    */
-
     width: auto;
     height: auto;
-
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 20px;
-    /* or 83% */
-
+    font-size: 1.5em;
+    line-height: 1.25em;
     display: flex;
     align-items: flex-end;
-    letter-spacing: 0.3px;
-
+    letter-spacing: 0.02em;
     color: #0075FF;
 }
 
-
 .OrangeRectangle{
-
     position: absolute; left: 65%;
-    width: 447px;
-    height: 684px;
+    width: 28em;
+    height: 43em;
     background: #FFAE81;
     border-radius: 30% 10%;
-
-    /*margin-top: 7%;*/
-
-
-
-    /* Shadow 1 */
-    /*
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 52px;
-    float: right;
-    margin: auto; */
 }
 
-
 .WhiteRectangle{
-    position: absolute; /* right: 6em;*/
-    width: 270px;
-    height: 477px;
+    position: absolute;
+    width: 17em;
+    height: 30em;
     background: #FFFFFF;
     border-radius: 10%;
-    padding: 40px;
+    padding: 2.5em;
     margin-left: 2%;
     left: 8%;
     right: 8%;
     top: 10%;
-
-
-
-    /*left: 0px;
-    top: 0px;
-    float: right;
-    margin: auto;
-    position: relative; */
-
-    /* Shadow 1 */
-    /*box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    border-radius: 52px; */
 }
 
 .Rectangle{
     float: right;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
-    perspective: 100px;
-
+    box-shadow: 0 0.125em 0.38em rgba(0, 0, 0, 0.14);
+    perspective: 6.25em;
+    margin-top: auto;
 }
 
 .testLeft {
     float: left;
     height: auto;
     margin-right: 4%;
-    margin-top: 0%;
+    margin-top: 0;
     margin-left: 8%;
 }
 
-
 .BlueRectangle{
-
     position: absolute;
     width: auto;
     height: auto;
-
-    /* Rectangle 9 */
-
-    left: 0%;
-    right: 0%;
+    left: 0;
+    right: 0;
     bottom: 10%;
-
-    margin-bottom: 50px;
-    margin: 23px;
-
-    /* Gradient/Blue Gradient 1 */
+    margin: 1.5em;
     background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
-
-    box-shadow: 0px 4px 4px rgba(14, 53, 191, 0.25);
-    border-radius: 6px;
+    box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
+    border-radius: 0.38em;
 }
 
-.TextoBlanco{
-    /*
-    position: absolute;
-    left: 12px;
-    right: 11px;
-    top: 25%;
-    bottom: 25%; */
-
+.WhiteText{
     align-items: center;
     text-align: center;
     margin-top: 1em ;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height, or 125% */
-
-    text-align: center;
-
-    /* Grey/Grey 1 */
-
+    font-size: 1em;
+    line-height: 1.25em;
     color: #F6F6F6;
-
 }
 
 #naranjita{
     color: #FFAE81;
-    font-family: "Open Sans";
-    font-size: 13px;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.81em;
 }
 .politicas{
-    padding-top: 10px;
+    padding-top: 1em;
 }
 
 .norton img{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     position: absolute;
-
-
-    /* Rectangle 9 */
-
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-
-    margin-bottom: 50px;
-    margin: 23px;
-    margin-left: 40%;
-    margin-top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 20% 1.44em 1.44em 40%;
 }
 
 .progressBar{
     position: absolute;
-    top: 4%;
     left: 11%;
-    width: 750px;
-    height: 100px;
+    width: 47em;
+    height: 6.25em;
+}
+
+#AllSuccess{
+    padding-top: 7.5em;
+}
+
+th, td {
+    padding: 1em;
+    font-family: Montserrat, sans-serif;
 }
