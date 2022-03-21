@@ -1,6 +1,6 @@
 var login_open = document.getElementById('user_profile'),
     login_overlay = document.getElementById('login_popup_overlay'),
-    login_popup = document.getElementById('logging_popup'),
+    login_popup = document.getElementById('login_popup'),
     login_close = document.getElementById('btn-cerrar-login_popup');
 
 login_open.addEventListener('click', function () {
