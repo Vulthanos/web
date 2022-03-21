@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -26,7 +27,6 @@ body{
     left: 10.1875em ;
     top: 13em;
 }
-
 
 /*Seccion para introducir el nombre*/
 .nombre{
