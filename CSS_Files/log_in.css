@@ -42,19 +42,18 @@
     margin-right: auto;
 }
 
-.eye {
+.login_eye {
     position: absolute;
     right: 4em;
     top: 29em;
     visibility: hidden;
-    z-index: 1000;
 }
 
-#vision {
+#login_vision {
     top: 29.2em;
 }
 
-.eye.activation {
+.login_eye.login_activation {
     visibility: visible;
 }
 
@@ -114,7 +113,6 @@
     align-items: center;
     justify-content: center;
     visibility: hidden;
-    z-index: 2;
 }
 
 .login_popup_overlay.login_active {
@@ -156,11 +154,11 @@
     opacity: 0;
 }
 
-.login_popup .t1 {
+.login_popup .login_t1 {
     opacity: 0;
 }
 
-.login_popup .t2 {
+.login_popup .login_t2 {
     opacity: 0;
 }
 
@@ -171,12 +169,12 @@
     transform: scale(0.95);
 }
 
-.login_popup.login_active .t1 {animation: Title1_animation .8s ease .5s forwards;}
-.login_popup.login_active .t2 {animation: Title2_animation .8s ease .5s forwards;}
-.login_popup.login_active .login_form_field {animation: Input_animation 1s linear 1s forwards;}
-.login_popup.login_active .login_popup_footer {animation: Footer_animation .8s ease .5s forwards;}
+.login_popup.login_active .login_t1 {animation: login_Title1_animation .8s ease .5s forwards;}
+.login_popup.login_active .login_t2 {animation: login_Title2_animation .8s ease .5s forwards;}
+.login_popup.login_active .login_form_field {animation: login_Input_animation 1s linear 1s forwards;}
+.login_popup.login_active .login_popup_footer {animation: login_Footer_animation .8s ease .5s forwards;}
 
-@keyframes Title1_animation {
+@keyframes login_Title1_animation {
     from {
         opacity: 0;
         transform: translateY(-1.5625em);
@@ -187,7 +185,7 @@
     }
 }
 
-@keyframes Title2_animation {
+@keyframes login_Title2_animation {
     from {
         opacity: 0;
         transform: translateY(1.5625em);
@@ -198,12 +196,12 @@
     }
 }
 
-@keyframes Input_animation {
+@keyframes login_Input_animation {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-@keyframes Footer_animation {
+@keyframes login_Footer_animation {
     from {
         opacity: 0;
         transform: translateY(1.5625em);

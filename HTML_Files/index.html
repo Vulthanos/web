@@ -7,12 +7,14 @@
         <link rel="stylesheet" type="text/css" href="/CSS_Files/fonts.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/index.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/log_in.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/sing_up.css">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <style> BODY{ font-family: Montserrat, monospace; } </style>
         <title>VULTHANOS</title>
     </head>
+
     <body>
         <header class="header">
             <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
@@ -52,16 +54,16 @@
                 <form action="">
                     <section>
                         <ul class="login_popup_title">
-                            <li class="bold t1"><a>INICIA SESIÓN</a></li>
-                            <li class="regular t2">¿No tienes cuenta? <a  href="sing_up.html" class="link">Registrate</a></li>
+                            <li class="bold login_t1"><a>INICIA SESIÓN</a></li>
+                            <li class="regular login_t2">¿No tienes cuenta? <a class="link" id="open_singup">Registrate</a></li>
                         </ul>
                     </section>
                     <section>
                         <label class="login_form_field"><input class="text-field bold" id="login_email" type="email" name="correo" placeholder="Email" required></label>
                         <label class="login_form_field">
                             <input class="text-field bold" id="login_password" type="password" name="password" placeholder="Password" required>
-                            <img class="eye activation" id="sin_vision" src="/IMGS/sing_up/ojo_cerrado.png" alt="">
-                            <img class="eye" id="vision" src="/IMGS/sing_up/ojo_abierto.png" alt="">
+                            <img class="login_eye login_activation" id="login_sin_vision" src="/IMGS/sing_up/ojo_cerrado.png" alt="">
+                            <img class="login_eye" id="login_vision" src="/IMGS/sing_up/ojo_abierto.png" alt="">
                         </label>
                     </section>
                     <section class="login_popup_footer">
@@ -73,6 +75,39 @@
         </div>
 
         <script src="/JS_Files/login_script.js"></script>
+
+        <div class="singup_popup_overlay" id="singup_popup_overlay">
+            <div class="singup_popup" id="singup_popup">
+                <a href="#" id="btn-cerrar-singup_popup" class="btn-cerrar-singup_popup"><i class="fas fa-times"></i></a>
+                <form action="">
+                    <section class="singup_popup_header">
+                        <ul class="singup_popup_title">
+                            <li class="bold singup_t1"><a>REGISTRARSE</a></li>
+                            <li class="regular singup_t2">¿Ya tienes cuenta? <a class="link" id="open_login">Identificate</a></li>
+                        </ul>
+                    </section>
+                    <section class="singup_popup_content">
+                        <label class="singup_form_field"><input class="text-field  bold" type="text" name="nombre" id="name-field" placeholder="Nombre" required></label>
+                        <label class="singup_form_field"><input class="text-field  bold" type="text" name="apellidos" id="surname-field" placeholder="Apellido" required></label>
+                        <label class="singup_form_field"><input class="text-field  bold" type="email" name="correo" id="email-field" placeholder="Email" required></label>
+                        <label class="singup_form_field">
+                            <input class="text-field  bold" type="password" name="password" id="singup_password" placeholder="Password" required>
+                            <img class="singup_eye singup_activation" id="singup_sin_vision" src="/IMGS/sing_up/ojo_cerrado.png" alt="">
+                            <img class="singup_eye" id="singup_vision" src="/IMGS/sing_up/ojo_abierto.png" alt="">
+                        </label>
+                        <div class="use_conditions">
+                            <input type="checkbox" id="selector">
+                            <label for="selector" class="selector-lbl"><a class="regular">He leido y acpetado las <a class="link">Condiciones de uso</a></a></label>
+                        </div>
+                    </section>
+                    <section class="singup_popup_footer">
+                        <a href="index.html" class="singup_item"><button class="bold singup_btn">Registrate</button></a>
+                    </section>
+                </form>
+            </div>
+        </div>
+
+        <script src="/JS_Files/singup_script.js"></script>
 
         <footer>
             <ul class="info">
