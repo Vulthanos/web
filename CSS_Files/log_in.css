@@ -16,6 +16,7 @@
 
 .login_popup .link:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .login_popup .regular {
@@ -41,10 +42,20 @@
     margin-right: auto;
 }
 
-#sin_vision {
+.eye {
     position: absolute;
     right: 4em;
     top: 29em;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#vision {
+    top: 29.2em;
+}
+
+.eye.activation {
+    visibility: visible;
 }
 
 .login_popup .selector {
