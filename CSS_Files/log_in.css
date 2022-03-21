@@ -57,6 +57,10 @@
     visibility: visible;
 }
 
+.login_eye:hover {
+    cursor: pointer;
+}
+
 .login_popup .selector {
     width: 1.375em;
     height: 1.375em;
