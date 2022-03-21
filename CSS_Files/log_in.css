@@ -1,41 +1,36 @@
-* {
-    margin:0;
-    padding:0;
-    font-family: Montserrat, sans-serif;
-    text-decoration: none;
-}
-
-ul {
+.login_popup_title {
     padding-top: 0.5em;
     padding-bottom: 1em;
     text-align: center;
 }
 
-.bold {
+.login_popup .bold {
     font-weight: bold;
     font-size: 2em;
+    color: #000000;
 }
 
-.link {
+.login_popup .link {
     color: #FF833D;
 }
 
-.link:hover {
+.login_popup .link:hover {
     text-decoration: underline;
 }
 
-.regular {
+.login_popup .regular {
     font-weight: bold;
     padding-top: 1em;
+    color: #000000;
 }
 
-label {
+.login_popup .login_form_field {
     padding-top: 5em;
     display: block;
     text-align: center;
 }
 
-.text-field {
+.login_popup .text-field {
     width: 18.9375em;
     height: 3.75em;
     background-color: #CEB7E5 ;
@@ -52,7 +47,7 @@ label {
     top: 26.8em;
 }
 
-.selector {
+.login_popup .selector {
     width: 1.375em;
     height: 1.375em;
     border: 0.0825em solid #000000;
@@ -61,36 +56,84 @@ label {
     left: 10em;
 }
 
-.selector:hover {
+.login_popup .selector:hover {
     cursor: pointer;
 }
-.selector:active {
+.login_popup .selector:active {
     background-color: #FFA16D;
 }
 
-footer {
+.login_popup .login_popup_footer {
     padding-top: 10em;
     text-align: center;
     left: 10em;
 
 }
 
-footer a {
-    padding-top: 1em;
+.login_popup .login_popup_footer .login_item {
     display: block;
 
 }
 
-button {
+.login_popup .login_btn {
     width: 18.9375em;
     height: 3.75em;
     background-color: #FFA16D ;
     border: none;
     border-radius: 1em;
     top: 9.46875em;
+    transition: .3s ease all;
 }
 
-button:hover {
+.login_popup .login_btn:hover {
     cursor: pointer;
+    background: rgba(255, 161, 109, .8);
 }
 
+/*PopUp*/
+
+.login_popup_overlay {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.login_popup_overlay.login_active {
+    visibility: visible;
+}
+
+.login_popup {
+    background: #F8F8F8;
+    box-shadow: 0 0 0.3125em 0 rgba(0,0,0,.3);
+    border-radius: 0.1875em;
+    padding: 1.25em;
+    text-align: center;
+    width: 38.5625em;
+    color: #000000;
+    z-index: 1000;
+
+}
+
+.login_popup .btn-cerrar-login_popup {
+    font-size: 1em;
+    line-height: 1em;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3s ease all;
+}
+
+.login_popup .btn-cerrar-login_popup:hover {
+    color: #000000;
+}
+
+
+/*PopUp Animations*/
