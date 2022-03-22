@@ -44,15 +44,17 @@
 }
 
 .slider_back {
-    right: 15em;
+    right: 18em;
 }
 .slider_next {
-    right: 13em;
+    right: 16em;
 }
 
 .slider_idicators {
     margin-top: 1em;
     max-width: 93%;
+    position: absolute;
+    left: 18em;
 }
 
 .slider_idicators .glider-dot {
