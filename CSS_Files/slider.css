@@ -26,10 +26,10 @@
 .slider_back, .slider_next {
     position: absolute;
     display: block;
-    width: 2.006875em;
-    height: 2.006875em;
+    width: fit-content;
+    height: fit-content;
     border: none;
-    top: calc(100% + 2.1875em);
+    top: calc(100% + 1.3em);
     cursor: pointer;
     line-height: 1.875em;
     text-align: center;
@@ -44,10 +44,10 @@
 }
 
 .slider_back {
-    right: 18em;
+    right: 20em;
 }
 .slider_next {
-    right: 16em;
+    right: 16.5em;
 }
 
 .slider_idicators {
@@ -55,6 +55,10 @@
     max-width: 93%;
     position: absolute;
     left: 18em;
+}
+
+.fa-circle-chevron-right, .fa-circle-chevron-left {
+    font-size: 2.006875em;
 }
 
 .slider_idicators .glider-dot {
