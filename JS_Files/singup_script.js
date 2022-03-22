@@ -40,20 +40,25 @@ singup_vision.addEventListener('click', function () {
     singup_vision.classList.remove('singup_activation');
 });
 
-const singup_password = document.getElementById('singup_password');
+const singup_password = document.getElementById('singup_password'),
+    singup_repit_password = document.getElementById('singup_repit_password');
 
 singup_sin_vision.addEventListener('click', function () {
     if (singup_vision.classList.contains('singup_activation')) {
         singup_password.type = "text";
+        singup_repit_password.type = "text";
     } else {
         singup_password.type = "password";
+        singup_repit_password.type = "password";
     }
 });
 
 singup_vision.addEventListener('click', function () {
     if (singup_vision.classList.contains('singup_activation')) {
         singup_password.type = "text";
+        singup_repit_password.type = "text";
     } else {
         singup_password.type = "password";
+        singup_repit_password.type = "password";
     }
 });
