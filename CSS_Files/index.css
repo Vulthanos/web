@@ -12,24 +12,6 @@ body {
     min-height: 100vh;
 }
 
-.slider {
-    width: 110.25em;
-    height: 51.4375em;
-    display: block;
-}
-
-.slider-img {
-    max-width: 110.25em;
-    max-height: 46.125em;
-    margin-top: 10em;
-}
-
-.slider-nav {
-    max-width: 110.25em;
-    height: 5.25em;
-    display: block;
-}
-
 figure label {
     margin: 0.5em;
 }
