@@ -17,6 +17,7 @@ header {
     overflow: hidden;
     background: none;
     margin-bottom: 2em;
+    z-index: 1;
 }
 
 header > nav {
