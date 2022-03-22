@@ -8,10 +8,22 @@ body{
     background: #fff;
 }
 
-/*Nombre de la pagina*/
-.titulo-central{
+
+.container{
+    width: 70%;
+    max-width: 60em;
+    padding: 35px 50px;
+    transform: translate(-50%,-50%);
     position: relative;
-    top: 5em;
+    left: 45em;
+    top: 50%;
+    border-radius: 10px;
+}
+
+/*Nombre de la pagina*/
+h1{
+    position: relative;
+    margin-top: 6em;
     text-align: center;
     font-size: 1.875em;
     font-style: normal;
@@ -19,89 +31,57 @@ body{
     color: #000000;
 }
 
-/*Titulo apartado Genere un ticket*/
-h1{
+h2{
     position: relative;
-    font-size: 1.5em;
-    top: 7em;
-    left: 10em;
-    width: 26.75em;
+    margin-top: 5em;
+}
 
+h3{
+    position: relative;
+    margin-top: 2em;
 }
 
 .linea-temporal{
-    position: absolute;
-    top: 15em;
-    left: 40em;
-}
-
-/*encabezado de detalles del pedido*/
-h2{
     position: relative;
-    font-size:1.20em;
-    top: 17em;
-    left: 8.5em;
-    width: 26.75em;
+    margin-top: 5em;
 }
 
-/*Seccion para introducir el correo electronico*/
-.correo{
+.columna-opciones{
     position: relative;
-    top: 21em;
-    left: 12em;
-    width: 26.75em;
+    margin-top: 4em;
 }
 
-/*texto en -algo que añadir-*/
-.comentario-extra{
+form{
+    width: 100%;
     position: relative;
-    top: 23em;
-    left: 10em;
-    width: 26.75em;
+
 }
 
-/*caja de comentario*/
-.inputForm{
-    height: 150px;
-    width: 350px;
+input{
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
 }
 
-/*comentario dentro de la caja de comentario*/
-::placeholder{
-    font-style: normal;
-    font-family: Montserrat, sans-serif;
+input:focus{
+    outline: none;
+    border-color: #FFA16D;
 }
 
-/*apartado añadir imagenes*/
-.imagenes{
-    position: relative;
-    top: 25em;
-    left: 10em;
-    width: 26.75em;
-}
-
-button{
-    background: #FFA16D;
-    border-radius: 0.375em;
-    border: none;
-    color: black;
-}
-
-/*boton de subir imagenes*/
 .subir-imagenes{
     position: relative;
-    width: 14em;
-    height: 3em;
-    top: 1em;
-    left: 15em;
-
+    border: none;
+    max-width: 15em;
+    max-height: 10em;
 }
 
-/*boton crear ticket*/
 .crear-ticket{
-    width: 13em;
-    height: 7em;
     position: relative;
-    left: 60%;
-    font-size: 1em;
+    margin-top: 5em;
+    border: none;
 }
+
+
