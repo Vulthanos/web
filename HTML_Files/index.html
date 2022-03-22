@@ -8,6 +8,9 @@
         <link rel="stylesheet" type="text/css" href="/CSS_Files/index.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/log_in.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/sing_up.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/slider.css">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -16,6 +19,7 @@
     </head>
 
     <body>
+
         <header class="header">
             <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
             <nav>
@@ -35,17 +39,27 @@
             <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
             <a ><img class="user" id="user_profile" src="/IMGS/header/user.png" alt=""></a>
         </header>
+
         <figure class="slider">
-            <a href="slider_result.html"><img class="slider-img" src="/IMGS/slider/pc_prueba.jpg" alt=""></a>
-            <nav class="slider-nav">
-                <label class="circulo_p uno"></label>
-                <label class="circulo_p dos"></label>
-                <label class="circulo_g"></label>
-                <label class="circulo_p tres"></label>
-                <label class="circulo_p cuatro"></label>
-                <img class="atras" src="/IMGS/slider/flecha_atras.png" alt="">
-                <img class="adelante" src="/IMGS/slider/flecha_adelante.png" alt="">
-            </nav>
+            <div class="slider_container">
+                <button aria-label="Atras" class="slider_nav slider_back"><i class="fas fa-chevron-circle-left"></i></button>
+                <div class="slider_list">
+                    <div class="slider_element">
+                        <img src="/IMGS/slider/pc_prueba.jpg" alt="">
+                    </div>
+                    <div class="slider_element">
+                        <img src="/IMGS/slider/pc_prueba1.jpeg" alt="">
+                    </div>
+                    <div class="slider_element">
+                        <img src="/IMGS/slider/pc_prueba2.jpeg" alt="">
+                    </div>
+                    <div class="slider_element">
+                        <img src="/IMGS/slider/pc_prueba3.jpg" alt="">
+                    </div>
+                </div>
+                <button aria-label="Adelante" class="slider_nav slider_next"><i class="fas fa-chevron-circle-right"></i></button>
+            </div>
+            <div role="tablist" class="slider_idicators"></div>
         </figure>
 
         <div class="login_popup_overlay" id="login_popup_overlay">
@@ -135,5 +149,8 @@
             </ul>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <script src="/JS_Files/slider.js"></script>
     </body>
 </html>
