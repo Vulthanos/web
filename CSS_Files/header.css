@@ -229,3 +229,7 @@ header > nav ul li a .baja {
     right: 0;
     top: 0;
 }
+
+.user:hover {
+    cursor: pointer;
+}
