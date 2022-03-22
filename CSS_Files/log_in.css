@@ -134,7 +134,7 @@
     transition: .3s ease all;
     transform: scale(0.6);
     opacity: 0;
-    margin-top: 4em;
+    margin-top: 4.5em;
 }
 
 .login_popup .btn-cerrar-login_popup {
@@ -170,7 +170,7 @@
 
 .login_popup.login_active {
     opacity: 1;
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 
 .login_popup.login_active .login_t1 {animation: login_Title1_animation .8s ease .5s forwards;}
