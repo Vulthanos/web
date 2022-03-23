@@ -7,7 +7,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
         <link href="/CSS_Files/generar-ticket2-style.css" rel="stylesheet">
         <link href="generar-ticket.html">
-        <link href="/CSS_Files/generar-ticket-style.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
         <title>VULTHANOS</title>
     </head>
@@ -32,20 +31,21 @@
             <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
             <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
         </header>
-
-
-
-
         <section class="container">
-            <h1>Ayuda</h1>
 
-            <h2><strong>Genere un ticket</strong></h2>
+
+
+            <h1 class="titulo-ayuda">Ayuda</h1>
+
+            <h2 class="titulo-ticket"><strong>Genere un ticket</strong></h2>
 
             <section class="linea-temporal">
                 <img src="/IMGS/barra_progreso_ticket2.png" alt="barra progreso 1">
             </section>
 
-            <h3><strong>Detalles del pedido</strong></h3>
+            <h3 class="titulo-seccion"><strong>Detalles del pedido</strong></h3>
+
+
 
             <form>
                 <section class="columna-opciones">
@@ -64,23 +64,20 @@
                 <section class="columna-opciones">
                     <span class="comentario-imagenes"><strong>Imagen adicional</strong></span>
                     <p>Puede adjuntar una imagen que nos ayude a comprender el problema</p>
-
-
                 </section>
 
+                <section class="cuadro-imagenes">
+                    <label for="subir-archivo">
+                        Seleccione el archivo
+                    </label>
+                    <input id="subir-archivo" type="file"/>
+                </section>
+
+                <button class="crear-ticket">
+                    <a href="/HTML_Files/generar-ticket3.html" style="text-decoration: none" target="_blank"><span>Crear ticket</span></a>
+                </button>
 
             </form>
-
-            <section tabindex="0" class="cuadro-imagenes">
-                <input class="subir-imagenes" accept="image/jpeg, image/jpg, image/png" type="file" tabindex="-1" style="display: none;" placeholder="Seleccionar imagenes">
-                <span>Arrastra o suelta la imagen</span>
-                <p style="color:#FFA16D"><small>Formato permitido: PNG, JPG, JPEG</small></p>
-            </section>
-
-            <button type="submit" class="crear-ticket">
-                <a href="generar-ticket3.html" style="text-decoration: none" target="_blank"><span>Crear ticket</span></a>
-            </button>
-
 
         </section>
 
