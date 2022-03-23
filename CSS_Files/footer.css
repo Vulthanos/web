@@ -1,6 +1,9 @@
 /*Estilos del footer*/
 @media screen and (min-width: 980px) {
     * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
         text-decoration: none;
     }
 
@@ -45,7 +48,7 @@
         position: absolute;
         width: 17em;
         height: 10em;
-        left: 35em;
+        left: 32.5em;
         top: 2.434375em;
     }
 
@@ -54,7 +57,7 @@
         position: absolute;
         width: 16.65875em;
         height: 10em;
-        right: 35em;
+        right: 32.5em;
         top: 2.434375em;
     }
 
