@@ -26,7 +26,7 @@
         position: absolute;
         left: 9em;
         margin:1.25em auto;
-        max-width:62.5em;
+        max-width:25em;
         width:90%;
     }
 
@@ -266,8 +266,6 @@
         position: absolute;
         left: 9em;
         margin:1.25em auto;
-        max-width:62.5em;
-        width:90%;
     }
 
     header > nav ul {
@@ -276,7 +274,6 @@
 
     header > nav > ul {
         display:table;
-        width:100%;
         background: #bd879d;
         position:absolute;
         height: 4.6em;
@@ -442,14 +439,14 @@
     }
 
     .buscar:hover input {
-        width: 30em;
+        width: 21em;
         border: 0.0625em solid #000000;
         border-radius: 1.875em;
         background-color: #ffffff;
     }
 
     .buscar input:focus {
-        width: 30em;
+        width: 21em;
         border: 0.0625em solid #000000;
         border-radius: 1.875em;
         background-color: #ffffff;
@@ -473,5 +470,11 @@
 
     .user:hover {
         cursor: pointer;
+    }
+
+    .mvl_inactive {
+        overflow: hidden;
+        visibility: hidden;
+        display: none;
     }
 }
