@@ -1,90 +1,203 @@
-*{
-    margin: 0;
-    padding: 0;
+@media screen and (min-width:980px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    /*Titulo apartado Genere un ticket*/
+    .titulo-seccion{
+        position: absolute;
+        font-size: 1.4em;
+        left: 10.1875em;
+        top: 10em;
+    }
+
+
+    .linea-temporal{
+        position: absolute;
+        top: 15em;
+        left: 40em;
+    }
+
+
+    /*Titulo apartado informacion del pedido*/
+    .informacion-pedido{
+        position: absolute;
+        left: 13.5em;
+        top: 23em;
+    }
+
+    .container{
+        width: 70%;
+        max-width: 60em;
+        padding: 35px 50px;
+        transform: translate(-50%,-50%);
+        position: relative;
+        left: 60em;
+        top: 50%;
+        border-radius: 10px;
+    }
+
+    .columna-opciones{
+        margin-top: 2em;
+    }
+
+    form{
+        width: 100%;
+        position: relative;
+        margin: 30px auto 0 auto;
+    }
+
+    label{
+        color: #1c093c;
+        font-size: 14px;
+    }
+
+    input{
+        width: 100%;
+        font-weight: 400;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: 1.2px solid #c4cae0;
+        margin-top: 5px;
+    }
+
+    input:focus{
+        outline: none;
+        border-color: #FFA16D;
+    }
+
+
+    button{
+        background: #FFA16D;
+        width: 6.25em;
+        height: 2em;
+        border-radius: 0.375em;
+        border: none;
+        position: absolute;
+        top: 25em;
+        left: 48%;
+        font-size: 1em;
+    }
+
+
 }
 
-body{
-    font-family: Montserrat, sans-serif;
-    background: #fff;
-}
+@media screen and (max-width:980px) {
 
-/*Nombre de la pagina*/
-.titulo-central{
-    position: relative;
-    top: 5em;
-    text-align: center;
-    font-size: 1.875em;
-    font-style: normal;
-    font-weight: normal;
-    color: #000000;
-}
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
-/*Titulo apartado Genere un ticket*/
-.titulo-seccion{
-    position: absolute;
-    font-size: 1.4em;
-    left: 10.1875em;
-    top: 10em;
-}
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        left: 6em;
+        top: 7em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    /*Titulo apartado Genere un ticket*/
+    .titulo-seccion{
+        position: relative;
+        font-size: 1.4em;
+        left: 11em;
+        top: 15em;
+    }
 
 
-.linea-temporal{
-    position: absolute;
-    top: 15em;
-    left: 40em;
-}
+    .linea-temporal{
+        position: relative;
+        top: 25em;
+        left: 25em;
+    }
 
 
-/*Titulo apartado informacion del pedido*/
-.informacion-pedido{
-    position: absolute;
-    left: 13.5em;
-    top: 23em;
-}
+    /*Titulo apartado informacion del pedido*/
+    .informacion-pedido{
+        position: absolute;
+        left: 13.5em;
+        top: 23em;
+    }
 
-/*Apartado para escribir el id del cliente*/
-.id-pedido{
-    position: absolute;
-    font-size: 1em;
-    left: 20em;
-    top: 26em;
-}
+    .container{
+        width: 70%;
+        max-width: 60em;
+        padding: 35px 50px;
+        transform: translate(-50%,-50%);
+        position: relative;
+        left: 45em;
+        top: 50em;
+        border-radius: 10px;
+    }
 
-/*Apartado para escribir el email del pedido*/
-.email-pedido{
-    position: absolute;
-    font-size: 1em;
-    left: 68em;
-    top: 26em;
-}
+    .columna-opciones{
+        margin-top: 2em;
+    }
 
-/*Tamaño de los textos de la seccion 2 y 3*/
-p{
-    font-size: 0.85em;
-}
+    form{
+        width: 100%;
+        position: relative;
+        margin: 30px auto 0 auto;
+    }
 
-/*Apartado para escribir el metodo de pago usado*/
-.metodo-pago{
-    position: absolute;
-    font-size: 1em;
-    left: 20em;
-    top: 32em;
+    label{
+        color: #1c093c;
+        font-size: 14px;
+    }
 
-}
+    input{
+        width: 100%;
+        font-weight: 400;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border: 1.2px solid #c4cae0;
+        margin-top: 5px;
+    }
 
-button{
-    background: #FFA16D;
-    width: 6.25em;
-    height: 2em;
-    border-radius: 0.375em;
-    position: absolute;
-    top: 61%;
-    left: 48%;
-    font-size: 1em;
-}
+    input:focus{
+        outline: none;
+        border-color: #FFA16D;
+    }
 
-.boton-continuar{
-    font-size: 0.9375em;
-    text-align: center;
-    color:black;
+
+    button{
+        background: #FFA16D;
+        width: 6.25em;
+        height: 2em;
+        border-radius: 0.375em;
+        border: none;
+        position: absolute;
+        top: 25em;
+        left: 48%;
+        font-size: 1em;
+    }
+
 }

@@ -43,30 +43,28 @@
         </section>
 
 
-        <section class="contenedor-informacion">
-            <section class="informacion-pedido"><span><strong>Informacion del pedido</strong></span></section>
+        <section class="container">
             <form>
-                <section class="id-pedido">
-                    <label for="orderId"><strong>Id del pedido</strong></label>
-                    <input type="text" maxlength="50"  id="orderId"  tabindex="1" value="">
-                    <p>Puede encontrar el id del producto en el correo de confirmacion o en el apartado <a href=" " class="link-pedidos" style="text-decoration:none" target="_blank">Mis pedidos</a></p>
+                <section class="columna-opciones">
+                    <label for="id-pedido"><strong>Id del pedido</strong></label>
+                    <input type="text" id="id-pedido" placeholder="Escriba el id del pedido" required>
                 </section>
 
-                <section class="email-pedido">
-                    <label for="orderEmail"><strong>Email del pedido</strong></label>
-                    <input type="email" maxlength="200" id="orderEmail" tabindex="2" value="">
-                    <p>El correo electronico que has usado en la compra o en la creacion de la cuenta</p>
+                <section class="columna-opciones">
+                    <label for="metodo-pago"><strong>Metodo de pago</strong></label>
+                    <input type="text" id="metodo-pago" placeholder="Escriba el metodo de pago" required>
                 </section>
 
-                <section class="metodo-pago">
-                    <label for="orderMethod"><strong>Metodo de pago</strong></label>
-                    <input type="text" maxlength="50" id="orderMethod" tabindex="3" value="">
-                    <p>Metodo de pago usado durante el proceso de compra</p>
+                <section class="columna-opciones">
+                    <label for="correo"><strong>Correo de contacto</strong></label>
+                    <input type="email" id="correo" placeholder="Escriba su correo" required>
                 </section>
-
-                <button class="continuar"><a href="generar-ticket2.html" class=" boton-continuar" style="text-decoration: none;">Continuar</a></button>
-
             </form>
+
+            <button type="submit" class="boton-continuar">
+                <a href="generar-ticket2.html" style="text-decoration: none" target="_blank"><span>Continuar</span></a>
+            </button>
+
         </section>
 
 
