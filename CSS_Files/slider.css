@@ -1,13 +1,11 @@
 
 .slider {
-    width: 110.25em;
-    height: 51.4375em;
     justify-content: center;
     align-items: center;
 }
 
 .slider_list {
-    max-width: 93%;
+    max-width: 100%;
     overflow: hidden;
     max-height:  50em;
 }
