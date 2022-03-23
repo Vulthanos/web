@@ -12,7 +12,7 @@
         position: absolute;
         text-align: center;
         left: 20%;
-        top: 50%;
+        top: 55%;
         width: 38em;
         height: 50em;
         background: #FFAE81;
@@ -718,10 +718,9 @@
 
 }
     @media only screen and (min-width: 1301px){
-    /*Desktops [>1200px] (PC) */
+    /*Desktops [>1301px] (PC) */
     .contentPurchase {
-        height: 100vh;
-        padding-bottom: 300px;
+
         display: flex;
         justify-content: left;
         align-items: center;
@@ -817,12 +816,11 @@
     }
 
     .CartContainer{
-        margin-top: 30%;
+        margin-top: 15%;
         float: left;
-        width: 35vw;
         height: auto;
         padding: 3.125em;
-        margin-left: 10%;
+        margin-left: 8%;
         background-color: #ffffff;
         border-radius: 1.25em;
         box-shadow: 0 0.625em 1.25em #1687d933;
