@@ -1,57 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
+@media screen and (min-width:980px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    .contenedor-newsletter{
+        position: absolute;
+        margin: 14em;
+        text-align: center
+    }
+
+    .container{
+        max-width: 40em;
+        display: flex;
+        margin-top: 3em;
+        margin-left: 32em;
+        align-items: center;
+        justify-content: center;
+        perspective: 800px;
+        -webkit-perspective:800px;
+    }
+
+    .button:hover{
+        transform:rotateX(-120deg);
+    }
+    input[type="email"]{
+        width:270px;
+        height: 17px;
+        border-radius: 1em;
+        padding: 5px;
+        padding-left:10px;
+        font-size:20px;
+    }
+    button{
+        background-color: #FFA16D;
+        border-radius: 1em;
+        border: none;
+        color:white;
+        font-size: 19px;
+        padding: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .suscripcion{
+        position: absolute;
+        top:25px;
+        left:25px;
+
+    }
 }
 
-body{
-    font-family: Montserrat, sans-serif;
-    background: #fff;
+@media screen and (max-width:980px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    .contenedor-newsletter{
+        position: absolute;
+        margin: 14em;
+        text-align: center
+    }
+
+    .container{
+        max-width: 40em;
+        display: flex;
+        margin-top: 2em;
+        margin-left: 3em;
+        align-items: center;
+        justify-content: center;
+        perspective: 800px;
+        -webkit-perspective:800px;
+    }
+
+    .button:hover{
+        transform:rotateX(-120deg);
+    }
+    input[type="email"]{
+        width:270px;
+        height: 17px;
+        border-radius: 1em;
+        padding: 5px;
+        padding-left:10px;
+        font-size:20px;
+    }
+    button{
+        background-color: #FFA16D;
+        border-radius: 1em;
+        border: none;
+        color:white;
+        font-size: 19px;
+        padding: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .suscripcion{
+        position: absolute;
+        top:25px;
+        left:25px;
+
+    }
 }
 
-.contenedor-newsletter{
-    position: absolute;
-    margin: 14em;
-    text-align: center
-}
 
-.container{
-    max-width: 40em;
-    display: flex;
-    margin-top: 3em;
-    margin-left: 32em;
-    align-items: center;
-    justify-content: center;
-    perspective: 800px;
-    -webkit-perspective:800px;
-}
 
-.button:hover{
-    transform:rotateX(-120deg);
-}
-input[type="email"]{
-    width:270px;
-    height: 17px;
-    border-radius: 1em;
-    padding: 5px;
-    padding-left:10px;
-    font-size:20px;
-}
-button{
-    background-color: #FFA16D;
-    border-radius: 1em;
-    border: none;
-    color:white;
-    font-size: 19px;
-    padding: 4px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.suscripcion{
-    position: absolute;
-    top:25px;
-    left:25px;
-
-}
 
 
 
