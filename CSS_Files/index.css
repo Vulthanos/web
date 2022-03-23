@@ -15,8 +15,6 @@
 
     .products {
         visibility: hidden;
-        overflow: hidden;
-        display: none;
     }
 
 }
