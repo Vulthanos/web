@@ -14,7 +14,6 @@
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css">
-        <style> BODY{ font-family: Montserrat, monospace; } </style>
         <title>VULTHANOS</title>
     </head>
 
@@ -23,13 +22,13 @@
         <header class="header">
             <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
             <nav>
-                <ul>
+                <ul class="header_ul">
                     <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
                     <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
                     <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
+                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
+                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
+                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
                 </ul>
             </nav>
             <div class="buscar"><label>
@@ -65,7 +64,7 @@
         <div class="login_popup_overlay" id="login_popup_overlay">
             <div class="login_popup" id="login_popup">
                 <a href="#" id="btn-cerrar-login_popup" class="btn-cerrar-login_popup"><i class="fas fa-times"></i></a>
-                <form action="">
+                <form action="" class="login_form" id="login_form">
                     <section>
                         <ul class="login_popup_title">
                             <li class="bold login_t1"><a>INICIA SESIÓN</a></li>

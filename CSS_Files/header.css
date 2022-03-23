@@ -1,235 +1,480 @@
-* {
-    margin:0;
-    padding:0;
-    font-family: Montserrat, sans-serif;
+@media screen and (min-width: 980px) {
+    * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    header {
+        width: 100%;
+        overflow: hidden;
+        background: none;
+        margin-bottom: 2em;
+        z-index: 1;
+    }
+
+    header > nav {
+        top:-1.25em;
+        position: absolute;
+        left: 9em;
+        margin:1.25em auto;
+        max-width:25em;
+        width:90%;
+    }
+
+    header > nav ul {
+        list-style:none;
+    }
+
+    header > nav > ul {
+        display:table;
+        width:100%;
+        background: #bd879d;
+        position:absolute;
+        height: 4.6em;
+    }
+
+    header > nav > ul li {
+        display:table-cell;
+    }
+
+    /*sub-menu*/
+    header > nav > ul > li:hover > ul {
+        display:block;
+        height: 4.6em;
+    }
+
+    header > nav > ul > li > ul {
+        display:block;
+        position:absolute;
+        background:#E39FB4;
+        left:0;
+        right:0;
+        overflow:hidden;
+        height:0;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    header > nav > ul li a {
+        color:#000000;
+        font-weight:bold;
+        display:block;
+        line-height:1.25em;
+        padding:1.75em;
+        position: relative;
+        text-align:center;
+        text-decoration:none;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    .header-text {
+        font-size: 1.125em;
+    }
+
+    header > nav > ul > li > a span {
+        display:block;
+        height:100%;
+        width:100%;
+        left:0;
+        position:absolute;
+        top:-3.4375em;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    header > nav > ul > li > a:hover > span {
+        top:0;
+    }
+
+    .icon {
+        position: absolute;
+    }
+
+    /*colores*/
+    header > nav ul li a .baja {
+        position: absolute;
+        background: #b45873;
+        height: 4.6em;
+        top: -4.2em;
+    }
+
+    .header {
+        position: fixed;
+        margin-top: 0;
+        z-index: 2000;
+        height: 4.6em;
+        background-color: #ffffff;
+    }
+
+    .icon-consolas {
+        height: 4.13em;
+        left: 3.8em;
+        top: 0.09em;
+    }
+
+    .icon-juegos {
+        height: 7em;
+        left: 2em;
+        top: -1.2em;
+    }
+
+    .icon-accesorios {
+        height: 5.5em;
+        left: 3.8em;
+        top: -0.46em;
+    }
+
+    .icon-controladores {
+        height: 8.2em;
+        left: 4.8em;
+        top: -1.8em;
+    }
+
+    .icon-componentes {
+        height: 5.5em;
+        left: 3.5em;
+        top: -0.5em;
+
+    }
+
+    .icon-pc {
+        width: 5.5em;
+        height: 5.5em;
+        left: -0.2em;
+        top: -0.4em;
+    }
+
+    .logo {
+        position: absolute;
+        width: 4.6em;
+        left: 0;
+        top: 0;
+    }
+
+    .lupa {
+        position: absolute;
+        width: 3.8em;
+        height: 3.8em;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 1.25em;
+        cursor: pointer;
+    }
+
+    .buscar {
+        position: absolute;
+        padding: 0.3125em;
+        top: 0;
+        right: 9.5em;
+    }
+
+    .buscar input {
+        width: 0;
+        height: 3.7em;
+        padding: 0 1.25em;
+        font-size: 1.125em;
+        color: #000000;
+        outline: none;
+        border: 0 solid #000000;
+        border-radius: 1.875em;
+        transition: all 0.6s ease;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .buscar:hover input {
+        width: 21em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
+
+    .buscar input:focus {
+        width: 21em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
+
+    .carrito {
+        position: absolute;
+        width: 6em;
+        height: 4em;
+        right: 4.5em;
+        top: 0.05em;
+    }
+
+    .user {
+        position: absolute;
+        width: 5.1em;
+        height: 4.6em;
+        right: 0;
+        top: 0;
+    }
+
+    .user:hover {
+        cursor: pointer;
+    }
 }
 
-html {
-    height: 100%;
-}
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+    * {
+        margin:0;
+        padding:0;
+        font-family: Montserrat, sans-serif;
+    }
 
-body {
-    height: 100%;
-}
+    html {
+        height: 100%;
+    }
 
-header {
-    width: 100%;
-    overflow: hidden;
-    background: none;
-    margin-bottom: 2em;
-    z-index: 1;
-}
+    body {
+        height: 100%;
+    }
 
-header > nav {
-    top:-1.25em;
-    position: absolute;
-    left: 9em;
-    margin:1.25em auto;
-    max-width:62.5em;
-    width:90%;
-}
+    header {
+        width: 100%;
+        overflow: hidden;
+        background: none;
+        margin-bottom: 2em;
+        z-index: 1;
+        border: none;
+    }
 
-header > nav ul {
-    list-style:none;
-}
+    header > nav {
+        top:-1.25em;
+        position: absolute;
+        left: 9em;
+        margin:1.25em auto;
+    }
 
-header > nav > ul {
-    display:table;
-    width:100%;
-    background: #bd879d;
-    position:absolute;
-    height: 4.6em;
-}
+    header > nav ul {
+        list-style:none;
+    }
 
-header > nav > ul li {
-    display:table-cell;
-}
+    header > nav > ul {
+        display:table;
+        background: #bd879d;
+        position:absolute;
+        height: 4.6em;
+    }
 
-/*sub-menu*/
-header > nav > ul > li:hover > ul {
-    display:block;
-    height: 4.6em;
-}
+    header > nav > ul li {
+        display:table-cell;
+    }
 
-header > nav > ul > li > ul {
-    display:block;
-    position:absolute;
-    background:#E39FB4;
-    left:0;
-    right:0;
-    overflow:hidden;
-    height:0;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
-}
+    /*sub-menu*/
+    header > nav > ul > li:hover > ul {
+        display:block;
+        height: 4.6em;
+    }
 
-header > nav > ul li a {
-    color:#000000;
-    font-weight:bold;
-    display:block;
-    line-height:1.25em;
-    padding:1.75em;
-    position: relative;
-    text-align:center;
-    text-decoration:none;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -ms-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
-}
+    header > nav > ul > li > ul {
+        display:block;
+        position:absolute;
+        background:#E39FB4;
+        left:0;
+        right:0;
+        overflow:hidden;
+        height:0;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
 
-.header-text {
-    font-size: 1.125em;
-}
+    header > nav > ul li a {
+        color:#000000;
+        font-weight:bold;
+        display:block;
+        line-height:1.25em;
+        padding:1.75em;
+        position: relative;
+        text-align:center;
+        text-decoration:none;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
 
-header > nav > ul > li > a span {
-    display:block;
-    height:100%;
-    width:100%;
-    left:0;
-    position:absolute;
-    top:-3.4375em;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-}
+    .header-text {
+        font-size: 1.125em;
+    }
 
-header > nav > ul > li > a:hover > span {
-    top:0;
-}
+    header > nav > ul > li > a span {
+        display:block;
+        height:100%;
+        width:100%;
+        left:0;
+        position:absolute;
+        top:-3.4375em;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
 
-.icon {
-    position: absolute;
-}
+    header > nav > ul > li > a:hover > span {
+        top:0;
+    }
 
-/*colores*/
-header > nav ul li a .baja {
-    position: absolute;
-    background: #b45873;
-    height: 4.6em;
-    top: -4.2em;
-}
+    .icon {
+        position: absolute;
+    }
 
-.header {
-    position: fixed;
-    margin-top: 0;
-    z-index: 2000;
-    height: 4.6em;
-    background-color: #ffffff;
-}
+    /*colores*/
+    header > nav ul li a .baja {
+        position: absolute;
+        background: #b45873;
+        height: 4.6em;
+        top: -4.2em;
+    }
 
-.icon-consolas {
-    height: 4.13em;
-    left: 3.8em;
-    top: 0.09em;
-}
+    .header {
+        position: fixed;
+        margin-top: 0;
+        z-index: 2000;
+        height: 4.6em;
+        background-color: #ffffff;
+    }
 
-.icon-juegos {
-    height: 7em;
-    left: 2em;
-    top: -1.2em;
-}
+    .icon-consolas {
+        height: 4.13em;
+        left: 3.8em;
+        top: 0.1em;
+    }
 
-.icon-accesorios {
-    height: 5.5em;
-    left: 3.8em;
-    top: -0.46em;
-}
+    .icon-juegos {
+        height: 7em;
+        left: 2em;
+        top: -1.2em;
+    }
 
-.icon-controladores {
-    height: 8.2em;
-    left: 4.8em;
-    top: -1.8em;
-}
+    .icon-accesorios {
+        height: 5.5em;
+        left: 3.8em;
+        top: -0.46em;
+    }
 
-.icon-componentes {
-    height: 5.5em;
-    left: 3.5em;
-    top: -0.5em;
+    .icon-controladores {
+        height: 8.2em;
+        left: 4.8em;
+        top: -1.8em;
+    }
 
-}
+    .icon-componentes {
+        height: 5.5em;
+        left: 3.5em;
+        top: -0.5em;
 
-.icon-pc {
-    width: 5.5em;
-    height: 5.5em;
-    left: -0.2em;
-    top: -0.4em;
-}
+    }
 
-.logo {
-    position: absolute;
-    width: 4.6em;
-    left: 0;
-    top: 0;
-}
+    .icon-pc {
+        width: 5.5em;
+        height: 5.5em;
+        left: -0.2em;
+        top: -0.4em;
+    }
 
-.lupa {
-    position: absolute;
-    width: 3.8em;
-    height: 3.8em;
-    right: 0;
-    top: 0;
-    text-align: center;
-    font-size: 1.25em;
-    cursor: pointer;
-}
+    .logo {
+        position: absolute;
+        width: 4.6em;
+        left: 0;
+        top: 0;
+    }
 
-.buscar {
-    position: absolute;
-    padding: 0.3125em;
-    top: 0;
-    right: 9.5em;
-}
+    .lupa {
+        position: absolute;
+        width: 3.8em;
+        height: 3.8em;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 1.25em;
+        cursor: pointer;
+    }
 
-.buscar input {
-    width: 0;
-    height: 3.7em;
-    padding: 0 1.25em;
-    font-size: 1.125em;
-    color: #000000;
-    outline: none;
-    border: 0 solid #000000;
-    border-radius: 1.875em;
-    transition: all 0.6s ease;
-    background-color: rgba(0, 0, 0, 0);
-}
+    .buscar {
+        position: absolute;
+        padding: 0.3125em;
+        top: 0;
+        right: 9.5em;
+    }
 
-.buscar:hover input {
-    width: 21em;
-    border: 0.0625em solid #000000;
-    border-radius: 1.875em;
-    background-color: #ffffff;
-}
+    .buscar input {
+        width: 0;
+        height: 3.7em;
+        padding: 0 1.25em;
+        font-size: 1.125em;
+        color: #000000;
+        outline: none;
+        border: 0 solid #000000;
+        border-radius: 1.875em;
+        transition: all 0.6s ease;
+        background-color: rgba(0, 0, 0, 0);
+    }
 
-.buscar input:focus {
-    width: 21em;
-    border: 0.0625em solid #000000;
-    border-radius: 1.875em;
-    background-color: #ffffff;
-}
+    .buscar:hover input {
+        width: 21em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
 
-.carrito {
-    position: absolute;
-    width: 6em;
-    height: 4em;
-    right: 4.5em;
-    top: 0.05em;
-}
+    .buscar input:focus {
+        width: 21em;
+        border: 0.0625em solid #000000;
+        border-radius: 1.875em;
+        background-color: #ffffff;
+    }
 
-.user {
-    position: absolute;
-    width: 5.1em;
-    height: 4.6em;
-    right: 0;
-    top: 0;
-}
+    .carrito {
+        position: absolute;
+        width: 6em;
+        height: 4em;
+        right: 4.5em;
+        top: 0.05em;
+    }
 
-.user:hover {
-    cursor: pointer;
+    .user {
+        position: absolute;
+        width: 5.1em;
+        height: 4.6em;
+        right: 0;
+        top: 0;
+    }
+
+    .user:hover {
+        cursor: pointer;
+    }
+
+    .mvl_inactive {
+        overflow: hidden;
+        visibility: hidden;
+        display: none;
+    }
 }
