@@ -1,0 +1,122 @@
+<!--
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print JS Array</title>
+</head>
+<body>
+<div id="arrayImages"></div>
+</body>
+<script>
+    // Array of image file names
+    const images = ["/IMGS/purchase/paypal.png", "/IMGS/purchase/security.png"];
+    // Reference to the container for the images
+    const arrayImagesElement = document.getElementById("arrayImages");
+
+    // Function that creates HTMLImageElement instance
+    function createImageNode(fileName, atlText) {
+        // Learn more about the image element
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement
+        const img = new Image();
+
+        // when png images 1,2,3 exist on your machine/server, uncomment img.src = fileName;
+        img.src = "images";
+        img.alt = "algo falla al cargar la imagen";
+
+        // img.src = fileName;
+        // img.alt = altText;
+
+        return img;
+    }
+
+    images.forEach(img => {
+        // For each file name in the 'images' array, create and append a new
+        // image node to the end of the list of children of <div id="arrayImages"></div>
+        // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+        arrayImagesElement.appendChild(createImageNode(img));
+    });
+</script>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <!-- <script type="text/javascript" src="main.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS_Files/purchaseStyle.css">
+    <title>VULTHANOS</title>
+</head>
+<body>
+
+
+<div class="CartContainer" id="Carrito2">
+    <div class="HeaderCart">
+        <h3 class="Heading">Shopping Cart</h3>
+        <h5 class="Action">Remove all</h5>
+    </div>
+</div>
+
+<script>
+    $.getJSON("/vulthanos.json", function (result) {
+        //find the array and do seomthing
+
+        $.each(result.products, function (key, val) {
+            let div1 = "";
+            let div2 = "";
+            let div3 = "";
+
+            let grandiv = "";
+
+            grandiv='<div class="Cart-Items pad">' +
+                '<div class="image-box"><img src="' +
+                val.Image +
+                '" height="120px"/></div>' +
+
+                '<div class="about"><h1 class="title">' +
+
+                val.Name +
+                '</h1/><h3 class="subtitle">x1</h3><img src="/IMGS/purchase/veg.png" height="30px"  /></div>' +
+
+                '<div class="prices"><div class="amount">' +
+                val.Price +
+                '</div><div class="remove">Remove</div></div>';
+
+                $("#Carrito2").append(grandiv);
+
+
+            div1 =
+                '<div class="image-box"><img src="' +
+                val.Image +
+                '" height="120px"/></div>';
+
+            div2 =
+                '<div class="about"><h1 class="title">' +
+                val.Name +
+                '</h1/><h3 class="subtitle">x1</h3>...</div>';
+
+            div3 =
+                '<div class="prices"><div class="amount">' +
+                val.Price +
+                '</div><div class="remove">Remove</div></div>';
+            let cart_items_pad = $("<div/>");
+            cart_items_pad.addClass("Cart-items pad");
+            cart_items_pad.append(div1);
+            cart_items_pad.append(div2);
+            cart_items_pad.append(div3);
+            //$("#Carrito2").append(cart_items_pad);
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
+

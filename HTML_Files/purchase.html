@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>VULTHANOS</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/purchaseStyle.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
@@ -34,74 +35,48 @@
         <section class="contentPurchase">
             <a href="index.html"><img class="progressBar" src="/IMGS/purchase/progressBar.png" alt="progressBar"></a>
 
-            <div class="CartContainer">
+            <div class="CartContainer" id="Carrito2">
                 <div class="HeaderCart">
                     <h3 class="Heading">Shopping Cart</h3>
                     <h5 class="Action">Remove all</h5>
                 </div>
-
-                <marquee behavior="alternate">VULTHANOS, HOT products!</marquee>
-
-                <!--Ordenador Buen estado-->
-                <div class="Cart-Items">
-
-                    <div class="image-box">
-                        <img src="/IMGS/purchase/ordenador.png" height="120px" />
-                    </div>
-
-                    <div class="about">
-                        <h1 class="title">Ordenador PC Gaming [buen estado]</h1>
-                        <h3 class="subtitle">X1</h3>
-                        <img src="/IMGS/purchase/veg.png" height="30px"  />
-                    </div>
-
-                    <div class="prices">
-                        <div class="amount">1099&euro;</div>
-                        <div class="remove"><u>Remove</u></div>
-                    </div>
-
-                </div>
-
-                <!-- Mando de Playstation-->
-                <div class="Cart-Items pad">
-
-                    <div class="image-box">
-                        <img src="/IMGS/purchase/mandoplay.png" height="120px" />
-                    </div>
-
-                    <div class="about">
-                        <h1 class="title">Mando PS5 - Sony Dualsense Blanco</h1>
-                        <h3 class="subtitle">X1</h3>
-                        <img src="/IMGS/purchase/veg.png" height="30px"  />
-                    </div>
-
-                    <div class="prices">
-                        <div class="amount">48&euro;</div>
-                        <div class="remove"><u>Remove</u></div>
-                    </div>
-
-                </div>
-
-                <!--Tarjeta Gráfica-->
-                <div class="Cart-Items pad">
-
-                    <div class="image-box">
-                        <img src="/IMGS/purchase/grafica.png" height="120px" />
-                    </div>
-
-                    <div class="about">
-                        <h1 class="title">Tarjeta Gráfica EVGA GeForce RTX 2060 12GB</h1>
-                        <h3 class="subtitle">X1</h3>
-                        <img src="/IMGS/purchase/veg.png" height="30px"  />
-                    </div>
-
-                    <div class="prices">
-                        <div class="amount">532&euro;</div>
-                        <div class="remove"><u>Remove</u></div>
-                    </div>
-
-                </div>
             </div>
+
+            <script>
+                $.getJSON("/vulthanos.json", function (result) {
+                    //find the array and do seomthing
+
+                    let suma = 0;
+
+                    $.each(result.products, function (key, val) {
+
+                        let grandiv = "";
+
+
+                        grandiv='<div class="Cart-Items pad">' +
+                            '<div class="image-box"><img src="' +
+                            val.Image +
+                            '" height="120px"/></div>' +
+
+                            '<div class="about"><h1 class="title">' +
+
+                            val.Name +
+                            '</h1/><h3 class="subtitle">x1</h3><img src="/IMGS/purchase/veg.png" height="30px"  /></div>' +
+
+                            '<div class="prices"><div class="amount">' +
+                            val.Price + '$' +
+                            '</div><div class="remove">Remove</div></div>';
+
+                        $("#Carrito2").append(grandiv);
+
+                        suma+=val.Price;
+
+                    });
+
+                    $("#precio").append(suma);
+                });
+            </script>
+
 
 
             <div class="Rectangle OrangeRectangle">
@@ -112,8 +87,8 @@
 
                             <tr class="TableAlign">
                                 <td>Subtotal</td>
-                                <td></td>
-                                <td><b>1679,00&euro;</b></td>
+                                <td><a ></td>
+                                <td><b id="precio" value=""></b><b>$</b></td>
                             </tr>
 
                             <tr class="TableAlign">
