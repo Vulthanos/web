@@ -1,4 +1,5 @@
-@media screen and (min-width: 86em) {
+/*Diseño Escritorio*/
+@media screen and (min-width: 1300px) {
     * {
         margin: 0;
         padding: 0;
@@ -11,12 +12,18 @@
         position: relative;
         padding-bottom: 14em;
         min-height: 100vh;
+    }
+
+    .products {
+        visibility: hidden;
+        overflow: hidden;
+        display: none;
     }
 
 }
 
 /*Diseño Tablet*/
-@media screen and (min-width: 25em), (max-width: 86em) and (orientation: landscape) {
+@media screen and (min-width: 981px) and (max-width: 1300px) {
     * {
         margin: 0;
         padding: 0;
@@ -29,11 +36,17 @@
         position: relative;
         padding-bottom: 14em;
         min-height: 100vh;
+    }
+
+    .products {
+        visibility: hidden;
+        overflow: hidden;
+        display: none;
     }
 }
 
 /*Diseño Móvil*/
-@media screen and (max-width: 25em){
+@media screen and (max-width: 980px){
     * {
         margin: 0;
         padding: 0;
@@ -46,5 +59,32 @@
         position: relative;
         padding-bottom: 14em;
         min-height: 100vh;
+    }
+
+    .products {
+        visibility: visible;
+        position: relative;
+        margin-top: 5em;
+        left: 7em;
+    }
+
+    .products article {
+        text-align: center;
+        align-items: center;
+        margin-top: 7em;
+        max-height: 20em;
+        margin-bottom: 16em;
+    }
+
+    .products img {
+        max-height: 30em;
+    }
+
+    .products label {
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+        padding-top: 0.5em;
+        font-size: 3em;
     }
 }
