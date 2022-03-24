@@ -1,56 +1,124 @@
-*{
-    margin: 0;
-    padding: 0;
+@media screen and (min-width:980px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        top: 7em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    /*Titulo apartado Genere un ticket*/
+    h1{
+        position: relative;
+        font-size: 1em;
+        top: 15em;
+        left: 10em;
+        width: 26.75em;
+    }
+
+    .linea-temporal{
+        position: absolute;
+        top: 19em;
+        left: 42em;
+    }
+
+    /*Texto e icono central*/
+    .fin-ticket{
+        position: relative;
+        text-align: center;
+        font-size: large;
+        top: 24em;
+    }
+
+    /*Volver a home*/
+    button{
+        position: relative;
+        left: 45.5%;
+        top: 34em;
+        background: #FFA16D;
+        border-radius: 0.375em;
+        width: 14em;
+        height: 3em;
+        border: none;
+        color: black;
+    }
+
 }
 
-body{
-    font-family: Montserrat, sans-serif;
-    background: #fff;
-}
+@media screen and (max-width:980px){
 
-/*Nombre de la pagina*/
-.titulo-central{
-    position: relative;
-    top: 7em;
-    text-align: center;
-    font-size: 1.875em;
-    font-style: normal;
-    font-weight: normal;
-    color: #000000;
-}
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
-/*Titulo apartado Genere un ticket*/
-h1{
-    position: relative;
-    font-size: 1em;
-    top: 15em;
-    left: 10em;
-    width: 26.75em;
-}
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
 
-.linea-temporal{
-    position: absolute;
-    top: 19em;
-    left: 42em;
-}
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        top: 7em;
+        left: 2em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
 
-/*Texto e icono central*/
-.fin-ticket{
-    position: relative;
-    text-align: center;
-    font-size: large;
-    top: 24em;
-}
+    /*Titulo apartado Genere un ticket*/
+    h1{
+        position: relative;
+        font-size: 1em;
+        top: 15em;
+        left: 10em;
+        width: 26.75em;
+    }
 
-/*Volver a home*/
-button{
-    position: relative;
-    left: 45.5%;
-    top: 34em;
-    background: #FFA16D;
-    border-radius: 0.375em;
-    width: 14em;
-    height: 3em;
-    border: none;
-    color: black;
+    .linea-temporal{
+        position: relative;
+        align-items: center;
+        top: 24em;
+        left: 15em;
+    }
+
+    /*Texto e icono central*/
+    .fin-ticket{
+        position: relative;
+        text-align: center;
+        font-size: large;
+        top: 30em;
+        left: 2em;
+    }
+
+    /*Volver a home*/
+    .volver{
+        position: relative;
+        left: 45.5%;
+        top: 46em;
+        background: #FFA16D;
+        border-radius: 0.375em;
+        width: 14em;
+        height: 3em;
+        border: none;
+        color: black;
+    }
+
 }
