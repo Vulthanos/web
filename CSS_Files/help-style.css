@@ -1,111 +1,235 @@
-*{
-    margin: 0;
-    padding: 0;
+@media screen and (min-width:980px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        left: 40%;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        max-width: 15em;
+        color: #000000;
+    }
+
+    /*Titulo apartado preguntas frecuentes*/
+    h1{
+        position: relative;
+        left: -27em;
+        font-size: 1.25em;
+        top: 10em;
+    }
+
+    .apartado{
+        background-color: #ffffff;
+        margin-top: 1em;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+    }
+
+
+    .menu-nav{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #FFA16D;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 0;
+    }
+
+    .parrafo{
+        position: relative;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+
+    .informacion-util{
+        position: absolute;
+        top: 17em;
+        left: 6%;
+        max-width: 33em;
+    }
+
+    .pagos{
+        position: absolute;
+        top: 53em;
+        left: 6%;
+        max-width: 33em;
+    }
+
+    .compras{
+        position: absolute;
+        top: 17em;
+        left: 35%;
+        max-width: 33em;
+    }
+
+    .activacion-juegos{
+        position: absolute;
+        top: 46em;
+        left: 35%;
+        max-width: 33em;
+
+    }
+
+    .pregunta-cuenta{
+        position: absolute;
+        top: 17em;
+        left: 64%;
+        max-width: 33em;
+
+    }
+
+
+    .pregunta-productos{
+        position: absolute;
+        top: 48em;
+        left: 64%;
+        max-width: 33em;
+
+    }
+
+
+
 }
 
-body{
-    font-family: Montserrat, sans-serif;
-    background: #fff;
+
+@media screen and (max-width:980px){
+    /*Movil*/
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        left: 40%;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        max-width: 15em;
+        color: #000000;
+    }
+
+    /*Titulo apartado preguntas frecuentes*/
+    h1{
+        position: relative;
+        left: 3em;
+        font-size: 1.25em;
+        top: 10em;
+    }
+
+    .apartado{
+        background-color: #ffffff;
+        margin-top: 1em;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+    }
+
+
+    .menu-nav{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #FFA16D;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 0;
+    }
+
+    .parrafo{
+        position: relative;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+
+    .informacion-util{
+        position: absolute;
+        top: 20em;
+        left: 13em;
+        width: 30em;
+    }
+
+    .pagos{
+        position: absolute;
+        top: 50em;
+        left: 13em;
+        width: 30em;
+    }
+
+    .compras{
+        position: absolute;
+        top: 75em;
+        left: 13em;
+        width: 30em;
+    }
+
+    .activacion-juegos{
+        position: absolute;
+        top: 98em;
+        left: 13em;
+        width: 30em;
+
+    }
+
+    .pregunta-cuenta{
+        position: absolute;
+        top: 136em;
+        left: 13em;
+        width: 30em;
+
+    }
+
+
+    .pregunta-productos{
+        position: absolute;
+        top: 168em;
+        left: 13em;
+        width: 30em;
+
+    }
+
+
+
 }
-
-/*Nombre de la pagina*/
-.titulo-central{
-    position: relative;
-    left: 40%;
-    top: 5em;
-    text-align: center;
-    font-size: 1.875em;
-    font-style: normal;
-    font-weight: normal;
-    max-width: 15em;
-    color: #000000;
-}
-
-/*Titulo apartado preguntas frecuentes*/
-h1{
-    position: relative;
-    left: -27em;
-    font-size: 1.25em;
-    top: 10em;
-}
-
-.apartado{
-    background-color: #ffffff;
-    margin-top: 1em;
-    padding: 15px 40px;
-    border-radius: 5px;
-    box-shadow: 0 15px 25px rgba(0,0,50,0.2);
-}
-
-
-.menu-nav{
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #111130;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px 0;
-}
-
-.parrafo{
-    position: relative;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 30px;
-    height: 0;
-    overflow: hidden;
-    transition: all 1s;
-}
-
-.informacion-util{
-    position: absolute;
-    top: 17em;
-    left: 10%;
-    max-width: 33em;
-}
-
-.pagos{
-    position: absolute;
-    top: 53em;
-    left: 10%;
-    max-width: 33em;
-}
-
-.compras{
-    position: absolute;
-    top: 17em;
-    left: 40%;
-    max-width: 33em;
-}
-
-.activacion-juegos{
-    position: absolute;
-    top: 46em;
-    left: 40%;
-    max-width: 33em;
-
-}
-
-.pregunta-cuenta{
-    position: absolute;
-    top: 17em;
-    left: 70%;
-    max-width: 33em;
-
-}
-
-
-.pregunta-productos{
-    position: absolute;
-    top: 48em;
-    left: 70%;
-    max-width: 33em;
-
-}
-
