@@ -59,7 +59,8 @@
 
 }
 
-@media screen and (max-width:980px){
+/*Diseño Escritorio*/
+@media screen and (min-width: 1301px){
 
     *{
         margin: 0;
