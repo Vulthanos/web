@@ -13,13 +13,13 @@
         <header class="header">
             <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
             <nav>
-                <ul>
+                <ul class="header_ul">
                     <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
                     <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
                     <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
+                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
+                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
+                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
                 </ul>
             </nav>
             <div class="buscar"><label>
@@ -27,7 +27,7 @@
                 <img class="lupa" src="/IMGS/header/lupa.png" alt="">
             </label></div>
             <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-            <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
+            <a ><img class="user" id="user_profile" src="/IMGS/header/user.png" alt=""></a>
         </header>
 
         <section class="result-content">
@@ -44,13 +44,20 @@
                 <article>
                     <label class="filter">Filtro<img class="cruz" src="/IMGS/search_result/cruz.png" alt=""></label>
                 </article>
-                <article>
-                    <label class="order"><a class="bold">Orden:</a> <a class="regular">nuevos primero</a><img class="desplegable" src="/IMGS/search_result/flecha_abajo.png" alt=""></label>
+                <article class="desplegable" id="desplegable">
+                    <label class="order"><a class="bold">Orden:</a>
+                        <select name="order_list" id="order_list" class="order_list">
+                            <option class="regular">Relevancia</option>
+                            <option class="regular">Precio: menores primero</option>
+                            <option class="regular">Precio: mayores primero</option>
+                            <option class="regular">Estado: nuevos primero</option>
+                            <option class="regular">Estado: usados primero</option>
+                        </select></label>
                 </article>
             </section>
             <section class="filters-menu">
                 <article class="filter-selector">
-                    <label class="search"><input type="text" placeholder="Busqueda"><img class="lupa-search" src="/IMGS/search_result/lupa.png" alt=""></label>
+                    <label class="search_filter"><input type="text" placeholder="Busqueda"><img class="lupa-search_filter" src="/IMGS/search_result/lupa.png" alt=""></label>
                 </article>
                 <section class="price-range">
                     <article class="title">
@@ -81,6 +88,7 @@
                     </article>
                 </section>
             </section>
+
             <section class="products">
                 <section class="top">
                     <article>
@@ -91,7 +99,7 @@
                         <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
                         <label>Nombre del producto</label>
                     </article>
-                    <article>
+                    <article class="movil_inactive">
                         <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
                         <label>Nombre del producto</label>
                     </article>
@@ -105,7 +113,49 @@
                         <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
                         <label>Nombre del producto</label>
                     </article>
+                    <article class="movil_inactive">
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                </section>
+                <section class="top mvl_products">
                     <article>
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                    <article>
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                    <article class="movil_inactive">
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                </section>
+                <section class="bot mvl_products">
+                    <article>
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                    <article>
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                    <article class="movil_inactive">
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                </section>
+                <section class="bot mvl_products">
+                    <article>
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                    <article>
+                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
+                        <label>Nombre del producto</label>
+                    </article>
+                    <article class="movil_inactive">
                         <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
                         <label>Nombre del producto</label>
                     </article>
