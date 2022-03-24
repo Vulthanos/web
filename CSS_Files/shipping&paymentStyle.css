@@ -1,5 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 @media screen and (min-width: 10px) and (max-width: 980px) {
     /*Smartphone*/
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+    /* Styles */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Open Sans", SansSerif, serif;
+        font-size: 14px;
+    }
+
+    .container {
+        width: auto;
+        margin-top: 20em;
+        margin-left: 10em;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    form {
+        padding: 10px;
+        background: lightgray;
+        color: black;
+        border-radius: 50px;
+    }
+    form label,
+    form input,
+    form button {
+        border: 0;
+        margin-bottom: 3px;
+        display: block;
+        width: 100%;
+        font-size: 2.5em;
+    }
+    form input {
+        font-size: 2em;
+        height: 60px;
+        line-height: 25px;
+        background: white;
+        color: #000;
+        padding: 0 6px;
+        box-sizing: border-box;
+        border-radius: 1em;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    form button {
+        margin-left: -35%;
+        height: 30px;
+        line-height: 30px;
+
+        background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
+        box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
+        border-radius: 0.38em;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+    form .error {
+        color: #ff0000;
+    }
+
+    .article-reference {
+        margin-top: 15px;
+    }
+    .article-reference a {
+        color: #e67e22;
+    }
+
+    #botonSubmit{
+        width: 25em;
+        align-items: center;
+        margin-left: 20em;
+    }
+
+    #cvv,
+    #card,
+    #mmaa {
+        text-align: center;
+        background-image: url(/IMGS/purchase/creditCardLogo.png);
+        background-size: 2.75em;
+        background-repeat: no-repeat;
+    }
+
+    /*
     input[type=text], select {
         padding: 0.75em 1.25em;
         margin: 0.5em 0;
@@ -31,7 +125,7 @@
     input[type=submit]:hover {
         background-color: #45a049;
     }
-
+*/
     div {
         border-radius: 0.32em;
         /*background-color: #f2f2f2;*/
@@ -57,10 +151,10 @@
         justify-content: left;
     }
     .OrangeRectangle {
-        position: absolute;
+        position: relative;
         text-align: center;
-        left: 20%;
-        top: 65%;
+        left: -10%;
+        top: 5%;
         width: 38em;
         height: 50em;
         background: #FFAE81;
@@ -424,11 +518,105 @@
 
 
 @media screen and (min-width: 1300px) {
+
+    #botonSubmit{
+        width: 25em;
+        align-items: center;
+        margin-left: 20em;
+    }
+
+    #cvv,
+    #card,
+    #mmaa {
+        text-align: center;
+        background-image: url(/IMGS/purchase/creditCardLogo.png);
+        background-size: 2.75em;
+        background-repeat: no-repeat
+
+    }
     /*Desktop*/
+    .sub-entry {
+        width: 30%;
+        margin: 80px;
+        float: left;
+    }
+
+    /* Styles */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: "Open Sans", SansSerif, serif;
+        font-size: 14px;
+    }
+
+    .container {
+        margin-top: 20em;
+        margin-left: 10em;
+        margin-bottom: auto;
+        width: 1000px;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    form {
+        padding: 10px;
+        background: lightgray;
+        color: black;
+        border-radius: 50px;
+    }
+    form label,
+    form input,
+    form button {
+        border: 0;
+        margin-bottom: 3px;
+        display: block;
+        width: 100%;
+    }
+    form input {
+        height: 25px;
+        line-height: 25px;
+        background: white;
+        color: #000;
+        padding: 0 6px;
+        box-sizing: border-box;
+        border-radius: 1em;
+    }
+
+    form button {
+        height: 30px;
+        line-height: 30px;
+
+        background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
+        box-shadow: 0 0.25em 0.25em rgba(14, 53, 191, 0.25);
+        border-radius: 0.38em;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+    form .error {
+        color: #ff0000;
+    }
+
+    .article-reference {
+        margin-top: 15px;
+    }
+    .article-reference a {
+        color: #e67e22;
+    }
+
 
     .empaquetado{
         float: top;
     }
+
+    /*
     input[type=text], select {
         padding: 0.75em 1.25em;
         margin: 0.5em 0;
@@ -456,11 +644,13 @@
         border-radius: 0.25em;
         cursor: pointer;
     }
+    *
+
 
     input[type=submit]:hover {
         background-color: #45a049;
     }
-
+    */
     div {
         border-radius: 0.32em;
         /*background-color: #f2f2f2;*/
@@ -481,8 +671,10 @@
         align-items: center;
     }
 
+
     .OrangeRectangle{
         position: absolute; left: 65%;
+        top:35%;
         width: 28em;
         height: 43em;
         background: #FFAE81;
@@ -626,3 +818,4 @@
         padding-top: 5%;
     }
 }
+

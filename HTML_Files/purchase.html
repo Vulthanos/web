@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>VULTHANOS</title>
+
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+        <script src="/JS_Files/DynamicCarrito.js"></script>
+
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/purchaseStyle.css">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
@@ -42,43 +46,6 @@
                 </div>
             </div>
 
-            <script>
-                $.getJSON("/vulthanos.json", function (result) {
-                    //find the array and do seomthing
-
-                    let suma = 0;
-
-                    $.each(result.products, function (key, val) {
-
-                        let grandiv = "";
-
-
-                        grandiv='<div class="Cart-Items pad">' +
-                            '<div class="image-box"><img src="' +
-                            val.Image +
-                            '" height="120px"/></div>' +
-
-                            '<div class="about"><h1 class="title">' +
-
-                            val.Name +
-                            '</h1/><h3 class="subtitle">x1</h3><img src="/IMGS/purchase/veg.png" height="30px"  /></div>' +
-
-                            '<div class="prices"><div class="amount">' +
-                            val.Price + '$' +
-                            '</div><div class="remove">Remove</div></div>';
-
-                        $("#Carrito2").append(grandiv);
-
-                        suma+=val.Price;
-
-                    });
-
-                    $("#precio").append(suma);
-                });
-            </script>
-
-
-
             <div class="Rectangle OrangeRectangle">
                 <div class="Rectangle WhiteRectangle">
                     <h4 class="HeadingResumen">Resumen del carrito</h4>
@@ -87,7 +54,7 @@
 
                             <tr class="TableAlign">
                                 <td>Subtotal</td>
-                                <td><a ></td>
+                                <td></td>
                                 <td><b id="precio" value=""></b><b>$</b></td>
                             </tr>
 

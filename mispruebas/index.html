@@ -1,122 +1,170 @@
-<!--
-DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Print JS Array</title>
-</head>
-<body>
-<div id="arrayImages"></div>
-</body>
-<script>
-    // Array of image file names
-    const images = ["/IMGS/purchase/paypal.png", "/IMGS/purchase/security.png"];
-    // Reference to the container for the images
-    const arrayImagesElement = document.getElementById("arrayImages");
-
-    // Function that creates HTMLImageElement instance
-    function createImageNode(fileName, atlText) {
-        // Learn more about the image element
-        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
-        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement
-        const img = new Image();
-
-        // when png images 1,2,3 exist on your machine/server, uncomment img.src = fileName;
-        img.src = "images";
-        img.alt = "algo falla al cargar la imagen";
-
-        // img.src = fileName;
-        // img.alt = altText;
-
-        return img;
-    }
-
-    images.forEach(img => {
-        // For each file name in the 'images' array, create and append a new
-        // image node to the end of the list of children of <div id="arrayImages"></div>
-        // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
-        arrayImagesElement.appendChild(createImageNode(img));
-    });
-</script>
-</html>
--->
 <!DOCTYPE html>
-<html lang="ES">
-<head>
-    <meta charset="UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>VULTHANOS</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-   <!-- <script type="text/javascript" src="main.js"></script>-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <link rel="stylesheet" type="text/css" href="/CSS_Files/purchaseStyle.css">
-    <title>VULTHANOS</title>
-</head>
-<body>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 
-<div class="CartContainer" id="Carrito2">
-    <div class="HeaderCart">
-        <h3 class="Heading">Shopping Cart</h3>
-        <h5 class="Action">Remove all</h5>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+
+        <script type="text/javascript" src="/mispruebas/main.js"></script>
+        <script src="/JS_Files/DynamicCarrito.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/shipping&paymentStyle.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
+        <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
+    </head>
+
+    <header class="header">
+        <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
+                <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
+                <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
+                <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
+                <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
+                <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
+            </ul>
+        </nav>
+        <div class="buscar"><label>
+            <input type="text" placeholder="Buscar" required>
+            <img class="lupa" src="/IMGS/header/lupa.png" alt="">
+        </label></div>
+        <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
+        <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
+    </header>
+
+    <section class="contentPurchase">
+
+        <a href="purchase.html"> <img class="progressBar" src="/IMGS/purchase/progressBar2.png" alt="progressBar"> </a>
+
+    <div class="container">
+        <h2 class="title">Address and Credit Card Details</h2>
+        <form action="successfulPurchase.html" name="registration">
+    <div class="sub-entry">
+                <label for="firstname">First Name and Lastname</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Your firstname and lastname">
+
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="Type your address in this field">
+
+                <label for="postalcode">Postal Code</label>
+                <input type="text" name="postalcode" id="postalcode" placeholder="Your postal code">
+
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="Place your city here">
+
+                <label for="phonenumber">Phone Number</label>
+                <input type="text" name="phonenumber" id="phonenumber" placeholder="+34 683 239 923">
     </div>
-</div>
 
-<script>
-    $.getJSON("/vulthanos.json", function (result) {
-        //find the array and do seomthing
+    <div class="sub-entry">
 
-        $.each(result.products, function (key, val) {
-            let div1 = "";
-            let div2 = "";
-            let div3 = "";
+                <label for="mmaa">MM/AA</label>
+                <input type="text" name="mmaa" id="mmaa" placeholder="02/25">
 
-            let grandiv = "";
+                <label for="card">Credit Card Number</label>
+                <input type="text" name="card" id="card" placeholder="XXXX-XXXX-XXXX-XXXX-XXXX">
 
-            grandiv='<div class="Cart-Items pad">' +
-                '<div class="image-box"><img src="' +
-                val.Image +
-                '" height="120px"/></div>' +
-
-                '<div class="about"><h1 class="title">' +
-
-                val.Name +
-                '</h1/><h3 class="subtitle">x1</h3><img src="/IMGS/purchase/veg.png" height="30px"  /></div>' +
-
-                '<div class="prices"><div class="amount">' +
-                val.Price +
-                '</div><div class="remove">Remove</div></div>';
-
-                $("#Carrito2").append(grandiv);
+                <label for="cvv">CVV</label>
+                <input type="password" name="cvv" id="cvv" placeholder="&#9679;&#9679;&#9679;">
 
 
-            div1 =
-                '<div class="image-box"><img src="' +
-                val.Image +
-                '" height="120px"/></div>';
-
-            div2 =
-                '<div class="about"><h1 class="title">' +
-                val.Name +
-                '</h1/><h3 class="subtitle">x1</h3>...</div>';
-
-            div3 =
-                '<div class="prices"><div class="amount">' +
-                val.Price +
-                '</div><div class="remove">Remove</div></div>';
-            let cart_items_pad = $("<div/>");
-            cart_items_pad.addClass("Cart-items pad");
-            cart_items_pad.append(div1);
-            cart_items_pad.append(div2);
-            cart_items_pad.append(div3);
-            //$("#Carrito2").append(cart_items_pad);
-        });
-    });
-</script>
+    </div>
+            <div id="botonSubmit">
+            <button type="submit" id="botonSubmit2">Pagar <b id="precio"></b><b>$</b></button>
+            </div>
 
 
 
+        </form>
 
-</body>
+        <div class="Rectangle OrangeRectangle">
+            <div class="Rectangle WhiteRectangle">
+                <h4 class="HeadingResumen">Resumen del carrito</h4>
+                <table width="250" cellspacing="0">
+                    <tbody>
+                    <tr class="TableAlign">
+                        <td>Subtotal</td>
+                        <td></td>
+                        <td><b id="precio3"></b><b>$</b></td>
+                    </tr>
+
+                    <tr class="TableAlign">
+                        <td>Descuento</td>
+                        <td></td>
+                        <td><b>11,99$</b></td>
+                    </tr>
+
+                    <tr class="TableAlign">
+                        <td>Garantía(Platinum) <p id="naranjita"> Añadir </p></td>
+                        <td></td>
+                        <td><b>0,00$</b></td>
+                    </tr>
+
+                    <tr class="TableAlign">
+                        <td>Envío</td>
+                        <td></td>
+                        <td>11,99$</td>
+                    </tr>
+
+                    <div class="Linea"></div>
+
+                    <tr class="totalLast">
+                        <td><b>Total</b></td>
+                        <td></td>
+                        <td><b id="precio2"></b><b>$</b></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <label class="politicas"><input type="checkbox">Acepto los términos de <a href="https://bit.ly/3K8VERM">Privacidad & Políticas</a> </label>
+
+                <div class="coment"><img  src="/IMGS/purchase/comentarioOpcional.png" alt="norton" width="250" height="70"> </div>
+
+                <!--<a href="successfulPurchase.html"><div class="BlueRectangle WhiteText"><b> Pagar</b> <b id="precio3" value=""></b>$</div></a>
+        -->
+                <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </section>
+
+
+    <footer>
+        <ul class="info">
+            <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
+            <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
+            <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
+        </ul>
+        <ul class="ayuda">
+            <li><a href="help.html" class="bold-footer">AYUDA</a></li>
+            <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
+            <li><a href="help.html" class="regular-footer">GENERA UN TICKET</a></li>
+        </ul>
+        <ul class="comunidad">
+            <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
+            <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
+            <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
+        </ul>
+        <ul class="redes">
+            <li class="bold-footer">REDES SOCIALES</li>
+            <li class="content"><a href=""><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
+            <li><a href=""><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
+            <li class="content"><a href=""><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
+            <li><a href=""><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
+        </ul>
+    </footer>
+    </body>
 </html>
-
