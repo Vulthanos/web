@@ -1,4 +1,6 @@
-@media screen and (min-width:980px){
+
+/*Diseño Escritorio*/
+@media screen and (min-width: 1301px){
 
     *{
         margin: 0;
@@ -59,8 +61,9 @@
 
 }
 
-/*Diseño Escritorio*/
-@media screen and (min-width: 1301px){
+
+    /*Diseño Móvil*/
+    @media screen and (max-width: 980px){
 
     *{
         margin: 0;

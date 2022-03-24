@@ -101,7 +101,9 @@
 
 }
 
-@media screen and (max-width:980px) {
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px) {
 
     *{
         margin: 0;
