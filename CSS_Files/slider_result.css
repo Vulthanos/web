@@ -32,7 +32,7 @@
         max-height: 19.4375em;
     }
 
-    label {
+    article label {
         font-weight: bold;
         text-align: center;
         display: inline-block;
@@ -75,7 +75,7 @@
         max-height: 19.4375em;
     }
 
-    label {
+    article label {
         font-weight: bold;
         text-align: center;
         display: inline-block;
@@ -110,8 +110,8 @@
     article {
         text-align: center;
         align-items: center;
-        margin-top: 5em;
-        margin-bottom: 5em;
+        margin-top: 5.5em;
+        margin-bottom: 4em;
         flex-direction: column;
         display: block;
         transform: scale(1.5);
@@ -122,7 +122,7 @@
         max-height: 19.4375em;
     }
 
-    label {
+    article label {
         font-weight: bold;
         text-align: center;
         display: block;
