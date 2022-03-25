@@ -1,5 +1,5 @@
 /*Diseño Escritorio*/
-@media screen and (min-width: 1301px){
+@media screen and (min-width: 1367px){
 
     *{
         margin: 0;
@@ -115,6 +115,129 @@
 
 
 }
+
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        left: 32%;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        max-width: 15em;
+        color: #000000;
+    }
+
+    /*Titulo apartado preguntas frecuentes*/
+    h1{
+        position: relative;
+        left: -22em;
+        font-size: 1.25em;
+        top: 10em;
+    }
+
+    .apartado{
+        background-color: #ffffff;
+        margin-top: 1em;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+    }
+
+
+    .menu-nav{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #FFA16D;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 0;
+    }
+
+    .parrafo{
+        position: relative;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+
+    .informacion-util{
+        position: absolute;
+        top: 20em;
+        left: 6%;
+        max-width: 33em;
+    }
+
+    .compras{
+        position: absolute;
+        top: 20em;
+        left: 50%;
+        max-width: 33em;
+    }
+
+
+    .pregunta-cuenta{
+        position: absolute;
+        top: 50em;
+        left: 6%;
+        max-width: 33em;
+
+    }
+
+    .pagos{
+        position: absolute;
+        top: 50em;
+        left: 50%;
+        max-width: 33em;
+    }
+
+
+    .activacion-juegos{
+        position: absolute;
+        top: 80em;
+        left: 6%;
+        max-width: 33em;
+
+    }
+
+
+    .pregunta-productos{
+        position: absolute;
+        top: 80em;
+        left: 50%;
+        max-width: 33em;
+
+    }
+
+
+
+
+
+}
+
 
 
 /*Diseño Móvil*/
