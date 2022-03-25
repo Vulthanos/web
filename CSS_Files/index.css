@@ -70,13 +70,33 @@
         display: none;
     }
 
+    .warinings_singup_position.w_inactive {
+        visibility: hidden;
+    }
+
     .warnings {
         width: 100%;
         color: #ac1f38;
+        font-size: 1em;
         text-align: center;
         position: absolute;
         bottom: 11em;
         transition: 0.3s ease all;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .warinings_singup_position {
+        background: #F8F8F8;
+        visibility: visible;
+        position: absolute;
+        justify-content: center;
+        border-radius: 1em;
+        right: -32.5em;
+        bottom: 25em;
+        transition: 0.3s ease all;
+        max-width: 30em;
+        padding-left: 2em;
     }
 }
 
@@ -122,13 +142,29 @@
         padding-top: 0.5em;
         font-size: 3em;
     }
+    .warinings_singup_position.w_inactive {
+        visibility: hidden;
+    }
+
     .warnings {
         width: 100%;
-        text-align: center;
-        margin: auto;
         color: #ac1f38;
+        font-size: 1em;
+        text-align: center;
         position: absolute;
         bottom: 11em;
+        transition: 0.3s ease all;
+        padding-top: 2em;
+        padding-bottom: 2em
+    }
+
+    .warinings_singup_position {
+        background: #F8F8F8;
+        visibility: visible;
+        position: absolute;
+        justify-content: center;
+        border-radius: 1em;
+        bottom: -20em;
         transition: 0.3s ease all;
     }
 }
