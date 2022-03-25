@@ -73,8 +73,6 @@
         line-height: 1.25em;
         color: #F6F6F6;
     }
-#F6F6F6;
-}
 
     #naranjita {
         color: #FFAE81;
@@ -705,6 +703,7 @@
     button:hover{
         cursor: pointer;
     }
+
 }
 
 @media only screen and (min-width: 1301px){
