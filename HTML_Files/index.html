@@ -98,7 +98,6 @@
 
         <script src="/JS_Files/login_script.js"></script>
 
-        <script src="/JS_Files/singup_validation.js"></script>
         <div class="singup_popup_overlay" id="singup_popup_overlay">
             <div class="singup_popup" id="singup_popup">
                 <a href="#" id="btn-cerrar-singup_popup" class="btn-cerrar-singup_popup"><i class="fas fa-times"></i></a>
@@ -125,8 +124,8 @@
                         </div>
                     </section>
                     <section class="singup_popup_footer">
-                        <p class="warnings" id="singup_warnings"></p>
-                        <a href="index.html" class="singup_item"><button type="submit" id="singup_btn" class="bold singup_btn">Registrate</button></a>
+                        <p class="warinings_singup_position warnings w_inactive" id="singup_warnings"></p>
+                        <a href="index.html" class="singup_item"><input type="submit" id="singup_btn" onclick="return singupFormSubmit()" class="bold singup_btn" value="Registrate"></a>
                     </section>
                 </form>
             </div>
