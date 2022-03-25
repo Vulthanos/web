@@ -1,5 +1,5 @@
 /*Diseño Escritorio*/
-@media screen and (min-width: 1301px) {
+@media screen and (min-width: 1367px) {
     .singup_popup_title {
         padding-top: 0.5em;
         padding-bottom: 1em;
@@ -243,7 +243,7 @@
 }
 
 /*Diseño Tablet*/
-@media screen and (min-width: 981px) and (max-width: 1300px) {
+@media screen and (min-width: 981px) and (max-width: 1366px) {
     .singup_popup_title {
         padding-top: 0.5em;
         padding-bottom: 1em;

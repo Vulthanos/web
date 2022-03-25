@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="/JS_Files/search_result.js"></script>
         <title>VULTHANOS</title>
         <meta charset="UTF-8">
     </head>
@@ -33,16 +35,16 @@
         <section class="result-content">
             <section class="filters">
                 <article>
-                    <label class="filter">Filtro<img class="cruz" src="/IMGS/search_result/cruz.png" alt=""></label>
+                    <label class="filter">Filtro<img class="cruz" src="/IMGS/result/cruz.png" alt=""></label>
                 </article>
                 <article>
-                    <label class="filter">Filtro<img class="cruz" src="/IMGS/search_result/cruz.png" alt=""></label>
+                    <label class="filter">Filtro<img class="cruz" src="/IMGS/result/cruz.png" alt=""></label>
                 </article>
                 <article>
-                    <label class="filter">Filtro<img class="cruz" src="/IMGS/search_result/cruz.png" alt=""></label>
+                    <label class="filter">Filtro<img class="cruz" src="/IMGS/result/cruz.png" alt=""></label>
                 </article>
                 <article>
-                    <label class="filter">Filtro<img class="cruz" src="/IMGS/search_result/cruz.png" alt=""></label>
+                    <label class="filter">Filtro<img class="cruz" src="/IMGS/result/cruz.png" alt=""></label>
                 </article>
                 <article class="desplegable" id="desplegable">
                     <label class="order"><a class="bold">Orden:</a>
@@ -57,7 +59,7 @@
             </section>
             <section class="filters-menu">
                 <article class="filter-selector">
-                    <label class="search_filter"><input type="text" placeholder="Busqueda"><img class="lupa-search_filter" src="/IMGS/search_result/lupa.png" alt=""></label>
+                    <label class="search_filter"><input type="text" placeholder="Busqueda"><img class="lupa-search_filter" src="/IMGS/result/lupa.png" alt=""></label>
                 </article>
                 <section class="price-range">
                     <article class="title">
@@ -90,76 +92,11 @@
             </section>
 
             <section class="products">
-                <section class="top">
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article class="movil_inactive">
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                </section>
-                <section class="bot">
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article class="movil_inactive">
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                </section>
-                <section class="top mvl_products">
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article class="movil_inactive">
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                </section>
-                <section class="bot mvl_products">
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article class="movil_inactive">
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                </section>
-                <section class="bot mvl_products">
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article>
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                    <article class="movil_inactive">
-                        <img class="product" src="/IMGS/slider/pc_prueba.jpg" alt="">
-                        <label>Nombre del producto</label>
-                    </article>
-                </section>
+                <section class="top" id="top"></section>
+                <section class="bot" id="bot"></section>
+                <section class="top mvl_products" id="top-mvl_products"></section>
+                <section class="bot mvl_products" id="bot-mvl_products1"></section>
+                <section class="bot mvl_products" id="bot-mvl_products2"></section>
             </section>
         </section>
 
