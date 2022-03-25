@@ -1,0 +1,30 @@
+{
+  "products": [
+    {
+      "Price": 900,
+      "Name": "Apple iPhone 13 Pro 256GB Azul Alpino",
+      "Image": "/IMGS/purchase/iphone.png"
+    },
+    {
+      "Price": 231.90,
+      "Name": "AMD Ryzen 5 5600G 4.40GHz (sin abrir)",
+      "Image": "/IMGS/purchase/cpu.png"
+
+    },
+    {
+      "Price": 48,
+      "Name": "Mando PS5 - Sony Dualsense Blanco",
+      "Image": "/IMGS/purchase/mandoplay.png"
+    },
+    {
+      "Price": 532,
+      "Name": "Tarjeta Gráfica EVGA GeForce RTX 2060 12GB",
+      "Image": "/IMGS/purchase/grafica.png"
+    },
+    {
+      "Price": 1099,
+      "Name": "Ordenador PC Gaming [buen estado]",
+      "Image": "/IMGS/purchase/ordenador.png"
+    }
+  ]
+}

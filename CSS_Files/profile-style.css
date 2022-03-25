@@ -1,105 +1,328 @@
-*{
-    margin: 0;
-    padding: 0;
+/*Diseño Escritorio*/
+@media screen and (min-width: 1367px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    .pagina-personal{
+        position: relative;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    /*Estilos del menu de la izquierda*/
+    .menu-izquierda ul {
+        list-style-type: none;
+        display: block;
+        font-size: 1.25em;
+        position: absolute;
+        top: 20em;
+        left: 5.25em;
+    }
+
+    .menu-nav{
+        color: black;
+    }
+
+    /*Titulo: Mi cuenta*/
+    .titulo-central {
+        position: absolute;
+        left: 25em;
+        top: 39em;
+    }
+
+    /*Titulo de informacion personal*/
+    h1{
+        position: absolute;
+        font-size: 1.25em;
+        left: 27.0625em;
+        top: 14em;
+
+    }
+
+    /*Informacion de contacto*/
+    .informacion-contacto{
+        position: absolute;
+        left: 27.0625em;
+        top: 20.5em;
+
+    }
+
+    /*Newsletter*/
+    .newsletter{
+        position: absolute;
+        left: 62.5625em;
+        top: 20.5em;
+    }
+
+    /*Titulo de direcciones*/
+    .apartado-direcciones{
+        position: absolute;
+        font-size: 1.25em;
+        left: 27.0625em;
+        top: 27em;
+    }
+
+    /*Direccion de facturacion*/
+    .block-direccion-facturacion{
+        position: absolute;
+        left: 27.0625em;
+        top: 37.8125em;
+    }
+
+    /*Direccion de envio*/
+    .block-direccion-envio{
+        position: absolute;
+        left: 62.5625em;
+        top: 37.8125em;
+    }
+
+
+    /* color de las opciones de edicion y cambio de contraseña, direccion y perfil*/
+    .cambio-opciones{
+        font-size: 0.85em;
+        color: #FFA16D;
+        text-decoration: none;
+    }
+
+    /*Boton unirse a la newsletter*/
+    button{
+        background: #FFA16D;
+        width: 31.3125em;
+        height: 3.75em;
+        border-radius: 0.375em;
+        border: 0;
+        font-size: 0.9375em;
+        font-weight: bold;
+    }
+
 }
 
-body{
-    font-family: Montserrat, sans-serif;
-    background: #fff;
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    .pagina-personal{
+        position: relative;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    /*Estilos del menu de la izquierda*/
+    .menu-izquierda ul {
+        list-style-type: none;
+        display: block;
+        font-size: 1.25em;
+        position: absolute;
+        top: 20em;
+        left: 5em;
+    }
+
+    .menu-nav{
+        color: black;
+    }
+
+    /*Titulo: Mi cuenta*/
+    .titulo-central {
+        position: absolute;
+        left: 25em;
+        top: 39em;
+    }
+
+    /*Titulo de informacion personal*/
+    h1{
+        position: absolute;
+        font-size: 1.25em;
+        left: 25em;
+        top: 14em;
+
+    }
+
+    /*Informacion de contacto*/
+    .informacion-contacto{
+        position: absolute;
+        left: 25em;
+        top: 20.5em;
+
+    }
+
+    /*Newsletter*/
+    .newsletter{
+        position: absolute;
+        left: 51em;
+        top: 20.5em;
+    }
+
+    /*Titulo de direcciones*/
+    .apartado-direcciones{
+        position: absolute;
+        font-size: 1.25em;
+        left: 24.5em;
+        top: 27em;
+    }
+
+    /*Direccion de facturacion*/
+    .block-direccion-facturacion{
+        position: absolute;
+        left: 25em;
+        top: 37.8125em;
+    }
+
+    /*Direccion de envio*/
+    .block-direccion-envio{
+        position: absolute;
+        left: 25em;
+        top: 42em;
+    }
+
+
+    /* color de las opciones de edicion y cambio de contraseña, direccion y perfil*/
+    .cambio-opciones{
+        font-size: 0.85em;
+        color: #FFA16D;
+        text-decoration: none;
+    }
+
+    /*Boton unirse a la newsletter*/
+    button{
+        background: #FFA16D;
+        width: 31.3125em;
+        height: 3.75em;
+        border-radius: 0.375em;
+        border: 0;
+        font-size: 0.9375em;
+        font-weight: bold;
+    }
+
 }
 
-.pagina-personal{
-    position: relative;
-    top: 5em;
-    text-align: center;
-    font-size: 1.875em;
-    font-style: normal;
-    font-weight: normal;
-    color: #000000;
+
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    .pagina-personal{
+        position: relative;
+        top: 7em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    .menu-izq-movil{
+        display: none;
+    }
+
+    /*Titulo: Mi cuenta*/
+    .titulo-central {
+        position: absolute;
+        left: 25em;
+        top: 39em;
+    }
+
+    /*Titulo de informacion personal*/
+    h1{
+        position: absolute;
+        font-size: 1.25em;
+        left: 13em;
+        top: 18em;
+
+    }
+
+    /*Informacion de contacto*/
+    .informacion-contacto{
+        position: absolute;
+        left: 16em;
+        top: 26em;
+
+    }
+
+    /*Newsletter*/
+    .newsletter{
+        position: absolute;
+        left: 16em;
+        top: 60em;
+    }
+
+    /*Titulo de direcciones*/
+    .apartado-direcciones{
+        position: absolute;
+        font-size: 1.25em;
+        left: 12.5em;
+        top: 32em;
+    }
+
+    /*Direccion de facturacion*/
+    .block-direccion-facturacion{
+        position: absolute;
+        left: 16em;
+        top: 45em;
+    }
+
+    /*Direccion de envio*/
+    .block-direccion-envio{
+        position: absolute;
+        left: 16em;
+        top: 49em;
+    }
+
+
+    /* color de las opciones de edicion y cambio de contraseña, direccion y perfil*/
+    .cambio-opciones{
+        font-size: 0.85em;
+        color: #FFA16D;
+        text-decoration: none;
+        margin-top: 2em;
+    }
+
+    /*Boton unirse a la newsletter*/
+    button{
+        background: #FFA16D;
+        width: 31.3125em;
+        height: 3.75em;
+        border-radius: 0.375em;
+        border: 0;
+        margin-top: 2em;
+        font-size: 0.9375em;
+        font-weight: bold;
+    }
+
 }
 
-/*Estilos del menu de la izquierda*/
-.menu-izquierda ul {
-    list-style-type: none;
-    display: block;
-    font-size: 1.25em;
-    position: absolute;
-    top: 20em;
-    left: 5.25em;
-}
-
-.menu-nav{
-    color: black;
-}
-
-/*Titulo: Mi cuenta*/
-.titulo-central {
-    position: absolute;
-    left: 25em;
-    top: 39em;
-}
-
-/*Titulo de informacion personal*/
-h1{
-    position: absolute;
-    font-size: 1.25em;
-    left: 27.0625em;
-    top: 14em;
-
-}
-
-/*Informacion de contacto*/
-.informacion-contacto{
-    position: absolute;
-    left: 27.0625em;
-    top: 20.5em;
-
-}
-
-/*Newsletter*/
-.newsletter{
-    position: absolute;
-    left: 62.5625em;
-    top: 20.5em;
-}
-
-/*Titulo de direcciones*/
-.apartado-direcciones{
-    position: absolute;
-    font-size: 1.25em;
-    left: 27.0625em;
-    top: 27em;
-}
-
-/*Direccion de facturacion*/
-.block-direccion-facturacion{
-    position: absolute;
-    left: 27.0625em;
-    top: 37.8125em;
-}
-
-/*Direccion de envio*/
-.block-direccion-envio{
-    position: absolute;
-    left: 62.5625em;
-    top: 37.8125em;
-}
-
-
-/* color de las opciones de edicion y cambio de contraseña, direccion y perfil*/
-.cambio-opciones{
-    font-size: 0.85em;
-    color: #FFA16D;
-    text-decoration: none;
-}
-
-/*Boton unirse a la newsletter*/
-button{
-    background: #FFA16D;
-    width: 31.3125em;
-    height: 3.75em;
-    border-radius: 0.375em;
-    border: 0;
-    font-size: 0.9375em;
-    font-weight: bold;
-}
