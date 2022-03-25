@@ -1,12 +1,15 @@
 {
   "img-sorteos": [
     {
+      "title": "Sorteo de una playstation 5",
       "img": "/IMGS/sorteo/sorteo_350x500.png"
     },
     {
+      "title": "Sorteo de una xbox series S",
       "img": "/IMGS/sorteo/sorteo2_350x500.png"
     },
     {
+      "title": "Sorteo del videojuego: Cyberpunk",
       "img": "/IMGS/sorteo/sorteo2_350x500.png"
     }
   ]
