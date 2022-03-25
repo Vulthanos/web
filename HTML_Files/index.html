@@ -18,32 +18,17 @@
         <script src="/JS_Files/slider.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
         <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <script src="/JS_Files/HeaderFooterLoader.js"></script>
         <title>VULTHANOS</title>
     </head>
 
     <body>
 
-        <header class="header">
-            <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
-            <nav>
-                <ul class="header_ul">
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
-                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
-                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
-                    <li class="mvl_inactive"><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
-                </ul>
-            </nav>
-            <div class="buscar"><label>
-                <input type="text" placeholder="Buscar" required>
-                <img class="lupa" src="/IMGS/header/lupa.png" alt="">
-            </label></div>
-            <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-            <a ><img class="user" id="user_profile" src="/IMGS/header/user.png" alt=""></a>
-        </header>
+    <div id="header"></div>
+    <div id="footer"></div>
 
-        <figure class="slider">
+
+    <figure class="slider">
             <div class="slider_container">
                 <button aria-label="Atras" class="slider_nav slider_back"><i class="fa-solid fa-circle-chevron-left" id="btn_back"></i></button>
                 <div class="slider_list" id="slider_list">
@@ -134,31 +119,5 @@
         </div>
 
         <script src="/JS_Files/singup_script.js"></script>
-
-        <footer>
-            <ul class="info">
-                <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
-                <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
-                <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
-            </ul>
-            <ul class="ayuda">
-                <li><a href="help.html" class="bold-footer">AYUDA</a></li>
-                <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
-                <li><a href="generar-ticket.html" class="regular-footer">GENERA UN TICKET</a></li>
-            </ul>
-            <ul class="comunidad">
-                <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
-                <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
-                <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
-            </ul>
-            <ul class="redes">
-                <li class="bold-footer">REDES SOCIALES</li>
-                <li class="content"><a href="" target="_blank"><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
-                <li><a href="" target="_blank"><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
-                <li class="content"><a href="" target="_blank"><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
-                <li><a href="" target="_blank"><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
-            </ul>
-        </footer>
-
     </body>
 </html>
