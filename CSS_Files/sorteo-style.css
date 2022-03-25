@@ -87,6 +87,10 @@
         color: black;
     }
 
+    .inactivo{
+        display: none;
+    }
+
 }
 
 
@@ -178,6 +182,10 @@
     .entrar-sorteo{
         color: black;
     }
+    .inactivo{
+        display: none;
+    }
+
 
 }
 
@@ -272,6 +280,10 @@
 
     .entrar-sorteo{
         color: black;
+    }
+
+    .inactivo{
+        display: none;
     }
 
 }
