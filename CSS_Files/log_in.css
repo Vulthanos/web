@@ -131,7 +131,7 @@
         border-radius: 0.1875em;
         padding: 1.25em;
         text-align: center;
-        width: 38.5625em;
+        max-width: 38.5625em;
         color: #000000;
         transition: .3s ease all;
         transform: scale(0.6);
@@ -230,6 +230,10 @@
             transform: translateY(0);
             opacity: 1;
         }
+    }
+
+    .border_error{
+        border: #ac1f38;
     }
 }
 
@@ -466,6 +470,11 @@
             opacity: 1;
         }
     }
+
+    .border_error{
+        border: #ac1f38;
+    }
+
 }
 
 /*Diseño Móvil*/
@@ -701,4 +710,9 @@
             opacity: 1;
         }
     }
+
+    .border_error{
+        border: #ac1f38;
+    }
+
 }
