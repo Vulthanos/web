@@ -62,3 +62,70 @@ singup_vision.addEventListener('click', function () {
         singup_repit_password.type = "password";
     }
 });
+
+var singup_name_field = document.getElementById('name-field');
+var singup_surname_field = document.getElementById('surname-field');
+var singup_email_field = document.getElementById('email-field');
+var singup_warnings = document.getElementById('singup_warnings');
+var singup_checkbox = document.getElementById('selector');
+
+function singupFormSubmit() {
+    singup_warnings.classList.add('w_inactive');
+    singup_warnings.innerHTML = "";
+    let singup_errores = "";
+    let singup_email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let singup_password_regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/;
+    let name_surname_regex = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/;
+    var singup_error = false;
+    if (singup_name_field.value.length === 0) {
+        singup_errores += 'El nombre no puede estar vacío<br>';
+        singup_error = true;
+    }
+    if (!name_surname_regex.test(singup_name_field.value)) {
+        singup_errores += 'El nombre no es correcto<br>';
+        singup_error = true;
+    }
+    if (singup_surname_field.value.length === 0) {
+        singup_errores += 'El apellido no puede estar vacío<br>';
+        singup_error = true;
+    }
+    if (!name_surname_regex.test(singup_surname_field.value)) {
+        singup_errores += 'El apellido no es correcto<br>';
+        singup_error = true;
+    }
+    if (singup_email_field.value.length === 0) {
+        singup_errores += 'El correo no puede quedar vacío<br>';
+        singup_error = true;
+    }
+    if (!singup_email_regex.test(singup_email_field.value)) {
+        singup_errores += 'El correo es incorrecto<br>';
+        singup_error = true;
+    }
+    if (singup_password.value.length === 0 && singup_repit_password.value.length === 0) {
+        singup_errores += 'Las contraseñas no pueden estar vacias<br>';
+        singup_error = true;
+    }
+    if (singup_password.value.length < 6 || singup_password.value.length > 16) {
+        singup_errores += 'La contraseña debe tener más de 6 caracteres y menos de 16<br>'
+        singup_error = true;
+    }
+    if (!singup_password_regex.test(singup_password.value)) {
+        singup_errores += 'La contraseña debe tener al menos un digito, una minuscula y una mayuscula<br>';
+        singup_error = true;
+    }
+    if (singup_password.value === singup_repit_password.value) {
+        singup_errores += 'Las contraseñas deben ser iguales<br>';
+        singup_error = true;
+    }
+    if (!singup_checkbox.checked) {
+        singup_errores += 'Debe aceptar las condiciones de uso<br>';
+        singup_error = true;
+    }
+    if (singup_error) {
+        singup_warnings.classList.remove('w_inactive');
+        singup_warnings.innerHTML = singup_errores;
+        return false;
+    } else {
+        return true;
+    }
+}
