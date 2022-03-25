@@ -38,4 +38,43 @@ $.getJSON("/JSON_Files/result.json", function(data) {
         $("#bot").append(bot_item);
 
     });
+
+    $.each(data.top_mvl_products, function(key, value) {
+
+        let mvl_item;
+
+        mvl_item = '<article>' +
+            '<img class="product" src="' + value.img + '" alt="">' +
+            '<label>' + value.name + '</label>'
+            + '</article>';
+
+        $("#top-mvl_products").append(mvl_item);
+
+    });
+
+    $.each(data.bot_mvl_products1, function(key, value) {
+
+        let mvl_item;
+
+        mvl_item = '<article>' +
+            '<img class="product" src="' + value.img + '" alt="">' +
+            '<label>' + value.name + '</label>'
+            + '</article>';
+
+        $("#bot-mvl_products1").append(mvl_item);
+
+    });
+
+    $.each(data.bot_mvl_products2, function(key, value) {
+
+        let mvl_item;
+
+        mvl_item = '<article>' +
+            '<img class="product" src="' + value.img + '" alt="">' +
+            '<label>' + value.name + '</label>'
+            + '</article>';
+
+        $("#bot-mvl_products2").append(mvl_item);
+
+    });
 });

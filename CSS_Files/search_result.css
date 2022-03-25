@@ -620,7 +620,7 @@
     }
 
     .top {
-        margin-top: 0.5em;
+        margin-top: -1.5em;
         right: 0;
         display: flex;
     }
@@ -699,5 +699,7 @@
 
     .products article {
         margin-right: 4em;
+        margin-top: 0.5em;
+        transform: scale(0.9);
     }
 }

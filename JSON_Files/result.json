@@ -68,5 +68,41 @@
             "img": "/IMGS/result/portatil.png",
             "name": "Portatil MSI"
         }
+    ],
+    "top_mvl_products": [
+        {
+            "id": 1,
+            "img": "/IMGS/result/Gran_Turismo.png",
+            "name": "Gran Turismo para PS5"
+        },
+        {
+            "id": 2,
+            "img": "/IMGS/result/portatil.png",
+            "name": "Portatil MSI"
+        }
+    ],
+    "bot_mvl_products1": [
+        {
+            "id": 1,
+            "img": "/IMGS/result/raton_msi.jpg",
+            "name": "Ratón MSI"
+        },
+        {
+            "id": 2,
+            "img": "/IMGS/result/portatil_asus.jpg",
+            "name": "Portatil ASUS"
+        }
+    ],
+    "bot_mvl_products2": [
+        {
+            "id": 1,
+            "img": "/IMGS/result/grafica_RTX3070.jpg",
+            "name": "Gráfica RTX 3070"
+        },
+        {
+            "id": 2,
+            "img": "/IMGS/result/raton_logitech.jpg",
+            "name": "Ratón Logitech"
+        }
     ]
 }

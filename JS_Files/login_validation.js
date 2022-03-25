@@ -3,7 +3,7 @@ const email_field = document.getElementById('login_email'),
     warnings_field = document.getElementById('login_warnings'),
     login_form = document.getElementById('login_form');
 
-login_form.addEventListener('submit', e=>{
+login_form.addEventListener('submit', function(e){
     e.preventDefault();
     let warnings = "";
     let email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
