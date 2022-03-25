@@ -7,7 +7,7 @@
 
     .mitabla{
         align-items: center;
-        margin-top: 2   0% ;
+        margin-top: 20% ;
         margin-bottom: 10%;
         width: 100%;
     }
@@ -169,9 +169,6 @@
 
 }
 
-
-
-
 @media screen and (min-width: 981px) and (max-width: 1300px) {
     /*TABLET*/
     html {
@@ -179,6 +176,21 @@
         height: 100%;
     }
 
+    .mitabla{
+        font-size: 1.6em;
+        align-items: center;
+        margin-top: 10% ;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    .HeadingResumen{
+        font-size: 2em;
+    }
+    .TableAlign{
+        align-items: center;
+        margin-left: 30px;
+    }
     #successful {
         width: 0.625em;
         height: auto;
@@ -295,6 +307,7 @@
 
     .politicas {
         padding-top: 1em;
+        margin-left: 10%;
     }
 
     .norton img {
@@ -332,14 +345,12 @@
         height: 100%;
     }
 
-
     .mitabla{
         font-size: 1.6em;
         align-items: center;
         margin-top: 10% ;
         margin-bottom: 10%;
         width: 100%;
-
     }
 
     .HeadingResumen{
