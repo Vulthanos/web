@@ -39,17 +39,17 @@
             <form>
                 <section class="columna-opciones">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Escriba su nombre" required>
+                    <input type="text" id="nombre" placeholder="Escriba su nombre" pattern="[A-Z][a-z]{1,15}" required>
                 </section>
 
                 <section class="columna-opciones">
                     <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" placeholder="Escriba su apellido" required>
+                    <input type="text" id="apellido" placeholder="Escriba su apellido" pattern="[A-Z][a-z]{1,15}" required>
                 </section>
 
                 <section class="columna-opciones">
                     <label for="correo">Correo de contacto</label>
-                    <input type="email" id="correo" placeholder="Escriba su correo" required>
+                    <input type="email" id="correo" placeholder="Escriba su correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </section>
             </form>
 
