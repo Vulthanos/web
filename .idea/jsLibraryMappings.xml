@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{b269aa07db, jquery, jquery-3.5.1, jquery-3.6.0, jquery-validate}" />
+    <file url="PROJECT" libraries="{2c36e9b7b1, all, glider-js, jquery-3.6.0, normalize.css}" />
   </component>
 </project>

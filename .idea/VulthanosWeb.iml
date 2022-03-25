@@ -9,10 +9,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="all" level="application" />
+    <orderEntry type="library" name="glider-js" level="application" />
+    <orderEntry type="library" name="2c36e9b7b1" level="application" />
+    <orderEntry type="library" name="normalize.css" level="application" />
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
-    <orderEntry type="library" name="b269aa07db" level="application" />
-    <orderEntry type="library" name="jquery-3.5.1" level="application" />
-    <orderEntry type="library" name="jquery" level="application" />
-    <orderEntry type="library" name="jquery-validate" level="application" />
   </component>
 </module>

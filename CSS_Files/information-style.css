@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+/*Nombre de la pagina*/
+.titulo-central{
+    position: relative;
+    top: 5em;
+    text-align: center;
+    font-size: 1.875em;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*titulo seccion sobre nosotros*/
+.sobre-nosotros {
+    position: absolute;
+    left: 12em;
+    top: 12em;
+    font-size: 1.4em;
+}
+
+.parrafo{
+    position: absolute;
+    font-size: 1em;
+    left: 12em;
+    top: 19em;
+}
+
+
+.imagen-corp{
+    position: absolute;
+    top: 14em;
+    left: 82em;
+}
+
+/*titulo seccion de contacto*/
+.contacto{
+    position: absolute;
+    font-size: 1.4em;
+    left: 12em;
+    top: 25em;
+}
+
+.departamento-negocios{
+    position: absolute;
+    font-size: 0.9em;
+    top: 42em;
+    left: 8em;
+}
+
+.departamento-legal{
+    position: absolute;
+    font-size: 0.9em;
+    top: 42em;
+    left: 50em;
+}
+
+.departamento-trabajo{
+    position: absolute;
+    font-size: 0.9em;
+    top: 42em;
+    left: 87em;
+}
+
+.correo{
+    color: #FFA16D;
+}

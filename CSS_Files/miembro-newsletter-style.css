@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background: #fff;
+}
+
+.contenedor-newsletter{
+    position: absolute;
+    margin: 14em;
+    text-align: center;
+
+}
+
+/*Ambos botones de la newsletter*/
+.formulario-entrada{
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 27em;
+    font-size: 1.5em;
+}
+
+/*recuadro del formulario*/
+.formulario {
+    position: absolute;
+    top: 20em;
+    background: #FFA16D;
+    width: 15em;
+    height: 3.75em;
+    border-radius: 0.375em;
+    border: none;
+    text-align: center;
+}
+
+::placeholder{
+    color: black;
+}
+
+/*boton de suscribete*/
+button{
+    position: absolute;
+    background: none;
+    width: 6.25em;
+    height: 2em;
+    border-radius: 0.375em;
+    border: none;
+    text-align: center;
+    top: 25em;
+    left: 43.5em;
+    font-size: 1em;
+}
