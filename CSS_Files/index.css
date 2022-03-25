@@ -21,10 +21,12 @@
     }
 
     .warnings {
-        width: 15em;
-        text-align: center;
-        margin: auto;
+        width: 100%;
         color: #ac1f38;
+        font-size: 1em;
+        text-align: center;
+        position: absolute;
+        bottom: 11em;
     }
 }
 
@@ -51,10 +53,11 @@
     }
 
     .warnings {
-        width: 15em;
-        text-align: center;
-        margin: auto;
+        width: 100%;
         color: #ac1f38;
+        text-align: center;
+        position: absolute;
+        bottom: 11em;
     }
 }
 
@@ -101,9 +104,11 @@
         font-size: 3em;
     }
     .warnings {
-        width: 15em;
+        width: 100%;
         text-align: center;
         margin: auto;
         color: #ac1f38;
+        position: absolute;
+        bottom: 11em;
     }
 }

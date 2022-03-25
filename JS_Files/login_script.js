@@ -57,20 +57,42 @@ var login_warnings = document.getElementById('login_warnings');
 var login_email = document.getElementById('login_email');
 
 function formSubmit() {
-    console.log('Formulario Enviado');
-
+    login_warnings.innerHTML = "";
+    login_email.classList.remove('border_error');
+    login_password.classList.remove('border_error');
     let errores = "";
+    let email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let password_regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/;
     var error = false;
     if (login_email.value.length === 0) {
         errores += 'El correo no puede estar vacío<br>'
         error = true;
+        login_email.classList.add('border_error');
     }
     if (login_password.value.length === 0) {
         errores += 'La contraseña no puede estar vacía<br>'
         error = true;
+        login_password.classList.add('border_error');
+    }
+    if (login_password.value.length < 6 || login_password.value.length > 16) {
+        errores += 'La contraseña debe tener más de 6 caracteres y menos de 16<br>'
+        error = true;
+        login_password.classList.add('border_error');
+    }
+    if (!email_regex.test(login_email.value)) {
+        errores += 'El correo es incorrecto<br>'
+        error = true;
+        login_email.classList.add('border_error');
+    }
+    if (!password_regex.test(login_password.value)) {
+        errores += 'La contraseña debe tener al menos un digito, una minuscula y una mayuscula<br>'
+        error = true;
+        login_password.classList.add('border_error');
     }
     if(error) {
         login_warnings.innerHTML = errores;
+        return false;
+    } else {
+        return true;
     }
-    return false;
 }
