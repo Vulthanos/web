@@ -1,5 +1,5 @@
 /*Diseño Escritorio*/
-@media screen and (min-width: 1301px){
+@media screen and (min-width: 1367px){
 
     *{
         margin: 0;
@@ -51,6 +51,63 @@
         color: black;
     }
 }
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Titulo de la pagina*/
+    .pagina-comunidad{
+        position: relative;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+    }
+
+    /*Titulo del apartado*/
+    h1{
+        position: absolute;
+        font-size: 1.25em;
+        left: 10.1875em ;
+        top: 13em;
+    }
+
+    /*Texto e icono central*/
+    .fin-sorteo{
+        position: relative;
+        text-align: center;
+        font-size: large;
+        top: 20em;
+    }
+
+    /*Volver a home*/
+    button{
+        position: relative;
+        left: 43.5%;
+        top: 28em;
+        background: #FFA16D;
+        border-radius: 0.375em;
+        width: 14em;
+        height: 3em;
+        border: none;
+        color: black;
+    }
+
+}
+
+
 /*Diseño Móvil*/
 @media screen and (max-width: 980px){
 
