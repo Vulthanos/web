@@ -20,6 +20,12 @@
         display: none;
     }
 
+    .warnings {
+        width: 15em;
+        text-align: center;
+        margin: auto;
+        color: #ac1f38;
+    }
 }
 
 /*Diseño Tablet*/
@@ -42,6 +48,13 @@
         visibility: hidden;
         overflow: hidden;
         display: none;
+    }
+
+    .warnings {
+        width: 15em;
+        text-align: center;
+        margin: auto;
+        color: #ac1f38;
     }
 }
 
@@ -86,5 +99,11 @@
         display: inline-block;
         padding-top: 0.5em;
         font-size: 3em;
+    }
+    .warnings {
+        width: 15em;
+        text-align: center;
+        margin: auto;
+        color: #ac1f38;
     }
 }

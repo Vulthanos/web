@@ -180,6 +180,10 @@
         margin-top: 1em;
     }
 
+    .products article {
+        margin-top: -1em;
+    }
+
     .product {
         max-width: 15em;
         max-height: 15em;
@@ -398,6 +402,10 @@
         text-align: center;
         align-items: center;
         margin-top: 2em;
+    }
+
+    .products article {
+        margin-top: -1em;
     }
 
     .product {

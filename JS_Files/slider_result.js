@@ -1,6 +1,6 @@
 
 $.getJSON("/JSON_Files/result.json", function(data) {
-    $.each(data.result_top_images, function(key, value) {
+    $.each(data.slider_result_top_images, function(key, value) {
 
         let top_item;
 
@@ -13,7 +13,7 @@ $.getJSON("/JSON_Files/result.json", function(data) {
 
     });
 
-    $.each(data.result_bot_images, function(key, value) {
+    $.each(data.slider_result_bot_images, function(key, value) {
 
         let bot_item;
 

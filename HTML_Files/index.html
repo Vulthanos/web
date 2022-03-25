@@ -69,10 +69,11 @@
             </article>
         </section>
 
+        <script src="/JS_Files/login_validation.js"></script>
         <div class="login_popup_overlay" id="login_popup_overlay">
             <div class="login_popup" id="login_popup">
                 <a href="#" id="btn-cerrar-login_popup" class="btn-cerrar-login_popup"><i class="fas fa-times"></i></a>
-                <form action="" class="login_form" id="login_form">
+                <form action="" method="POST" class="login_form" id="login_form">
                     <section>
                         <ul class="login_popup_title">
                             <li class="bold login_t1"><a>INICIA SESIÓN</a></li>
@@ -80,15 +81,16 @@
                         </ul>
                     </section>
                     <section>
-                        <label class="login_form_field"><input class="text-field bold" id="login_email" type="email" name="correo" placeholder="Email" required></label>
+                        <label class="login_form_field"><input class="text-field bold" name="" id="login_email" type="email" placeholder="Email" required></label>
                         <label class="login_form_field">
-                            <input class="text-field bold" id="login_password" type="password" name="password" placeholder="Password" required>
+                            <input class="text-field bold" name="" id="login_password" type="password" placeholder="Password" required>
                             <img class="login_eye login_activation" id="login_sin_vision" src="/IMGS/sing_up/ojo_cerrado.png" alt="">
                             <img class="login_eye" id="login_vision" src="/IMGS/sing_up/ojo_abierto.png" alt="">
                         </label>
                     </section>
                     <section class="login_popup_footer">
-                        <a href="index.html"><button class="login_item login_btn bold">Iniciar Sesión</button></a>
+                        <p class="warnings" id="login_warnings"></p>
+                        <a href="index.html"><button type="submit" class="login_item login_btn bold">Iniciar Sesión</button></a>
                         <a class="login_item link forgot">¿Has olvidado tu contraseña?</a>
                     </section>
                 </form>
@@ -97,10 +99,11 @@
 
         <script src="/JS_Files/login_script.js"></script>
 
+        <script src="/JS_Files/singup_validation.js"></script>
         <div class="singup_popup_overlay" id="singup_popup_overlay">
             <div class="singup_popup" id="singup_popup">
                 <a href="#" id="btn-cerrar-singup_popup" class="btn-cerrar-singup_popup"><i class="fas fa-times"></i></a>
-                <form action="">
+                <form action="" method="POST" id="singup_form">
                     <section class="singup_popup_header">
                         <ul class="singup_popup_title">
                             <li class="bold singup_t1"><a>REGISTRARSE</a></li>
@@ -123,7 +126,8 @@
                         </div>
                     </section>
                     <section class="singup_popup_footer">
-                        <a href="index.html" class="singup_item"><button class="bold singup_btn">Registrate</button></a>
+                        <p class="warnings" id="singup_warnings"></p>
+                        <a href="index.html" class="singup_item"><button type="submit" id="singup_btn" class="bold singup_btn">Registrate</button></a>
                     </section>
                 </form>
             </div>
