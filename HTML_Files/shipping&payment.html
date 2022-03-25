@@ -1,170 +1,115 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>VULTHANOS</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>VULTHANOS</title>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="/JS_Files/FormValidation.js"></script>
+        <script src="/JS_Files/DynamicCarrito.js"></script>
+        <script src="/JS_Files/HeaderFooterLoader.js"></script>
 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/shipping&paymentStyle.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
+        <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
+        <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
+    </head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <body>
+        <div id="header"></div>
+        <div id="footer"></div>
 
+        <section class="contentPurchase">
 
-    <script type="text/javascript" src="/JS_Files/FormValidation.js"></script>
-    <script src="/JS_Files/DynamicCarrito.js"></script>
+            <a href="purchase.html"> <img class="progressBar" src="/IMGS/purchase/progressBar2.png" alt="progressBar"> </a>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
-    <link rel="stylesheet" type="text/css" href="/CSS_Files/shipping&paymentStyle.css">
-    <link rel="stylesheet" type="text/css" href="/CSS_Files/header.css">
-    <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
-    <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
-</head>
+            <div class="container">
+                <h2 class="title">Address and Credit Card Details</h2>
+                <form action="successfulPurchase.html" name="registration" method="post">
+                    <div class="sub-entry">
+                        <label for="firstname">First Name and Lastname</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Your firstname and lastname">
 
-<header class="header">
-    <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
-    <nav>
-        <ul>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
-            <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
-        </ul>
-    </nav>
-    <div class="buscar"><label>
-        <input type="text" placeholder="Buscar" required>
-        <img class="lupa" src="/IMGS/header/lupa.png" alt="">
-    </label></div>
-    <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-    <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
-</header>
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Type your address in this field">
 
-<section class="contentPurchase">
+                        <label for="postalcode">Postal Code</label>
+                        <input type="text" name="postalcode" id="postalcode" placeholder="Your postal code">
 
-    <a href="purchase.html"> <img class="progressBar" src="/IMGS/purchase/progressBar2.png" alt="progressBar"> </a>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="Place your city here">
 
-    <div class="container">
-        <h2 class="title">Address and Credit Card Details</h2>
-        <form action="successfulPurchase.html" name="registration" method="post">
-            <div class="sub-entry">
-                <label for="firstname">First Name and Lastname</label>
-                <input type="text" name="firstname" id="firstname" placeholder="Your firstname and lastname">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="text" name="phonenumber" id="phonenumber" placeholder="+34 683 239 923">
+                    </div>
 
-                <label for="address">Address</label>
-                <input type="text" name="address" id="address" placeholder="Type your address in this field">
+                    <div class="sub-entry">
 
-                <label for="postalcode">Postal Code</label>
-                <input type="text" name="postalcode" id="postalcode" placeholder="Your postal code">
+                        <label for="mmaa">MM/AA</label>
+                        <input type="text" name="mmaa" id="mmaa" placeholder="02/25">
 
-                <label for="city">City</label>
-                <input type="text" name="city" id="city" placeholder="Place your city here">
+                        <label for="card">Credit Card Number</label>
+                        <input type="text" name="card" id="card" placeholder="XXXX-XXXX-XXXX-XXXX">
 
-                <label for="phonenumber">Phone Number</label>
-                <input type="text" name="phonenumber" id="phonenumber" placeholder="+34 683 239 923">
+                        <label for="cvv">CVV</label>
+                        <input type="password" name="cvv" id="cvv" placeholder="&#9679;&#9679;&#9679;">
+                    </div>
+
+                    <div id="botonSubmit">
+                        <button type="submit" id="botonSubmit2">Pagar <b id="precio"></b><b>$</b></button>
+                    </div>
+                </form>
+
+                <div class="Rectangle OrangeRectangle">
+                    <div class="Rectangle WhiteRectangle">
+                        <h4 class="HeadingResumen">Resumen del carrito</h4>
+                        <table width="250" cellspacing="0">
+                            <tbody>
+                            <tr class="TableAlign">
+                                <td>Subtotal</td>
+                                <td></td>
+                                <td><b id="precio3"></b><b>$</b></td>
+                            </tr>
+
+                            <tr class="TableAlign">
+                                <td>Descuento</td>
+                                <td></td>
+                                <td><b>11,99$</b></td>
+                            </tr>
+
+                            <tr class="TableAlign">
+                                <td>Garantía(Platinum) <p id="naranjita"> Añadir </p></td>
+                                <td></td>
+                                <td><b>0,00$</b></td>
+                            </tr>
+
+                            <tr class="TableAlign">
+                                <td>Envío</td>
+                                <td></td>
+                                <td>11,99$</td>
+                            </tr>
+
+                            <div class="Linea"></div>
+
+                            <tr class="totalLast">
+                                <td><b>Total</b></td>
+                                <td></td>
+                                <td><b id="precio2"></b><b>$</b></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <label class="politicas"><input type="checkbox">Acepto los términos de <a href="https://bit.ly/3K8VERM">Privacidad & Políticas</a> </label>
+
+                        <div class="coment"><img  src="/IMGS/purchase/comentarioOpcional.png" alt="norton" width="250" height="70"> </div>
+
+                        <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="sub-entry">
-
-                <label for="mmaa">MM/AA</label>
-                <input type="text" name="mmaa" id="mmaa" placeholder="02/25">
-
-                <label for="card">Credit Card Number</label>
-                <input type="text" name="card" id="card" placeholder="XXXX-XXXX-XXXX-XXXX-XXXX">
-
-                <label for="cvv">CVV</label>
-                <input type="password" name="cvv" id="cvv" placeholder="&#9679;&#9679;&#9679;">
-
-
-            </div>
-            <div id="botonSubmit">
-                <button type="submit" id="botonSubmit2">Pagar <b id="precio"></b><b>$</b></button>
-            </div>
-
-        </form>
-
-        <div class="Rectangle OrangeRectangle">
-            <div class="Rectangle WhiteRectangle">
-                <h4 class="HeadingResumen">Resumen del carrito</h4>
-                <table width="250" cellspacing="0">
-                    <tbody>
-                    <tr class="TableAlign">
-                        <td>Subtotal</td>
-                        <td></td>
-                        <td><b id="precio3"></b><b>$</b></td>
-                    </tr>
-
-                    <tr class="TableAlign">
-                        <td>Descuento</td>
-                        <td></td>
-                        <td><b>11,99$</b></td>
-                    </tr>
-
-                    <tr class="TableAlign">
-                        <td>Garantía(Platinum) <p id="naranjita"> Añadir </p></td>
-                        <td></td>
-                        <td><b>0,00$</b></td>
-                    </tr>
-
-                    <tr class="TableAlign">
-                        <td>Envío</td>
-                        <td></td>
-                        <td>11,99$</td>
-                    </tr>
-
-                    <div class="Linea"></div>
-
-                    <tr class="totalLast">
-                        <td><b>Total</b></td>
-                        <td></td>
-                        <td><b id="precio2"></b><b>$</b></td>
-                    </tr>
-                    </tbody>
-                </table>
-
-                <label class="politicas"><input type="checkbox">Acepto los términos de <a href="https://bit.ly/3K8VERM">Privacidad & Políticas</a> </label>
-
-                <div class="coment"><img  src="/IMGS/purchase/comentarioOpcional.png" alt="norton" width="250" height="70"> </div>
-
-                <!--<a href="successfulPurchase.html"><div class="BlueRectangle WhiteText"><b> Pagar</b> <b id="precio3" value=""></b>$</div></a>
-        -->
-                <div class="norton"><img  src="/IMGS/purchase/security.png" alt="norton" width="100" height="40"> </div>
-            </div>
-        </div>
-    </div>
-
-
-
-</section>
-
-
-<footer>
-    <ul class="info">
-        <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
-        <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
-        <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
-    </ul>
-    <ul class="ayuda">
-        <li><a href="help.html" class="bold-footer">AYUDA</a></li>
-        <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
-        <li><a href="help.html" class="regular-footer">GENERA UN TICKET</a></li>
-    </ul>
-    <ul class="comunidad">
-        <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
-        <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
-        <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
-    </ul>
-    <ul class="redes">
-        <li class="bold-footer">REDES SOCIALES</li>
-        <li class="content"><a href=""><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
-        <li><a href=""><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
-        <li class="content"><a href=""><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
-        <li><a href=""><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
-    </ul>
-</footer>
-
-
-</body>
+        </section>
+    </body>
 </html>
