@@ -78,12 +78,7 @@
         border-color: #FFA16D;
     }
 
-    .subir-imagenes{
-        position: relative;
-        border: none;
-        max-width: 15em;
-        max-height: 10em;
-    }
+
 
     .crear-ticket{
         margin-top: 5em;

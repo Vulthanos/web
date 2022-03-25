@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
         <link href="/CSS_Files/generar-ticket2-style.css" rel="stylesheet">
         <link href="generar-ticket.html">
+        <script src="/JS_Files/uploadImage.js"></script>
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
         <title>VULTHANOS</title>
     </head>
@@ -67,10 +68,14 @@
                 </section>
 
                 <section class="cuadro-imagenes">
-                    <label for="subir-archivo">
-                        Seleccione el archivo
-                    </label>
-                    <input id="subir-archivo" type="file"/>
+                        <figure class="image-container">
+                            <img id="seleccion-imagen">
+                            <figcaption id="nombre-archivo"></figcaption>
+                        </figure>
+                        <input type="file" id="subir-imagen" accept="image/*">
+                        <label for="subir-imagen">
+                            <i class="fas fa-upload"></i>
+                        </label>
                 </section>
 
                 <button class="crear-ticket">
