@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>VULTHANOS</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="/JS_Files/HeaderFooterLoader.js"></script>
+
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="fonts">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
         <link rel="stylesheet" type="text/css" href="/CSS_Files/successfulPurchase.css">
@@ -12,39 +16,23 @@
     </head>
 
     <body>
-        <header class="header">
-            <a href="index.html"><img class="logo" src="/IMGS/header/logo.png" alt=""></a>
-            <nav>
-                <ul>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-consolas" src="/IMGS/header/consola.png" alt=""></span><label class="header-text">CONSOLAS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-juegos" src="/IMGS/header/juego.png" alt=""></span><label class="header-text">JUEGOS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-accesorios" src="/IMGS/header/auriculares.png" alt=""></span><label class="header-text">ACCESORIOS</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-controladores" src="/IMGS/header/mando.png" alt=""></span><label class="header-text">CONTROLADORES</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-componentes" src="/IMGS/header/componente.png" alt=""></span><label class="header-text">COMPONENTES</label></a></li>
-                    <li><a href="search_result.html"><span class="baja"><img class ="icon icon-pc" src="/IMGS/header/pc.png" alt=""></span><label class="header-text">PC</label></a></li>
-                </ul>
-            </nav>
-            <div class="buscar"><label>
-                <input type="text" placeholder="Buscar" required>
-                <img class="lupa" src="/IMGS/header/lupa.png" alt="">
-            </label></div>
-            <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-            <a href="profile_page.html"><img class="user" src="/IMGS/header/user.png" alt=""></a>
-        </header>
+        <div id="header"></div>
+        <div id="footer"></div>
 
         <div id="AllSuccess">
             <div class="contentPurchase">
                 <img class="progressBar" src="/IMGS/purchase/progressBar3.png" alt="progressBar">
-                <div id="successful"><img src="/IMGS/purchase/pagoexitoso_100x100.png" alt="successful"></div>
+
+            <div id="successful"><img src="/IMGS/purchase/pagoexitoso.png" alt="successful" width="200" height="200"></div>
                 <h1 class="TextoCompraFinal">Pago completado exitosamente.</h1>
-                <a href="index.html"><h2 class="GoToMain">Ir a la página de inicio</h2></a>
+                <a href="index.html"> <h2 class="GoToMain">Ir a la página de inicio</h2> </a>
             </div>
 
             <div class="Rectangle OrangeRectangle">
                 <div class="Rectangle WhiteRectangle">
                     <h4 class="HeadingResumen">Confirmación</h4>
 
-                    <table width="250" cellspacing="0">
+                    <table class="mitabla" width="250" cellspacing="0">
                         <tbody>
                         <tr class="TableAlign">
                             <td>Te hemos enviado un correo a tu e-mail de
@@ -55,37 +43,12 @@
 
                     <label class="politicas">¿No lo has recibido? <a href="https://bit.ly/3K8VERM">Clica aquí</a> </label>
 
-                    <a href="index.html"><div class="BlueRectangle WhiteText"><p> Ir a la página de inicio</p></div></a>
+
+                    <a href="index.html"> <div class="BlueRectangle WhiteText"><p> Ir a la página de inicio</p></div> </a>
 
                     <div class="norton"><img  src="/IMGS/purchase/security_100x40.png" alt="norton"> </div>
                 </div>
             </div>
         </div>
-
-        <footer>
-            <ul class="info">
-                <li><a href="information.html" class="bold-footer">INFORMACIÓN</a></li>
-                <li class="content"><a href="information.html" class="regular-footer">SOBRE NOSOTROS</a></li>
-                <li><a href="information.html" class="regular-footer">CONTACTO</a></li>
-            </ul>
-            <ul class="ayuda">
-                <li><a href="help.html" class="bold-footer">AYUDA</a></li>
-                <li class="content"><a href="help.html" class="regular-footer">FAQ</a></li>
-                <li><a href="generar-ticket.html" class="regular-footer">GENERA UN TICKET</a></li>
-            </ul>
-            <ul class="comunidad">
-                <li><a href="sorteo.html" class="bold-footer">COMUNIDAD</a></li>
-                <li class="content"><a href="sorteo.html" class="regular-footer">BLOG</a></li>
-                <li><a href="sorteo.html" class="regular-footer">SORTEOS</a></li>
-            </ul>
-            <ul class="redes">
-                <li class="bold-footer">REDES SOCIALES</li>
-                <li class="content"><a href=""><img class="tw" src="/IMGS/footer/twitter.png" alt=""></a></li>
-                <li><a href=""><img class="ig" src="/IMGS/footer/instagram.png" alt=""></a></li>
-                <li class="content"><a href=""><img class="disc" src="/IMGS/footer/discord.png" alt=""></a></li>
-                <li><a href=""><img class="fb" src="/IMGS/footer/facebook.png" alt=""></a></li>
-            </ul>
-        </footer>
-
     </body>
 </html>
