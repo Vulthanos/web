@@ -522,7 +522,10 @@
     #botonSubmit{
         width: 25em;
         align-items: center;
-        margin-left: 20em;
+        margin-left: 12em;
+
+
+
     }
 
     #cvv,
@@ -536,7 +539,7 @@
     }
     /*Desktop*/
     .sub-entry {
-        width: 30%;
+        width: 27%;
         margin: 80px;
         float: left;
     }
@@ -556,7 +559,8 @@
         margin-top: 20em;
         margin-left: 10em;
         margin-bottom: auto;
-        width: 1000px;
+        width: 70%;
+
     }
 
     .title {
@@ -565,9 +569,12 @@
 
     form {
         padding: 10px;
+        width: 70%;
+        /*height: 805px;*/
         background: lightgray;
         color: black;
         border-radius: 50px;
+        margin-bottom: 10%;
     }
     form label,
     form input,
