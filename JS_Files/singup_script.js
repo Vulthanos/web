@@ -63,11 +63,11 @@ singup_vision.addEventListener('click', function () {
     }
 });
 
-var singup_name_field = document.getElementById('name-field');
-var singup_surname_field = document.getElementById('surname-field');
-var singup_email_field = document.getElementById('email-field');
-var singup_warnings = document.getElementById('singup_warnings');
-var singup_checkbox = document.getElementById('selector');
+const singup_name_field = document.getElementById('name-field');
+const singup_surname_field = document.getElementById('surname-field');
+const singup_email_field = document.getElementById('email-field');
+const singup_warnings = document.getElementById('singup_warnings');
+const singup_checkbox = document.getElementById('selector');
 
 function singupFormSubmit() {
     singup_warnings.classList.add('w_inactive');
@@ -76,7 +76,7 @@ function singupFormSubmit() {
     let singup_email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let singup_password_regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/;
     let name_surname_regex = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/;
-    var singup_error = false;
+    let singup_error = false;
     if (singup_name_field.value.length === 0) {
         singup_errores += 'El nombre no puede estar vacío<br>';
         singup_error = true;
@@ -113,7 +113,7 @@ function singupFormSubmit() {
         singup_errores += 'La contraseña debe tener al menos un digito, una minuscula y una mayuscula<br>';
         singup_error = true;
     }
-    if (singup_password.value === singup_repit_password.value) {
+    if (!singup_password.value === singup_repit_password.value) {
         singup_errores += 'Las contraseñas deben ser iguales<br>';
         singup_error = true;
     }

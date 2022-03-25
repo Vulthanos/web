@@ -32,8 +32,6 @@
         position: absolute;
         bottom: 11em;
         transition: 0.3s ease all;
-        padding-top: 2em;
-        padding-bottom: 2em
     }
 
     .warinings_singup_position {
@@ -45,6 +43,8 @@
         right: -39em;
         bottom: 25em;
         transition: 0.3s ease all;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 }
 
@@ -82,8 +82,6 @@
         position: absolute;
         bottom: 11em;
         transition: 0.3s ease all;
-        padding-top: 2em;
-        padding-bottom: 2em;
     }
 
     .warinings_singup_position {
@@ -97,6 +95,8 @@
         transition: 0.3s ease all;
         max-width: 30em;
         padding-left: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 }
 
@@ -154,8 +154,6 @@
         position: absolute;
         bottom: 11em;
         transition: 0.3s ease all;
-        padding-top: 2em;
-        padding-bottom: 2em
     }
 
     .warinings_singup_position {
@@ -166,5 +164,7 @@
         border-radius: 1em;
         bottom: -20em;
         transition: 0.3s ease all;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 }
