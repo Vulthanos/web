@@ -1,110 +1,360 @@
-*{
-    margin: 0;
-    padding: 0;
+/*Diseño Escritorio*/
+@media screen and (min-width: 1367px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        left: 40%;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        max-width: 15em;
+        color: #000000;
+    }
+
+    /*Titulo apartado preguntas frecuentes*/
+    h1{
+        position: relative;
+        left: -27em;
+        font-size: 1.25em;
+        top: 10em;
+    }
+
+    .apartado{
+        background-color: #ffffff;
+        margin-top: 1em;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+    }
+
+
+    .menu-nav{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #FFA16D;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 0;
+    }
+
+    .parrafo{
+        position: relative;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+
+    .informacion-util{
+        position: absolute;
+        top: 17em;
+        left: 6%;
+        max-width: 33em;
+    }
+
+    .pagos{
+        position: absolute;
+        top: 53em;
+        left: 6%;
+        max-width: 33em;
+    }
+
+    .compras{
+        position: absolute;
+        top: 17em;
+        left: 35%;
+        max-width: 33em;
+    }
+
+    .activacion-juegos{
+        position: absolute;
+        top: 46em;
+        left: 35%;
+        max-width: 33em;
+
+    }
+
+    .pregunta-cuenta{
+        position: absolute;
+        top: 17em;
+        left: 64%;
+        max-width: 33em;
+
+    }
+
+
+    .pregunta-productos{
+        position: absolute;
+        top: 48em;
+        left: 64%;
+        max-width: 33em;
+
+    }
+
+
+
 }
 
-body{
-    font-family: Montserrat, sans-serif;
-    background: #fff;
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        left: 32%;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        max-width: 15em;
+        color: #000000;
+    }
+
+    /*Titulo apartado preguntas frecuentes*/
+    h1{
+        position: relative;
+        left: -22em;
+        font-size: 1.25em;
+        top: 10em;
+    }
+
+    .apartado{
+        background-color: #ffffff;
+        margin-top: 1em;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+    }
+
+
+    .menu-nav{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #FFA16D;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 0;
+    }
+
+    .parrafo{
+        position: relative;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+
+    .informacion-util{
+        position: absolute;
+        top: 20em;
+        left: 6%;
+        max-width: 33em;
+    }
+
+    .compras{
+        position: absolute;
+        top: 20em;
+        left: 50%;
+        max-width: 33em;
+    }
+
+
+    .pregunta-cuenta{
+        position: absolute;
+        top: 50em;
+        left: 6%;
+        max-width: 33em;
+
+    }
+
+    .pagos{
+        position: absolute;
+        top: 50em;
+        left: 50%;
+        max-width: 33em;
+    }
+
+
+    .activacion-juegos{
+        position: absolute;
+        top: 80em;
+        left: 6%;
+        max-width: 33em;
+
+    }
+
+
+    .pregunta-productos{
+        position: absolute;
+        top: 80em;
+        left: 50%;
+        max-width: 33em;
+
+    }
+
+
+
+
+
 }
 
-/*Nombre de la pagina*/
-.titulo-central{
-    position: relative;
-    top: 5em;
-    left: 28em;
-    text-align: center;
-    font-size: 1.875em;
-    font-style: normal;
-    font-weight: normal;
-    color: #000000;
-}
 
-/*Titulo apartado preguntas frecuentes*/
-h1{
-    position: absolute;
-    font-size: 1.25em;
-    left: 10.1875em;
-    top: 14em;
-}
 
-.informacion-util{
-    position: absolute;
-    top: 20em;
-    left: 14em;
-}
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
 
-.pagos{
-    position: absolute;
-    top: 40.625em;
-    left: 14em;
-}
 
-.compras{
-    position: absolute;
-    top: 20em;
-    left: 45em;
-}
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
-.activacion-juegos{
-    position: absolute;
-    top: 40.625em;
-    left: 45em;
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
 
-}
+    /*Nombre de la pagina*/
+    .titulo-central{
+        position: relative;
+        left: 40%;
+        top: 5em;
+        text-align: center;
+        font-size: 1.875em;
+        font-style: normal;
+        font-weight: normal;
+        max-width: 15em;
+        color: #000000;
+    }
 
-.pregunta-cuenta{
-    position: absolute;
-    top: 20em;
-    left: 85em;
+    /*Titulo apartado preguntas frecuentes*/
+    h1{
+        position: relative;
+        left: 3em;
+        font-size: 1.25em;
+        top: 10em;
+    }
 
-}
+    .apartado{
+        background-color: #ffffff;
+        margin-top: 1em;
+        padding: 15px 40px;
+        border-radius: 5px;
+        box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+    }
 
-.pregunta-productos{
-    position: absolute;
-    top: 40.625em;
-    left: 85em;
 
-}
+    .menu-nav{
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: #FFA16D;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 0;
+    }
 
-.menu-nav-info ul{
-    position: absolute;
-    list-style-type: none;
-    top: 21.875em;
-    left: 10.1875em;
-}
+    .parrafo{
+        position: relative;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 30px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
 
-.menu-nav-pagos ul{
-    position: absolute;
-    list-style-type: none;
-    top: 42.5em;
-    left: 10.1875em;
-}
+    .informacion-util{
+        position: absolute;
+        top: 20em;
+        left: 13em;
+        width: 30em;
+    }
 
-.menu-nav-compras ul{
-    position: absolute;
-    list-style-type: none;
-    top: 21.875em;
-    left: 40em;
-}
+    .pagos{
+        position: absolute;
+        top: 50em;
+        left: 13em;
+        width: 30em;
+    }
 
-.menu-nav-juegos ul{
-    position: absolute;
-    list-style-type: none;
-    top: 42.5em;
-    left: 40em;
-}
+    .compras{
+        position: absolute;
+        top: 75em;
+        left: 13em;
+        width: 30em;
+    }
 
-.menu-nav-cuenta ul{
-    position: absolute;
-    list-style-type: none;
-    top: 21.875em;
-    left: 80em;
-}
+    .activacion-juegos{
+        position: absolute;
+        top: 98em;
+        left: 13em;
+        width: 30em;
 
-.menu-nav-productos ul{
-    position: absolute;
-    list-style-type: none;
-    top: 42.5em;
-    left: 78em;
+    }
+
+    .pregunta-cuenta{
+        position: absolute;
+        top: 136em;
+        left: 13em;
+        width: 30em;
+
+    }
+
+
+    .pregunta-productos{
+        position: absolute;
+        top: 168em;
+        left: 13em;
+        width: 30em;
+
+    }
+
+
+
 }
