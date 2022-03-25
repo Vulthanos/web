@@ -1,5 +1,5 @@
 /*Diseño Escritorio*/
-@media screen and (min-width: 1301px) {
+@media screen and (min-width: 1367px) {
     .slider {
         justify-content: center;
         align-items: center;
@@ -84,7 +84,7 @@
 }
 
 /*Diseño Tablet*/
-@media screen and (min-width: 981px) and (max-width: 1300px) {
+@media screen and (min-width: 981px) and (max-width: 1366px) {
     .slider {
         justify-content: center;
         align-items: center;

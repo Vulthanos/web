@@ -1,0 +1,38 @@
+{
+    "result_top_images": [
+        {
+            "img": "/IMGS/result/pc_prueba.jpg",
+            "name": "Ordenador de Sobremesa"
+        },
+        {
+            "img": "/IMGS/result/auriculares.png",
+            "name": "Cascos Gaming"
+        },
+        {
+            "img": "/IMGS/result/Gran_Turismo.png",
+            "name": "Gran Turismo para PS5"
+        },
+        {
+            "img": "/IMGS/result/mando.png",
+            "name": "Mando XBOX series X"
+        }
+    ],
+    "result_bot_images": [
+        {
+            "img": "/IMGS/result/monitor.png",
+            "name": "Monitor MSI"
+        },
+        {
+            "img": "/IMGS/result/nintendo_switch.png",
+            "name": "Nintendo Switch"
+        },
+        {
+            "img": "/IMGS/result/portatil.png",
+            "name": "Portatil MSI"
+        },
+        {
+            "img": "/IMGS/result/teclado.png",
+            "name": "Teclado por Cable"
+        }
+    ]
+}
