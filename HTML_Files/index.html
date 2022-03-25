@@ -40,7 +40,7 @@
                 <img class="lupa" src="/IMGS/header/lupa.png" alt="">
             </label></div>
             <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-            <a ><img class="user" id="user_profile" src="/IMGS/header/user.png" alt=""></a>
+            <a><img class="user" id="user_profile" src="/IMGS/header/user.png" alt=""></a>
         </header>
 
         <figure class="slider">
@@ -69,7 +69,6 @@
             </article>
         </section>
 
-        <script src="/JS_Files/login_validation.js"></script>
         <div class="login_popup_overlay" id="login_popup_overlay">
             <div class="login_popup" id="login_popup">
                 <a href="#" id="btn-cerrar-login_popup" class="btn-cerrar-login_popup"><i class="fas fa-times"></i></a>
@@ -81,16 +80,16 @@
                         </ul>
                     </section>
                     <section>
-                        <label class="login_form_field"><input class="text-field bold" name="" id="login_email" type="email" placeholder="Email" required></label>
+                        <label class="login_form_field"><input class="text-field bold" name="" id="login_email" type="email" placeholder="Email"></label>
                         <label class="login_form_field">
-                            <input class="text-field bold" name="" pattern="" id="login_password" type="password" placeholder="Password" required>
+                            <input class="text-field bold" name="" id="login_password" type="password" placeholder="Password">
                             <img class="login_eye login_activation" id="login_sin_vision" src="/IMGS/sing_up/ojo_cerrado.png" alt="">
                             <img class="login_eye" id="login_vision" src="/IMGS/sing_up/ojo_abierto.png" alt="">
                         </label>
                     </section>
                     <section class="login_popup_footer">
-                        <p class="warnings" id="login_warnings"></p>
-                        <a href="index.html"><button type="submit" class="login_item login_btn bold">Iniciar Sesión</button></a>
+                        <div class="warnings" id="login_warnings"></div>
+                        <a href="index.html"><input type="submit" class="login_item login_btn bold" onclick="return formSubmit()" value="Iniciar Sesión"></a>
                         <a class="login_item link forgot">¿Has olvidado tu contraseña?</a>
                     </section>
                 </form>

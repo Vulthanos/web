@@ -52,3 +52,25 @@ login_vision.addEventListener('click', function () {
         login_password.type = "password";
     }
 });
+
+var login_warnings = document.getElementById('login_warnings');
+var login_email = document.getElementById('login_email');
+
+function formSubmit() {
+    console.log('Formulario Enviado');
+
+    let errores = "";
+    var error = false;
+    if (login_email.value.length === 0) {
+        errores += 'El correo no puede estar vacío<br>'
+        error = true;
+    }
+    if (login_password.value.length === 0) {
+        errores += 'La contraseña no puede estar vacía<br>'
+        error = true;
+    }
+    if(error) {
+        login_warnings.innerHTML = errores;
+    }
+    return false;
+}
