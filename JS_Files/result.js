@@ -17,7 +17,8 @@ $.getJSON("/JSON_Files/result.json", function(data) {
 
         let bot_item;
 
-        bot_item = '<img src="' + value.img + '" alt="">' +
+        bot_item ='<article>' +
+            '<img src="' + value.img + '" alt="">' +
             '<label>' + value.name + '</label>'
         '</article>';
 
