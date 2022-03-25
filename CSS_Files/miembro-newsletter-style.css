@@ -1,55 +1,183 @@
-*{
-    margin: 0;
-    padding: 0;
+/*Diseño Escritorio*/
+@media screen and (min-width: 1367px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    .contenedor-newsletter{
+        position: absolute;
+        margin: 14em;
+        text-align: center
+    }
+
+    .container{
+        max-width: 40em;
+        display: flex;
+        margin-top: 3em;
+        margin-left: 32em;
+        align-items: center;
+        justify-content: center;
+        perspective: 800px;
+        -webkit-perspective:800px;
+    }
+
+    .button:hover{
+        transform:rotateX(-120deg);
+    }
+    input[type="email"]{
+        width:270px;
+        height: 17px;
+        border-radius: 1em;
+        padding: 5px;
+        padding-left:10px;
+        font-size:20px;
+    }
+    button{
+        background-color: #FFA16D;
+        border-radius: 1em;
+        border: none;
+        color:white;
+        font-size: 19px;
+        padding: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .suscripcion{
+        position: absolute;
+        top:25px;
+        left:25px;
+
+    }
 }
 
-body{
-    font-family: Montserrat, sans-serif;
-    background: #fff;
+
+/*Diseño Tablet*/
+@media screen and (min-width: 981px) and (max-width: 1366px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    .contenedor-newsletter{
+        position: absolute;
+        margin: 14em;
+        text-align: center
+    }
+
+    .container{
+        max-width: 40em;
+        display: flex;
+        margin-top: 3em;
+        margin-left: 32em;
+        align-items: center;
+        justify-content: center;
+        perspective: 800px;
+        -webkit-perspective:800px;
+    }
+
+    .button:hover{
+        transform:rotateX(-120deg);
+    }
+    input[type="email"]{
+        width:270px;
+        height: 17px;
+        border-radius: 1em;
+        padding: 5px;
+        padding-left:10px;
+        font-size:20px;
+    }
+    button{
+        background-color: #FFA16D;
+        border-radius: 1em;
+        border: none;
+        color:white;
+        font-size: 19px;
+        padding: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .suscripcion{
+        position: relative;
+        top:25px;
+        left:-238px;
+    }
+
 }
 
-.contenedor-newsletter{
-    position: absolute;
-    margin: 14em;
-    text-align: center;
 
+
+/*Diseño Móvil*/
+@media screen and (max-width: 980px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: Montserrat, sans-serif;
+        background: #fff;
+    }
+
+    .contenedor-newsletter{
+        position: absolute;
+        margin: 14em;
+        text-align: center
+    }
+
+    .container{
+        max-width: 40em;
+        display: flex;
+        margin-top: 2em;
+        margin-left: 3em;
+        align-items: center;
+        justify-content: center;
+        perspective: 800px;
+        -webkit-perspective:800px;
+    }
+
+    .button:hover{
+        transform:rotateX(-120deg);
+    }
+    input[type="email"]{
+        width:270px;
+        height: 17px;
+        border-radius: 1em;
+        padding: 5px;
+        padding-left:10px;
+        font-size:20px;
+    }
+    button{
+        background-color: #FFA16D;
+        border-radius: 1em;
+        border: none;
+        color:white;
+        font-size: 19px;
+        padding: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .suscripcion{
+        position: absolute;
+        top:25px;
+        left:25px;
+
+    }
 }
 
-/*Ambos botones de la newsletter*/
-.formulario-entrada{
-    text-align: center;
-    position: absolute;
-    top: 55%;
-    left: 27em;
-    font-size: 1.5em;
-}
 
-/*recuadro del formulario*/
-.formulario {
-    position: absolute;
-    top: 20em;
-    background: #FFA16D;
-    width: 15em;
-    height: 3.75em;
-    border-radius: 0.375em;
-    border: none;
-    text-align: center;
-}
 
-::placeholder{
-    color: black;
-}
 
-/*boton de suscribete*/
-button{
-    position: absolute;
-    background: none;
-    width: 6.25em;
-    height: 2em;
-    border-radius: 0.375em;
-    border: none;
-    text-align: center;
-    top: 25em;
-    left: 43.5em;
-    font-size: 1em;
-}
+
+

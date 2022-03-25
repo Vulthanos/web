@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="/CSS_Files/footer.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="/IMGS/header/logo.png">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="/JS_Files/sorteo-script.js"></script>
         <link href="/CSS_Files/entrar_sorteo_style.css" rel="stylesheet">
         <title>VULTHANOS</title>
     </head>
@@ -35,36 +37,32 @@
 
         <h1 class="sorteo"><strong>Sorteos</strong></h1>
 
-        <form>
-            <section class="nombre">
-                <label for="name">
-                    <span class="name"><strong>Introduce tu nombre</strong></span>
-                </label>
-                <input type="text" maxlength="200" id="name" value=" ">
-            </section>
-            <section class="apellido">
-                <label for="surname">
-                    <span class="surname"><strong>Introduce tu apellido</strong></span>
-                </label>
-                <input type="text" maxlength="200" id="surname" value=" ">
-            </section>
-            <section class="correo">
-                <label for="contactEmail">
-                    <span class="email"><strong>Correo electronico de contacto</strong></span>
-                </label>
-                <input type="email" maxlength="200" id="contactEmail" value=" ">
-            </section>
-        </form>
+        <section class="container">
+            <form>
+                <section class="columna-opciones">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Escriba su nombre" pattern="/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/" required>
+                </section>
 
-        <section class="imagen-sorteo">
-            <img src="/IMGS/sorteo/sorteo_300x400.png" alt="imagen del producto que se sortea">
+                <section class="columna-opciones">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Escriba su apellido" pattern="/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/" required>
+                </section>
+
+                <section class="columna-opciones">
+                    <label for="correo">Correo de contacto</label>
+                    <input type="email" id="correo" placeholder="Escriba su correo" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" required>
+                </section>
+            </form>
+
+                <button type="submit" class="participar">
+                    <a href="entrar_sorteo_fin.html" style="text-decoration: none" target="_blank"><span>Participar</span></a>
+                </button>
+
         </section>
 
-        <section class="boton-participar">
-            <button class="participar">
-                <a href="entrar_sorteo_fin.html" class="boton-entrar" style="text-decoration: none">Participa</a>
-            </button>
-</section>
+        <section id="imagenSorteo"></section>
+
 
         <footer>
             <ul class="info">
