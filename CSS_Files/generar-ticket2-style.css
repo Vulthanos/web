@@ -215,9 +215,8 @@
     /*Nombre de la pagina*/
     .titulo-ayuda{
         position: relative;
-        max-width: fit-content;
-        left: 3em;
-        top: -11em;
+        left: 15em;
+        top: -15em;
         text-align: center;
         font-size: 1.875em;
         font-style: normal;
@@ -228,25 +227,26 @@
     .titulo-ticket{
         position: relative;
         max-width: fit-content;
-        top: -11em;
-        left: -13em;
-        font-size: 1.4em;
+        top: -33em;
+        left: 47em;
+        font-size: 0.7em;
 
     }
 
     .titulo-seccion{
         position: relative;
         max-width: fit-content;
-        top: -20em;
-        left: -16em;
+        top: -27em;
+        left: 55em;
+        font-size: 0.6em;
 
     }
 
     .linea-temporal{
         max-width: fit-content;
         position: relative;
-        top: -5em;
-        left: -11em;
+        top: -18em;
+        left: 29em;
     }
 
     .container{
@@ -261,7 +261,9 @@
     .columna-opciones{
         position: relative;
         margin-top: 4em;
-        left: -20em;
+        top: -26em;
+        left: 55em;
+        font-size: 0.6em;
     }
 
     .cuadro-imagenes{
@@ -280,7 +282,8 @@
         height: 2em;
         border-radius: 0.375em;
         position: relative;
-        left: -2em;
+        left: 44em;
+        top: -19em;
         font-size: 1em;
     }
 }
