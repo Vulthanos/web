@@ -1,0 +1,25 @@
+{
+  "users" : [
+    {
+      "id": 1,
+      "name": "Tinizara",
+      "surname": "Rodríguez Delgado",
+      "email": "Tini@vulthanos.es",
+      "pass": "SoyT12"
+    },
+    {
+      "id": 2,
+      "name": "Fernando",
+      "surname": "Sanfiel Reyes",
+      "email": "Fer@vulthanos.es",
+      "pass": "SoyF12"
+    },
+    {
+      "id": 3,
+      "name": "Sebastián",
+      "surname": "Fernández García",
+      "email": "Sebas@vulthanos.es",
+      "pass": "SoyS12"
+    }
+  ]
+}
