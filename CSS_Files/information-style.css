@@ -31,10 +31,11 @@
     }
 
     .parrafo{
-        position: absolute;
+        position: relative;
         font-size: 1em;
-        left: 12em;
-        top: 19em;
+        left: -15em;
+        margin: 27em;
+        top: -8em;
     }
 
 
