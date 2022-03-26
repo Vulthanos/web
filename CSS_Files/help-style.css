@@ -112,6 +112,11 @@
 
     }
 
+    .footer-help{
+        position: absolute;
+        bottom: -30em;
+    }
+
 
 
 }
@@ -127,6 +132,7 @@
     body{
         font-family: Montserrat, sans-serif;
         background: #fff;
+
     }
 
     /*Nombre de la pagina*/
@@ -229,13 +235,14 @@
         top: 80em;
         left: 50%;
         max-width: 33em;
+        margin-bottom: auto ;
 
     }
 
-
-
-
-
+    .footer-help{
+        position: absolute;
+        bottom: -73em;
+    }
 }
 
 
@@ -252,12 +259,16 @@
     body{
         font-family: Montserrat, sans-serif;
         background: #fff;
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+        
     }
 
     /*Nombre de la pagina*/
     .titulo-central{
         position: relative;
-        left: 40%;
+        left: 3em;
         top: 5em;
         text-align: center;
         font-size: 1.875em;
@@ -309,52 +320,63 @@
         transition: all 1s;
     }
 
-    .informacion-util{
-        position: absolute;
-        top: 20em;
-        left: 13em;
-        width: 30em;
+    .container{
+        max-width: 100%;
+        position: relative;
+        left: 6em;
+        top: 16em;
+    }
+
+    .informacion-util  {
+        margin-bottom: 4em;
     }
 
     .pagos{
-        position: absolute;
-        top: 50em;
-        left: 13em;
-        width: 30em;
+        margin-bottom: 4em;
     }
 
     .compras{
-        position: absolute;
-        top: 75em;
-        left: 13em;
-        width: 30em;
+        margin-bottom: 4em;
     }
 
-    .activacion-juegos{
-        position: absolute;
-        top: 98em;
-        left: 13em;
-        width: 30em;
+    .activacion-juegos {
+        margin-bottom: 4em;
+
+    }
+
+    .pregunta-productos{
+        margin-bottom: 4em;
 
     }
 
     .pregunta-cuenta{
-        position: absolute;
-        top: 136em;
-        left: 13em;
-        width: 30em;
+        margin-bottom: 4em;
+    }
+
+    .footer-help{
+        margin-top: auto;
+        bottom: -130em;
+        width: 157%;
 
     }
 
-
-    .pregunta-productos{
-        position: absolute;
-        top: 168em;
-        left: 13em;
-        width: 30em;
-
+    .footer-help ul{
+        transform: scale(0.7);
     }
 
+
+
+    .footer-help .ayuda{
+        left: 8em;
+    }
+
+    .footer-help .comunidad{
+        left: 15em;
+    }
+
+    .footer-help .redes{
+        left: 20em;
+    }
 
 
 }
