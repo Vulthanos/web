@@ -53,15 +53,17 @@ login_vision.addEventListener('click', function () {
     }
 });
 
-var login_warnings = document.getElementById('login_warnings');
-var login_email = document.getElementById('login_email');
+const login_btn = document.getElementById('login_btn');
+const login_warnings = document.getElementById('login_warnings');
+const login_email = document.getElementById('login_email');
 
 function formSubmit() {
     login_warnings.innerHTML = "";
     let errores = "";
     let email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let password_regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/;
-    var error = false;
+    let error = false;
+    let successful_login = false;
     if (login_email.value.length === 0) {
         errores += 'El correo no puede estar vacío<br>'
         error = true;
@@ -86,6 +88,20 @@ function formSubmit() {
         login_warnings.innerHTML = errores;
         return false;
     } else {
+        successful_login = true;
+        successfulLogin(successful_login);
         return true;
+    }
+}
+
+function successfulLogin(log_in) {
+    if(log_in) {
+        login_btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            login_overlay.classList.remove('login_active');
+            login_popup.classList.remove('login_active');
+        });
+        const profile_link = document.getElementById('profile_link');
+        profile_link.setAttribute('href', 'profile_page.html');
     }
 }
