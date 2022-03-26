@@ -223,7 +223,8 @@
     /*Nombre de la pagina*/
     .titulo-central{
         position: relative;
-        left: 6em;
+        max-width: fit-content;
+        left: 15em;
         top: 7em;
         text-align: center;
         font-size: 1.875em;
@@ -235,6 +236,7 @@
     /*Titulo apartado Genere un ticket*/
     .titulo-seccion{
         position: relative;
+        max-width: fit-content;
         font-size: 1.4em;
         left: 11em;
         top: 15em;
@@ -243,8 +245,9 @@
 
     .linea-temporal{
         position: relative;
+        max-width: fit-content;
         top: 25em;
-        left: 25em;
+        left: 16em;
     }
 
 
@@ -261,8 +264,8 @@
         padding: 35px 50px;
         transform: translate(-50%,-50%);
         position: relative;
-        left: 45em;
-        top: 50em;
+        left: 29em;
+        top: 43em;
         border-radius: 10px;
     }
 
