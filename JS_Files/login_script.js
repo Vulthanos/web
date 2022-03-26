@@ -53,39 +53,69 @@ login_vision.addEventListener('click', function () {
     }
 });
 
-var login_warnings = document.getElementById('login_warnings');
-var login_email = document.getElementById('login_email');
+const login_btn = document.getElementById('login_btn');
+const login_warnings = document.getElementById('login_warnings');
+const login_email = document.getElementById('login_email');
 
 function formSubmit() {
     login_warnings.innerHTML = "";
     let errores = "";
     let email_regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let password_regex = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$/;
-    var error = false;
+    let error = false;
+    let successful_login = false;
     if (login_email.value.length === 0) {
-        errores += 'El correo no puede estar vacío<br>'
+        errores += 'El correo no puede estar vacío<br>';
         error = true;
     }
     if (login_password.value.length === 0) {
-        errores += 'La contraseña no puede estar vacía<br>'
+        errores += 'La contraseña no puede estar vacía<br>';
         error = true;
     }
     if (login_password.value.length < 6 || login_password.value.length > 16) {
-        errores += 'La contraseña debe tener más de 6 caracteres y menos de 16<br>'
+        errores += 'La contraseña debe tener más de 6 caracteres y menos de 16<br>';
         error = true;
     }
     if (!email_regex.test(login_email.value)) {
-        errores += 'El correo es incorrecto<br>'
+        errores += 'El correo es incorrecto<br>';
         error = true;
     }
     if (!password_regex.test(login_password.value)) {
-        errores += 'La contraseña debe tener al menos un digito, una minuscula y una mayuscula<br>'
+        errores += 'La contraseña debe tener al menos un digito, una minuscula y una mayuscula<br>';
         error = true;
     }
     if(error) {
         login_warnings.innerHTML = errores;
         return false;
     } else {
-        return true;
+        if (API_Consult) {
+            return true;
+        } else {
+            errores += 'La combinacion de email y contraseña no existe<br>';
+            login_warnings.innerHTML = errores;
+            return false;
+        }
+    }
+}
+
+function API_Consult() {
+    fetch("http://localhost:3000/users").then((response) => response.json()).then(users => {
+        users.forEach(user => {
+            if (login_password.value === user.pass && login_email.value === user.email) {
+                return true;
+            }
+        });
+    });
+}
+
+function successfulLogin(log_in) {
+    if(log_in) {
+        login_btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            login_overlay.classList.remove('login_active');
+            login_popup.classList.remove('login_active');
+        });
+        const profile_link = document.getElementById('profile_link');
+        profile_link.setAttribute('href', 'profile_page.html');
     }
 }

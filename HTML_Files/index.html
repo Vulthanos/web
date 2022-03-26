@@ -40,7 +40,7 @@
                 <img class="lupa" src="/IMGS/header/lupa.png" alt="">
             </label></div>
             <a href="purchase.html"><img class="carrito" src="/IMGS/header/carrito.png" alt=""></a>
-            <a><img class="user" id="user_profile" src="/IMGS/header/user.png" alt=""></a>
+            <a id="profile_link"><img class="user" id="user_profile" src="/IMGS/header/user.png" alt=""></a>
         </header>
 
         <figure class="slider">
@@ -72,7 +72,7 @@
         <div class="login_popup_overlay" id="login_popup_overlay">
             <div class="login_popup" id="login_popup">
                 <a href="#" id="btn-cerrar-login_popup" class="btn-cerrar-login_popup"><i class="fas fa-times"></i></a>
-                <form action="" method="POST" class="login_form" id="login_form">
+                <form action="" method="GET" class="login_form" id="login_form">
                     <section>
                         <ul class="login_popup_title">
                             <li class="bold login_t1"><a>INICIA SESIÓN</a></li>
@@ -89,7 +89,7 @@
                     </section>
                     <section class="login_popup_footer">
                         <p class="warnings" id="login_warnings"></p>
-                        <a href="index.html"><input type="submit" class="login_item login_btn bold" onclick="return formSubmit()" value="Iniciar Sesión"></a>
+                        <input id="login_btn" type="submit" class="login_item login_btn bold" onclick="return formSubmit()" value="Iniciar Sesión">
                         <a class="login_item link forgot">¿Has olvidado tu contraseña?</a>
                     </section>
                 </form>
@@ -125,7 +125,7 @@
                     </section>
                     <section class="singup_popup_footer">
                         <p class="warinings_singup_position warnings w_inactive" id="singup_warnings"></p>
-                        <a href="index.html" class="singup_item"><input type="submit" id="singup_btn" onclick="return singupFormSubmit()" class="bold singup_btn" value="Registrate"></a>
+                        <a class="singup_item"><input type="submit" id="singup_btn" onclick="return singupFormSubmit()" class="bold singup_btn" value="Registrate"></a>
                     </section>
                 </form>
             </div>
