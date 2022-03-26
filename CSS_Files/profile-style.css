@@ -269,7 +269,7 @@
     /*Informacion de contacto*/
     .informacion-contacto{
         position: absolute;
-        left: 16em;
+        left: 20em;
         top: 26em;
 
     }
@@ -277,7 +277,7 @@
     /*Newsletter*/
     .newsletter{
         position: absolute;
-        left: 16em;
+        left: 20em;
         top: 60em;
     }
 
@@ -292,14 +292,14 @@
     /*Direccion de facturacion*/
     .block-direccion-facturacion{
         position: absolute;
-        left: 16em;
+        left: 20em;
         top: 45em;
     }
 
     /*Direccion de envio*/
     .block-direccion-envio{
         position: absolute;
-        left: 16em;
+        left: 20em;
         top: 49em;
     }
 
