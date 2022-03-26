@@ -142,8 +142,8 @@
     /*Imagen sorteo 3*/
     .sorteo3{
         position: absolute;
-        top: 21.875em;
-        left: 84.6875em;
+        top: 70em;
+        left: 33em;
 
     }
 
@@ -182,8 +182,10 @@
     .entrar-sorteo{
         color: black;
     }
-    .inactivo{
-        display: none;
+
+    .footer-sorteo{
+        position: absolute;
+        bottom: -70em;
     }
 
 
@@ -227,14 +229,14 @@
     /*Imagen sorteo 1*/
     .sorteo1{
         position: absolute;
-        top: 30em;
+        top: 24em;
         left: 20em;
     }
 
     /*Imagen sorteo 2*/
     .sorteo2{
         position: absolute;
-        top: 73em;
+        top: 70em;
         left: 20em;
     }
 
@@ -275,16 +277,20 @@
     .txt-sorteo3{
         position: absolute;
         color: black;
-        left: 23em;
+        left: 27em;
     }
 
     .entrar-sorteo{
         color: black;
     }
 
-    .inactivo{
-        display: none;
+    .footer-sorteo{
+        position: absolute;
+        bottom: -35em;
+        width: 100%;
     }
+
+
 
 }
 
