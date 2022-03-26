@@ -65,33 +65,47 @@ function formSubmit() {
     let error = false;
     let successful_login = false;
     if (login_email.value.length === 0) {
-        errores += 'El correo no puede estar vacío<br>'
+        errores += 'El correo no puede estar vacío<br>';
         error = true;
     }
     if (login_password.value.length === 0) {
-        errores += 'La contraseña no puede estar vacía<br>'
+        errores += 'La contraseña no puede estar vacía<br>';
         error = true;
     }
     if (login_password.value.length < 6 || login_password.value.length > 16) {
-        errores += 'La contraseña debe tener más de 6 caracteres y menos de 16<br>'
+        errores += 'La contraseña debe tener más de 6 caracteres y menos de 16<br>';
         error = true;
     }
     if (!email_regex.test(login_email.value)) {
-        errores += 'El correo es incorrecto<br>'
+        errores += 'El correo es incorrecto<br>';
         error = true;
     }
     if (!password_regex.test(login_password.value)) {
-        errores += 'La contraseña debe tener al menos un digito, una minuscula y una mayuscula<br>'
+        errores += 'La contraseña debe tener al menos un digito, una minuscula y una mayuscula<br>';
         error = true;
     }
     if(error) {
         login_warnings.innerHTML = errores;
         return false;
     } else {
-        successful_login = true;
-        successfulLogin(successful_login);
-        return true;
+        if (API_Consult) {
+            return true;
+        } else {
+            errores += 'La combinacion de email y contraseña no existe<br>';
+            login_warnings.innerHTML = errores;
+            return false;
+        }
     }
+}
+
+function API_Consult() {
+    fetch("http://localhost:3000/users").then((response) => response.json()).then(users => {
+        users.forEach(user => {
+            if (login_password.value === user.pass && login_email.value === user.email) {
+                return true;
+            }
+        });
+    });
 }
 
 function successfulLogin(log_in) {
