@@ -327,35 +327,15 @@
         top: 16em;
     }
 
-    .informacion-util  {
+    .informacion-util , .pagos , .compras, .activacion-juegos, .pregunta-productos, .pregunta-cuenta
+    {
         margin-bottom: 4em;
     }
 
-    .pagos{
-        margin-bottom: 4em;
-    }
-
-    .compras{
-        margin-bottom: 4em;
-    }
-
-    .activacion-juegos {
-        margin-bottom: 4em;
-
-    }
-
-    .pregunta-productos{
-        margin-bottom: 4em;
-
-    }
-
-    .pregunta-cuenta{
-        margin-bottom: 4em;
-    }
 
     .footer-help{
         margin-top: auto;
-        bottom: -130em;
+        bottom: -145em;
         width: 157%;
 
     }
@@ -363,7 +343,6 @@
     .footer-help ul{
         transform: scale(0.7);
     }
-
 
 
     .footer-help .ayuda{
@@ -377,6 +356,5 @@
     .footer-help .redes{
         left: 20em;
     }
-
 
 }
